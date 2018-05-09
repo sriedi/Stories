@@ -1,0 +1,419 @@
+<tw-storydata name="Berners Street " startnode="1" creator="Twine" creator-version="2.2.1" ifid="241E6239-A58E-486E-9D3B-710AA8E8657C" zoom="0.6" format="SugarCube" format-version="2.21.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">html{
+font-family:Georgia,serif;
+}
+#story{
+
+}
+
+.gameheader{
+width: 100%;
+height: 10vh;
+background-color:#e4b31d;
+text-align: center;
+}
+
+
+#redmap
+{
+position:relative;
+width:50vw;
+height:60vh;
+margin: 15vh auto;
+background-color: red;
+}
+#faker
+{
+background-color: blue;
+position: absolute;
+top: 20%;
+left: 5%;
+height: 200px;
+width: 200px; 
+}
+
+#blocksford
+{
+background-color: green;
+position: absolute;
+top: 10%;
+left: 50%;
+height: 200px;
+width: 200px; 
+}
+
+#reek
+{
+background-color: yellow;
+position: absolute;
+top: 80%;
+right: 10%;
+height: 200px;
+width: 200px; 
+}
+
+
+
+
+
+
+
+
+
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">Dialog.addClickHandler("#some-element", null, function () {
+    Dialog.setup("My Dialog Title", "my-dialog-class");
+    Dialog.wiki(Story.get("MyDialogContents").processText());
+});
+Config.history.controls = false;
+
+
+
+
+
+
+
+
+
+
+
+</script><tw-passagedata pid="1" name="Start" tags="" position="3164,97" size="100,100">Bernerstreet ist die Geschichte eines Dieners im 18 Jhrd. der in die Wirren des grössten Steiches des Jahrhunderts gerät.
+[[Goto-&gt;Intro]]
+
+
+&lt;&lt;set $phase_collection to true &gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Intro" tags="" position="3493,92" size="100,100">
+T’was a mediocrely foggy day; one of many typical London fall mornings. You take the corner towards Hook’s bureau; evade a few people rushing; and look down the street. 
+The city’s awakening; the ubiquitous noise of people slowly increases together with the sun climbing the sky westwards. A few carriages were rolling on the manky streets already; a couple of maids were transporting bins of laundry, chit-chatting with each other in shrill soprane tones of voice. 
+
+The effect of the coffee you drank half an hour ago is slowly unfolding; and you’re feeling rather well, ready to serve another day as a loyal helping hand for Hook.
+Another corner to the right; and your destination comes in sight, a four-storied, bulky office building; towering high above the surrounding structures. You open the main gate and go inside, greeting the portier on the way. No response, he’s still half-asleep, as usual in the morning hours.
+As you climb up the two rows of stairs up to the office, you notice agitated talk coming from Hooks bureau. You slow down your walk; and as you reach the double-door; the voices get clearer.
+//Should I eavesdrop?//, you ask yourself; standing before the massive entry. 
+
+[[Wait and Listen]]
+[[Enter Directly]]
+
+
+</tw-passagedata><tw-passagedata pid="3" name="Map" tags="" position="3546.6666666666665,1358" size="100,100">&lt;div id=&quot;redmap&quot;&gt;
+	&lt;div id=&quot;blocksford&quot;&gt;[[Blocksford Street]]&lt;/div&gt;
+	&lt;div id=&quot;faker&quot;&gt;[[Faker Street]]&lt;/div&gt;
+	&lt;div id=&quot;reek&quot;&gt;[[Reek Street]]&lt;/div&gt;
+&lt;/div&gt;
+
+[[Go Home-&gt;Interlude]]
+</tw-passagedata><tw-passagedata pid="4" name="Blocksford Street" tags="" position="2954.3333333333335,1306" size="100,100">You are on the Blocksfordstreet
+[[Map]]
+[[Photography Shop]]
+[[Caclographer Workshop]]
+[[Oriental Rugshop]]
+</tw-passagedata><tw-passagedata pid="5" name="Faker Street" tags="" position="4310,1053" size="100,100">You are on the Faker Street
+
+[[Map]] 
+
+[[Church]]
+[[Workshop]]
+[[Weapons Shop]]</tw-passagedata><tw-passagedata pid="6" name="Reek Street" tags="" position="3954,1493" size="100,100">You are on Reek Street
+[[Map]] 
+[[Shadey Alley]]
+[[Prostitute]]
+[[Pharmacy]]</tw-passagedata><tw-passagedata pid="7" name="Interlude" tags="" position="3404,1658" size="100,100">&lt;&lt;set $phase_colletction to false&gt;&gt;
+
+[[Monday]]
+</tw-passagedata><tw-passagedata pid="8" name="Monday" tags="" position="3363,1823" size="100,100">[[8.00]]
+
+</tw-passagedata><tw-passagedata pid="9" name="8.00" tags="" position="3326,2001" size="100,100">[[9.00]]
+
+&lt;&lt;set _randompassage to either(
+    &#39;Random Event 1&#39;,
+    &#39;Random Event 2&#39;
+)&gt;&gt;
+&lt;&lt;include _randompassage &gt;&gt;
+
+</tw-passagedata><tw-passagedata pid="10" name="9.00" tags="" position="3322,2177" size="100,100">[[10.00]]</tw-passagedata><tw-passagedata pid="11" name="Church" tags="" position="4766,1191" size="100,100">[[Charcter Priest]]
+[[Faker Street]] </tw-passagedata><tw-passagedata pid="12" name="Workshop" tags="" position="4579,721" size="100,100">[[Faker Street]] 
+[[Character Inventor]]
+</tw-passagedata><tw-passagedata pid="13" name="Weapons Shop" tags="" position="4122,813" size="100,100">[[Faker Street]]
+[[Character Weaponsdealer]]</tw-passagedata><tw-passagedata pid="14" name="Character Weaponsdealer" tags="" position="4409,651" size="100,100">[[Faker Street]] </tw-passagedata><tw-passagedata pid="15" name="Character Inventor" tags="" position="4870,946" size="100,100">[[Faker Street]] </tw-passagedata><tw-passagedata pid="16" name="Charcter Priest" tags="" position="4527,1380" size="100,100">[[Faker Street]] </tw-passagedata><tw-passagedata pid="17" name="10.00" tags="" position="3318,2341" size="100,100">[[11.00]]</tw-passagedata><tw-passagedata pid="18" name="11.00" tags="" position="3323,2531" size="100,100">[[12.00]]
+</tw-passagedata><tw-passagedata pid="19" name="12.00" tags="" position="3323,2741" size="100,100">[[100 Ending]]
+[[Overdone Ending]]
+[[Underperformance Ending]]</tw-passagedata><tw-passagedata pid="20" name="100 Ending" tags="" position="3161,3109" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="Overdone Ending" tags="" position="3311,3109" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="22" name="Underperformance Ending" tags="" position="3461,3079" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="23" name="Random Event 1" tags="" position="3143,2014" size="100,100">This is Event 1</tw-passagedata><tw-passagedata pid="24" name="Random Event 2" tags="" position="3476,2002" size="100,100">This is Event 2
+
+</tw-passagedata><tw-passagedata pid="25" name="Shadey Alley" tags="" position="3670,1725" size="100,100">[[Reek Street]] 
+[[Character Criminal]]</tw-passagedata><tw-passagedata pid="26" name="Prostitute" tags="" position="4318,2176" size="100,100">[[Reek Street]] 
+[[Character Prostitute]]
+</tw-passagedata><tw-passagedata pid="27" name="Pharmacy" tags="" position="4271,1345" size="100,100">[[Reek Street]] 
+[[Character Pharmacist]]
+
+</tw-passagedata><tw-passagedata pid="28" name="Character Pharmacist" tags="" position="4725,1751" size="100,100">[[Reek Street]] </tw-passagedata><tw-passagedata pid="29" name="Character Prostitute" tags="" position="4596,1991" size="100,100">[[Reek Street]] </tw-passagedata><tw-passagedata pid="30" name="Character Criminal" tags="" position="4041,2044" size="100,100">[[Reek Street]] </tw-passagedata><tw-passagedata pid="31" name="Photography Shop" tags="" position="2923,881" size="100,100">
+You push the giant shiny hand made glass door of the brand new building and step in. The store is one big room. Two well-dressed gentlemen sit together on a small table having a cup of tea and a chat, while another man in the back of the room is handling something with a big camera. In the other corner, a young lady in a brand new white dress practises some poses in front of a big picture of an empty london street in deep winter. There are also a lot of frames and shelves filled up with cameras, lenses and other stuff.
+The whole room is very clean and tidy. Everything shines and sparkles.
+One of the two chatting gentlemen interrupts the talking and turns his head around. He is a very big man, definitely overweight, wearing a dark brand new suit with a black top hat and a big moustache in his chubby face.
+He turns up his big nose at you and says in a scottish accent:
+
+//I’ll be with ye in a Moment, Sir.//
+
+He lights his pipe and continues the talk with the other gentleman, also a very big one.
+
+
+[[Return to the Street-&gt;Blocksford Street]] 
+[[You stand still and listen to the gentlemen]]
+[[You decide to take a walk through the store and check it out a little bit.]]</tw-passagedata><tw-passagedata pid="32" name="Caclographer Workshop" tags="" position="2596,1363" size="100,100">[[Blocksford Street]] 
+[[Character Calcographer]]
+</tw-passagedata><tw-passagedata pid="33" name="Oriental Rugshop" tags="" position="2844,1701" size="100,100">[[Blocksford Street]] 
+[[Character Rugdealer]]
+</tw-passagedata><tw-passagedata pid="34" name="Character Photographer" tags="" position="2559.6666666666665,1116" size="100,100">[[Blocksford Street]] </tw-passagedata><tw-passagedata pid="35" name="Character Calcographer" tags="" position="2631,1616" size="100,100">[[Blocksford Street]] </tw-passagedata><tw-passagedata pid="36" name="Character Rugdealer" tags="" position="3017,1601" size="100,100">[[Blocksford Street]] </tw-passagedata><tw-passagedata pid="37" name="Wait and Listen" tags="" position="3366,493" size="100,100">You cower down a bit, tilt your head and hold your ear towards the door. You try to make out the muffled voices.
+//“... standing any chance! Hah! Your money’s as good as mine already, Hook!”//
+//“Don’t be too sure about that, Beazley! We will see.”//
+//“Do and think what you must, Hook. So, its a bet?”//
+//“It’s a bet!”//
+//“No sealing it with a handshake, Hook? Afraid?”//
+//“Pah. Come here, you lousy wannabe-architect!”//
+A slight clapping sound is audible through the thick wooden door as their hands meet for an energic handshake. 
+//“Well, Hook, ‘til then!”//
+
+As steps approach, you swiftly react and push against the door and enter. Mr. Hook is standing behind his desk, his left hand clenching a cup of coffee; the other guy, apparently a certain Mr. Beazley, came to a halt as you opened the door, and looks at you with a startled expression on his face. //“Good morning, Sir”//, you say and nod into Hooks direction. Then, looking at Beazley, you merely hint at a bow. //“Good morning to you aswell, sir”//, you quickly add.
+
+//“Good day.”// Beazley scurries out; leaving the door open.
+A brief moment of silence follows, only Beazleys hasty steps from the staircase are audible, slowly fainting away.
+“Good morning, boy. How are you?”, Hook asks, still standing.
+“Im good, sir, very kind that you ask. How are you instead? I think I overheard some kind of… a discussion, sir?”
+//“Ahh…”// Hook exhales loudly, sits down and points at the chair on the opposite side of his desk. //“Take a seat, will you. I’ve got something to do for you, boy.”//
+“Well, that’s what I’ve been hired for, no?” You smile a bit and sit down, only to notice the warmth of its preceded occupation. You shudder somewhat, but you try to focus on Hook again. “Tell me, sir. It would be an honor.”
+//“Well, boy, listen up. I trust you, and you know that. Do… you know that?”// He lifts a brow.
+
+//“I sure do, sir.”//
+
+//“That’s good. So, listen carefully…”//
+
+&#39;&#39;What do you do?&#39;&#39;
+
+[[Actually listen carefully]]
+[[Only listen halfway; and just try to snap up the most important bits]]</tw-passagedata><tw-passagedata pid="38" name="Enter Directly" tags="" position="3651,401" size="100,100">Heaving open the heavy doorwing, you step into a heated discussion, it seems.
+//“You won’t be standing any chance! Hah! Your money’s as good as mine already, Hook!”//
+Hook is sitting behind his desk, obviously unnerved. On the opposite side: a skinny dude in a wavy coat, throwing gestures, reddened face. He wears a checkered scarf, tightly wrapped around the neck. No wonder his face is this red, he must be smothering, you think for yourself.
+Your enter most obviously startled the present gentlemen.
+“Good morning, Mr. Hook. Good morning, sir”, you state confidently; and then quickly add: //“The gentlemen may forgive my interruption. I will leave you to your discussion.”//
+//“No, no, boy. Good morning to you as well. I’d like you to join us in our...feverish interlocutions”//, Mr.Hook answers in a friendly manner. //“Take a chair and sit with us, boy.”//
+He points towards the conference table. You take up a chair and heave it over to Hooks desk; and take a seat in a slightly angular way, so you can see both of the attendants, but mainly face the strange mister on the opposite side of Hook.
+//“May I present to you, Mr. Samuel Beazley; my boy. He’s a friend of mine.”// Hook looks at you strangely; swiftly raising his eyebrows only a tiny tad when saying ‘friend’.
+//“Well met, sir.”//
+//“Well met, boy.”//
+//“Wonderful. Now that we’re all acquainted, may I introduce our young friend here to the latest quarrel, Mr. Beazley?”//
+He nods. His face had lost a bit of its redness; and he seems to calm down. 
+//“Very well. Samuel -”//, he looks at him and lifts a brow //“- and I, we had a bit of a dispute. He strongly believes; even insists, may I say; that the placement of any property given, here in beautiful ol’ London; totally and absolutely defines and influences its ability to gain fame; or exposure of any kind. I heavily disagree. In my, honest and unambiguous opinion, I think any, and I say any, place or housing can become the center of attention, if the circumstance is given. But Samuel - “// Hook turns his head again, throwing another provoking look towards Beazley //“- kind of seems to ignore the evidence given.”//
+//“Oh bollocks! Come on, Theodore, there is no darn evidence! A poor house in a poor quarter will always be a shaky abode at societies dead end. And you know that.”// Beazley’s face is reddening again.
+//“That’s exactly the point, Samuel. I do not know.”// Hook turns around and looks at you with a strange shine in his eyes.\\”And that’s what it’s all about, boy. We’re unable to find a meeting point in this discussion. So, dear Mr. Beazley here proposed some kind of...uh, a bet; I guess one could say.”//
+//“Not some kind of bet, Beazley, it’s a bet. A bet in the most literal sense. We just haven’t found an agreement on the stakes yet. Maybe your…”// Beazley looks at you with a condescending stare //“...your butler has some astute idea concerning the matter?”//
+A snobbish grin phases in on his expression.
+A short, awkward silence follows.
+
+&#39;&#39;What do you do?&#39;&#39;           
+
+[[Involve yourself into the discussion]]
+[[Extricate yourself from the discussion as best as you can]]
+</tw-passagedata><tw-passagedata pid="39" name="Happening Priest" tags="" position="3539,2198" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="40" name="Happening Prostitute" tags="" position="3137,2171" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="41" name="Involve yourself into the discussion" tags="" position="3837,1074" size="100,100">In a desperate attempt to seem smart; you just speak out the first thing that comes to your mind.
+//“Uhh...we could….uhh, maybe...maybe the loser should come up for all the costs that came up throughout the bets process?”//
+//“Oh, really?”// Beazley purses his lips. //“So if you start to build a damn two-hundred meter tower down the at the docks; declare its going to be a museum, import an abundance of golden trinkets and ancient sculptures, art and all of them Brummagems, then I’m to come up for its costs once its built and done, like in, what, fourty years maybe!? Impossible.”//
+Hook laughs out loud. //“LOL!”//, he yells in a strange manner.
+//“What?”//, Beazley and I asked in unisono.
+//“Nothing, nothing.”// He throws his hand in a gesture, grinning, as he continues: //“But, I am intrigued by my fellow’s idea. We could limit the money spent to an acceptable degree by making our agreement…”//, he lifts his eyebrows and grins, //“...a timed one.”//
+//“Timed? As in, 24 hours for example?”//, Beazley barfs.
+//“Uhh, that’s a tad too few time for such a task, I fear. You wouldn’t want this to be an unfair matter, won’t you?”// Hook stands up from his chair; and starts walking around, as he speaks. //“I think 72 hours should be enough. Three days. Starting at ten o’clock today. I’ll need the most part of today to make some…preparations. Throughout the last day, which should be...uhh…”// Hook turns around and hushes back to his desk again, quickly scrolling through his agenda. //“So, well, today’s november the twenty-fifth, and it’ll soon be ten o’clock. Today I’ll prepare everything, mhmm, mhmm…”// he scribbles something into his booklet, then continues, //“tomorrow we’ll organize it all, yes, yes…”// again, he notes a few words, //“and then, at ten o’clock the twenty-seventh, we’ll find ourselves at 44, Berner Street, and watch the…spectacle!”//
+//“Spectacle? Hook, you’re delusional.”//
+//“I may be, my friend, and now? So, is it a bet?”//
+//“It’s a bet!”// Beazley answers overeager.“No sealing it with a handshake, Hook? Afraid?”
+//“Pah. Come here, you lousy wannabe-architect!”//
+You watch them shaking their hands and exchanging goodbyes, and see Beazley off with a “‘Til then” as he makes his way out. After hearing the sound of the heavy door below closing, Hook looks up from his notes and addresses you.
+//“Boy, are you ready?”//
+//“Uhh, ready? Ready for what, sir?”//
+//“Well, to get stir up some tumult, my boy! Ha-hah!”//
+The nagging feeling of skepticism slowly manifests inside your mind. //“You wanted me to go and win this bet all this time?”//
+//“Well, ye-eah.”// He glares at you, shaking his head quickly; //”Aren’t you my readily assistant after all? Employed and well paid to help in my everyday duties?”//
+//“Sir, I am unsure whether or not this counts as an ‘everyday duty’, as you so nicely put it, sir.”//
+//“Oh come on, boy! Are you telling me you want to miss out on such an opportunity?”//
+//“What opportunity, sir?”// You lift your shoulders and hold up your palms, //“What am I even supposed to do exactly?”//
+//“I’ll prepare money, for you to spend in the name of this bet. And! And I’ll prepare some papers that will identify you as my messenger.”//
+//“And then? I’m still in the unclear about the task itself, sir.”//
+//“You’ll scurry around downtown, and uptown as well if you want. Get people to visit the Berner Street. Make up reasons, set appointments and get the folks over there! It’s quite the easy task, I’d say.”//
+You’re speechless, standing there amidst the room, hand-wringing in confusion.
+Hook speaks up again. //“Don’t give me that flustered look, boy! It’ll be fun! All the consequences and costs will be hung up on Beazley in the end, isn’t it?”//
+//“Yeah, as long as we win the bet.”//
+//“We will win the bet. Where’s your enthusiasm?”//
+//“I fear my enthusiasm is absent today, sir.”
+Hook laughs wholeheartedly at my response. Then comes over to tap my shoulder.
+//“Give it a try at least, won’t you? We’ll meet up tomorrow morning, I’ll hand you everything you’ll need. And then, you just take the whole day to assemble as big of a crowd as you can down at Berners.”//
+A silenced sigh escapes you. But, after all you’ve been, at least more or less, persuaded to obey.
+Hook gives you a few other tasks for the present day; and leaves you with that; expecting you tomorrow morning.
+
+[[Accept it -&gt;Continue]] 
+[[Try to talk Hook out of the idea-&gt;Talk Hook out of the idea, explaining how nonsensical this all is.]]
+</tw-passagedata><tw-passagedata pid="42" name="Extricate yourself from the discussion as best as you can" tags="" position="3923,554" size="100,100">Quickly you stress to find an adequate answer without being insulting.
+“Gentlemen, I can assure you I feel most honored to be asked this directly to join in on your active conversation. But; as you sure may both understand; neither my social status nor my very limited general knowledge allow me to participate in such a sophisticated discussion.”
+That was good, you think to yourself.
+“Coward.” Beazley’s response is delivered in a harsh dryness.
+“Yeah, totally.” Hook shows a sneering smirk.
+An appalled “Excuse me?” escapes you.
+“Don’t get your knickers in a twist boy, come on! Tell us what you think, won’t you?”, Hook asks, but it almost seems like an order.
+
+[[ Give in and think of a good idea-&gt;Involve yourself into the discussion]]
+[[You defend your position harshly and insist on not involving yourself]]</tw-passagedata><tw-passagedata pid="43" name="Actually listen carefully" tags="" position="3276,696" size="100,100">The sunshine, flooding the room in a gloomy orange light; really started to warm things up. While Hook starts to explain what the morning fuzz was all about; you take off your jacket and get comfortable in your seat, unlike before. By the time you find yourself all set and ready to go; you recognize, that even if you really wanted to listen; now Hook’s deep into the matter and you missed some information already. So you raise a hand lightly. “Pardon me, sir. Please, can you recapitulate the last few sentences?”
+“Ah, boy, pull yourself together, will you? Where were we again?”
+“Don’t worry sir. Just start over. You know what they say: ‘Emphasis through Repetition’”
+“Humbuck. Nobody says that.” He gives you a stern look; followed by a hand gesture similar to a throwaway move. Then he takes a deep breath, and starts over again.
+“So, Beazley and I had a bit of a discussion, boy. It’s a bit hard to explain; but basically it’s like that: Beazley insists on being in the right concerning a specific arguing point. He assumes, no, he even believes, that the location of an address, real estate or property inside of good ol’ London, is absolutely determining the possible amount of fame and publicity the concerned property or housing, or whatever it may be, may ever have.” You look a bit flustered and confused; and Hook is recognizing that. He continues: ”Now, this may sound complicated, but what I mean by that, is pretty simple. Beazley thinks, and I quote; that a ‘poor house in a poor quarter will always be a shaky abode at societies dead end’; and I strongly believe in the falsification of this very narrow-minded statement. As there is no imminent evidence considering this discussion point, we...uhh..” he checks your expression again; and softly plants his face into the palm of his hand.
+“Listen, boy. Beazley says that there are certain places, that can not ever become famous. I said, that’s wrong. Are you following me?”
+You nod, feeling a rush of blood to your cheeks. Hook was an author, so the vocabulary he used was always very overwhelming; but; at least he was patient.
+“I asked you a question, boy.”
+“Yes, sir, I follow.”
+“Good. We made a bet, Beazley and I.”
+“Is the bet, that you will try to make a very shady place very famous, sir?”, you quickly throw in your assumption to show that you’re following what he’s saying.
+“Exactly. Now, here’s where you come into play, boy.”
+“How may I serve, sir?”
+“I have a very specific place in mind, you know? Its at the Berner street. An absolute nightmare of a building, to be honest, not more than a ramshackle hut; but -”, he clears his throat, “ I think that is exactly what the task is all about, wouldn’t you agree?”
+You nod again, adding a sloppy “Yessir”.
+“So, the exact address is 44, Berner St. and the building is officially my property. Some weird inheritance or something. I’ll prepare a small bundle for you that will certify that and your authenticity as my trusted servant, so you may speak and act in my name.”
+“That is an honor, Sir, truly. May I know, what exactly I’ll speak and how I’ll have to act though?”
+He looks at you with a witty smirk.
+“You’re such a smart boy, sometimes, at least. I, most logically, want you to go outside; and make this disgrace of a house famous! Do your best, spend as much as you need -” he squints, “- but for god’s sake be considerate. But I’ll easily spend some grands to beat that nutcase. Especially…”
+his smirk returns, this time wider, “...since the loser of the bet has to come up for the costs, hah!”
+ 
+ [[Continue]] </tw-passagedata><tw-passagedata pid="44" name="Only listen halfway; and just try to snap up the most important bits" tags="" position="3510,824" size="100,100">You act like you’re listening, nod in blind agreement; and somehow try to extract the most important info. Hook’s talking in high vocabulary again; and the longer he goes on, the more you have to focus; if you want to or not.
+You understand that there is a bet, something about a house on a certain “Berner Street”, and that you’ll have to organize something. Realizing that you’re not totally following; you slightly lift your hand and ask:” Excuse me sir, what exactly do I have to do again?”
+For a fraction of a second, an expression of disappointment hushes over Hook’s face.
+You think you understand him whispering a “Lord help me..” under his breath, as he starts over again. You’re all ear now; and listening to what he’s saying, you figure out pretty fast what there’s to do. 
+Apparently, Hook had a bit of an argument with Beazley; about if it would be possible to make a random place in London famous. Beazley would disagree, saying, that if it is just a shack downtown; it will never become famous for anything else than maybe being haunted. But Hook is fully convinced, that any place can become noteworthy; or famous; if the right circumstances are given. Hook bestows you with the task, to organize as many different parties and/or people to a certain address; and wants you to assemble as much random people as possible around and in that spot. The afore heard Berner Street it is; house number 44 to be exact. 
+Before you can ask; he explains:” We don’t have an exact time limitation; but we will show Beazley that a few days will be enough. And…” he pauses artistically, “I will prepare a little satchel for you with enough financial backup to fulfill your task today; as well as some papers, so you may identify yourself as my right hand at any time.”
+Right hand?, you blush a bit, feeling kind of honored. “Yes, sir. May I ask a question?”
+“You may, boy.”
+“How do I know if I make the right decisions? I fear that if I call upon the wrong people to come by, then maybe they’ll cause trouble..”
+“That’s exactly what I’m hoping for, boy. You know, this house at the 44. Berner Street is nothing of worth to me. I actually want you to call upon the ‘wrong’ people to come by. Let there be a fuming mess of a disorder down there! Ha ha, let it become utter chaos!”
+You look at Hook with doubt written all over your expression. “Sir, and you are sure that a ‘satchel’ of money will suffice for this task? What if the ordered people start increasing their wages upon arriving there? What if we get billed for transport costs; what if something brea-”
+“Ah, ah, ah, boy. Calm down. You know, as long as we win this bet; and get this address on the Gazettes; we won’t have to pay anything. I tricked good ol’ Beazley into thinking there would be no chance to win this for us. So he agreed to the condition, that the loser pays it all. Now, what do you say?” 
+He smiles widely, obviously underestimating the situation and the possible drawbacks from this.
+But, as usual, there wasn’t all that much worth in discussing with him. He is an eccentric mind; giving out eccentric tasks, for the most eccentric reasons. At least, as long as one doesn’t equate ‘eccentric’ with ‘insane’, that is.
+“Well then, boy. Go make yourself ready. I’ll be having your equipment prepared in a quarter.”
+
+&#39;&#39;What do you do?&#39;&#39;
+[[Talk Hook out of the idea, explaining how nonsensical this all is.]]
+
+[[Agree, and do as he pleases.-&gt;Continue]]</tw-passagedata><tw-passagedata pid="45" name="Talk Hook out of the idea, explaining how nonsensical this all is." tags="" position="3666,803" size="100,100">Thinking about all the things you got explained to you; you realize that all of this is utter nonsense. Why would anyone even accept such a bet? What was there to prove?
+“Sir.” You strike a serious note as you speak.
+“Yes, boy?”
+“Are you sure this whole thing is a good idea, sir?”
+“What are you implying, boy?” Annoyance swings in Hooks voice.
+“This...bet. I am quite bothered by the whole thing, I must say.”
+“Oh, really? And what would you know?”
+“Well….first of all, there isn’t anything to win or to lose here. The argument you and Beazley had isn’t an argument at all. Have you heard of “the great london fire”, sir?”
+“Sure I have, boy. Tragic.”
+“Tragic, yes. But the place where the fire started, the pudding lane, now boasts a huge memorial down the road, and is generally known. Everyone informing oneself about the great fire automatically will get to know of the pudding lane. Can you see where I am going here, sir? The pudding lane wasn’t anything spectacular, or worth to become famous. But this exact happening made it a marked and known place in the end.”
+“I see, I see. Continue.”
+“What is there to continue, sir? You are obviously in the right when it comes to this argument, and there is no point in trying to reprove it. In fact, even if the loser of the bet takes all of the cost; in case something unexpected or bad happens; that will only hurt both of your reputations, sir. And; in the worst case; bring at least one of you two into bankruptcy. I wouldn’t want to act as an active messenger for such a vile thing to happen.”
+Nice, you think to yourself, I even could exclude myself from the affair already, hehe.
+Hook sits there, sunken in thought. After a few seconds the wrinkles on his forehead flatten out; and he looks up to you.
+“We shouldn’t do this, shouldn’t we, boy?” He sighs. “Ah, what a shame. I was hoping for a bit of exciting suspense and play in my old days. But it turns out, wisdom may not be a thing of age, boy.” He looks at you, nodding. “Well then. I’ll write Beazley. Hopefully I can explain myself as eloquently as you did, ha-hah!”
+“I fully trust your capacities as a well-known author, Mr. Hook.”
+“Don’t get cocky, boy. Here.” He hands you a list. “Your daily to-do list. Get to work; and I’ll do the same.”
+“Sure thing, sir.”
+You take the list, walk across the room, enter your bureau, and start with your daily tasks.
+
+And so, without ever knowing, you prevented the Berners Street Hoax from happening.
+</tw-passagedata><tw-passagedata pid="46" name="Continue" tags="" position="3546,1193" size="100,100">
+And so, on the next day, you head over to Hook’s office again, ready to do as he pleased. 
+You will go out into the streets of London, and try to get as many people to visit the Berner Street 54 as you can. The more trouble you stir up, the better, that’s the whole plan. 
+You try to keep in mind that getting people that don’t like each other to the Berner Street at the same time, will increase the turmoil even more.
+Hook seems very enthusiastic, as he gives you a satchel of money and a few papers wrapped in an envelope. He quickly explains to you why and how the papers are relevant; and advises you to spend the money wisely.
+With a witty smirk on his face he retreats back into his bureau; and wishes you good luck and success.
+
+So you step out into another frosty London fall morning, ready to engage in your given task.
+Make Berner Street famous, no matter what!
+
+&lt;&lt;set $phase_collection to true &gt;&gt;
+&lt;&lt;set $money to 85&gt;&gt;
+
+[[Get out the Map-&gt;Map]]</tw-passagedata><tw-passagedata pid="47" name="You defend your position harshly and insist on not involving yourself" tags="" position="3967,791" size="100,100">Gentlemen, all the peer-pressure and scoffing in the world wouldn’t change my mind. I am here to serve as an assistant, not an advisor. I am not qualified; and I strongly refuse to partake in this discussion, as already said. If I speak my mind; and my words and or ideas result in a catastrophe; I do not want to take the blame, gentlemen.” You look at Hook with a stern expression and continue: “Sir, I kindly request to be handed today’s to-do-list, so I may put myself to use.”
+“...” 
+Silence. Both Beazley and Hook look at you, Beazley in some kind of disgust, Hook in disappointment. The silence continues for a few seconds, then Hook breaks the quietness with a sigh; stands up; opens his drawer; and takes out a folded piece of paper.
+“Well then, boy. Here.” He holds the paper towards you. “As you please. Though I think you should know, that your reaction beforehand definitely came around more brash and impertinent than anything you could have said concerning our little chat. Take this list, and leave. We’ll talk later, assistant.” Hook’s angry, and hands you the to-do-list with a snippy look.
+“Sir.” You take the paper and go towards the door to your small bureau, giving Beazley a shallow nod as a greeting on your way out.
+The to-do-list only states some paperwork and a bit of grocery shopping. You decide to start with the paperwork, as it’ll eat up most of the time. You hear Hook and Beazley through the door, murmuring. You try to ignore it and start answering pleads here, ordering some ink there, kind of boring stuff, but at least there’s nothing complicated; and so you work through your way through the list for the next few hours. Hook isn’t in the office anymore at noon; and after you wait for a quarter, you decide to go get lunch. As you return half an hour later, there’s still no sign of Hook. You’re not worried though, he’s out often; but you can’t shake off the feeling of having disappointed Hook. The fact that he isn’t here, and maybe avoids you; only makes your remorse grow.
+The clock shows almost three o’clock, as you finally finish all of the paperwork for today.
+You pick up the list of the things Hook wants you to buy; and make your way down the stairs, down the street, down to the grocery store. After you bought everything, you find yourself back at the bureau at four. 
+Before you enter, you already know: he’s back. You heave the door open with one hand and enter.
+Hook sits behind his desk, moveless. A depressed expression darkens his face.
+“Good evening, sir. I’ve succesfu-”
+“Hush, boy.” Hook doesn’t even look at you.
+You nod. “Sir.”
+Walking towards the private section of the bureau to unload the groceries, Hook stops you.
+“Boy.” A grim tone weeps from his voice.
+You immediately turn around. Something’s not right. Not at all.
+“Sir, yes, sir?”
+“You’re fired. Go home.”
+“What?! Becau-”
+“Do. Not. Discuss with me. No law keeps me from doing this. You was supposed to be my assistant. And if my assistant has such a stick up his arse and can’t even involve himself in a lighthearted discussion; what is he good for? Every damn moron can do the paperwork and buy me darn apples and all that bric-a-brac, I employed you because I thought of you as a witty, good-willing youngster. Not a stuck-up bore. Go home now. Dismissed”      
+</tw-passagedata><tw-passagedata pid="48" name="PassageHeader" tags="" position="3161,258" size="100,100">&lt;&lt;if $phase_collection is true&gt;&gt;
+	&lt;div class=&quot;gameheader&quot;&gt;
+	&lt;&lt;print $money&gt;&gt;£
+	&lt;/div&gt;
+&lt;&lt;elseif $phase_tumult is true&gt;&gt;
+	&lt;div clas=&quot;gameheader&quot;&gt;
+	&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="You stand still and listen to the gentlemen" tags="" position="2643,587.6666666666666" size="100,100">You give a nod, turn around a little bit and take a step beside. There are some magazines laying on another table. You take one of them, scroll through the pages a little bit and try to understand what the gentlemen are talking about.
+
+… you have never seen anything like this, i’m telling you, Lance! You will be the first in the city to own it, i promise you!
+
+Ah dinnae ken. Still not sure about the price..
+
+Don’t be so stingy! It will pay off! You’ll get way more commissions when it gets around the city that Lance McFlare has this camera!
+
+It’s brand new?
+
+Even newer than brand new, Lance! You even can’t buy it in Germany yet!
+
+So, how will ye get it, mate?
+
+Well, you know.. I know a man who knows a man who lives in Leipzig. He knows someone whose brother-in-law works for the company and they have already distributed some test models to professional photographers around Leipzig. In a couple of months they will bring them to the german stores and according to my calculations they will export it in about half a year. So.. At the release date in germany, the professional photographers who testet the cameras, can buy them or give them back. And this is the point where the brother-in-law of the man who knows the man in Leipzig who knows my man comes in; If some of the photographers give their cameras back, he can buy one of them and send it to me. Of course all of the gentlemen want a piece of the cake, but i promise you, it will be worth it!
+
+Hmmm.. I’ll pay more to get a new model a little bit sooner than the other photographers in the city? That’s normally not my kind of business.
+
+Think about the prestige, Lance! Everybody will get jealous of you! You even might get a job for “the visitors magazine of London”. This is still your biggest goal, isn’t it?
+
+Sure, mate! If there is anything more that i could reach, it would be a photo of mine printed in the visitors magazine. But still.. i am not sure about the whole story.. There are a lot of gentlemen involved in this and i don’t know anybody of them..
+
+You know me! And you know how i work, don’t you?
+
+Aaaye, but still...
+
+Think about it, Lance!
+
+I will. While i’m helping the client here.
+
+He stands up, pushes back the chair adjusts his collar and comes straight towards you.
+
+//Aye, Sir, i am sorry that you had to wait, but ye know.. business… My name is Lance McFlare, welcome to my studio!//
+
+
+[[I need a photographer]]
+</tw-passagedata><tw-passagedata pid="50" name="You decide to take a walk through the store and check it out a little bit." tags="" position="2883,616" size="100,100">[[Expensive Price]]</tw-passagedata><tw-passagedata pid="51" name="I need a photographer" tags="" position="2419.6666666666665,830.9999999999999" size="100,100">
+//Aye, right place, right time! Although my timetable is quite full, i do have some time left for new commissions! What exactly are we talking about?//
+
+
+// My employer Mrs. Tottenham wants a professional portrait of herself.//
+
+//Alright, a portrait session coasts **15£**//
+
+[[ Listen, the Lady Tottenham is very well-known in the Borough, has a lot of connections to people you might be interested in. If you would do her this favour, she might do a bit of advertising for your work-&gt;cheaperprice]]
+</tw-passagedata><tw-passagedata pid="52" name="cheaperprice" tags="" position="2591.333333333333,922.6666666666664" size="100,100">&lt;&lt;set $photographer_pricecheap to true&gt;&gt;
+Oh well in that Case I&#39;ll do it for merly 10£.
+
+[[Deal]]
+</tw-passagedata><tw-passagedata pid="53" name="Deal" tags="" position="2719.6666666666665,999.3333333333331" size="100,100">&lt;&lt;if $photographer_pricecheap is true&gt;&gt;
+&lt;&lt;set $money - 15&gt;&gt;
+Some Dialog
+&lt;&lt;else&gt;&gt;
+&lt;&lt;set $money - 10&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+
+[[Blocksford Street]] </tw-passagedata><tw-passagedata pid="54" name="Expensive Price" tags="" position="2728,794.3333333333334" size="100,100">&lt;&lt;set $photographer_pricecheap to false&gt;&gt;
+
+
+[[Deal]]
+
+</tw-passagedata></tw-storydata>
