@@ -61,6 +61,7 @@ width: 200px;
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">Dialog.addClickHandler("#some-element", null, function () {
     Dialog.setup("My Dialog Title", "my-dialog-class");
     Dialog.wiki(Story.get("MyDialogContents").processText());
@@ -79,11 +80,12 @@ Config.history.controls = false;
 
 
 
-</script><tw-passagedata pid="1" name="Start" tags="" position="3164,97" size="100,100">Bernerstreet ist die Geschichte eines Dieners im 18 Jhrd. der in die Wirren des grössten Steiches des Jahrhunderts gerät.
+
+</script><tw-passagedata pid="1" name="Start" tags="" position="5888.666666666667,370" size="100,100">Bernerstreet ist die Geschichte eines Dieners im 18 Jhrd. der in die Wirren des grössten Steiches des Jahrhunderts gerät.
 [[Goto-&gt;Intro]]
 
 
-</tw-passagedata><tw-passagedata pid="2" name="Intro" tags="" position="3493,92" size="100,100">
+</tw-passagedata><tw-passagedata pid="2" name="Intro" tags="" position="3465,0" size="100,100">
 T’was a mediocrely foggy day; one of many typical London fall mornings. You take the corner towards Hook’s bureau; evade a few people rushing; and look down the street. 
 The city’s awakening; the ubiquitous noise of people slowly increases together with the sun climbing the sky westwards. A few carriages were rolling on the manky streets already; a couple of maids were transporting bins of laundry, chit-chatting with each other in shrill soprane tones of voice. 
 
@@ -96,34 +98,41 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 [[Enter Directly]]
 
 
-</tw-passagedata><tw-passagedata pid="3" name="Map" tags="" position="3546,1358" size="100,100">&lt;div id=&quot;redmap&quot;&gt;
+</tw-passagedata><tw-passagedata pid="3" name="Map" tags="" position="3546,1357" size="100,100">&lt;div id=&quot;redmap&quot;&gt;
 	&lt;div id=&quot;blocksford&quot;&gt;[[Blocksford Street]]&lt;/div&gt;
 	&lt;div id=&quot;faker&quot;&gt;[[Faker Street]]&lt;/div&gt;
 	&lt;div id=&quot;reek&quot;&gt;[[Reek Street]]&lt;/div&gt;
 &lt;/div&gt;
 
 [[Go Home-&gt;Interlude]]
-</tw-passagedata><tw-passagedata pid="4" name="Blocksford Street" tags="" position="2954,1306" size="100,100">You are on the Blocksfordstreet
+</tw-passagedata><tw-passagedata pid="4" name="Blocksford Street" tags="" position="2910,1518" size="100,100">You are on the Blocksfordstreet
 [[Map]]
 [[Photography Shop]]
 [[Caclographer Workshop]]
 [[Oriental Rugshop]]
-</tw-passagedata><tw-passagedata pid="5" name="Faker Street" tags="" position="4310,1053" size="100,100">You are on the Faker Street
+</tw-passagedata><tw-passagedata pid="5" name="Faker Street" tags="" position="4690,1031" size="100,100">You are on the Faker Street
 
 [[Map]] 
 
 [[Church]]
 [[Wierd Workshop]]
-[[Weapons Shop]]</tw-passagedata><tw-passagedata pid="6" name="Reek Street" tags="" position="3954,1493" size="100,100">You are on Reek Street
+[[Weapons Shop]]</tw-passagedata><tw-passagedata pid="6" name="Reek Street" tags="" position="4510,1777" size="100,100">You are on Reek Street
+
+&lt;&lt;set _randompassage to either(
+    &#39;Detective&#39;,
+    &#39;Normal Reek Street Text&#39;
+)&gt;&gt;
+&lt;&lt;include _randompassage &gt;&gt;
+
 [[Map]] 
 [[Shadey Alley]]
 [[Shady Tavern]]
-[[Pharmacy]]</tw-passagedata><tw-passagedata pid="7" name="Interlude" tags="" position="3404,1658" size="100,100">&lt;&lt;set $phase_colletction to false&gt;&gt;
+[[Pharmacy]]</tw-passagedata><tw-passagedata pid="7" name="Interlude" tags="" position="3584,1750" size="100,100">&lt;&lt;set $phase_colletction to false&gt;&gt;
 
 [[Monday]]
-</tw-passagedata><tw-passagedata pid="8" name="Monday" tags="" position="3363,1823" size="100,100">[[8.00]]
+</tw-passagedata><tw-passagedata pid="8" name="Monday" tags="" position="3498,1932" size="100,100">[[8.00]]
 
-</tw-passagedata><tw-passagedata pid="9" name="8.00" tags="" position="3327.6666666666665,2001" size="100,100">[[9.00]]
+</tw-passagedata><tw-passagedata pid="9" name="8.00" tags="" position="3507,2135" size="100,100">
 
 &lt;&lt;set _randompassage to either(
     &#39;Random Event 1&#39;,
@@ -134,12 +143,14 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 //Photographer//
 
 //Chalcographer//
-</tw-passagedata><tw-passagedata pid="10" name="9.00" tags="" position="3322,2177" size="100,100">[[10.00]]
+
+
+[[9.00]]</tw-passagedata><tw-passagedata pid="10" name="9.00" tags="" position="3508,2288" size="100,100">[[10.00]]
 
 //Weapons Dealer//
 
-//Inventor//</tw-passagedata><tw-passagedata pid="11" name="Church" tags="" position="4782.666666666667,1001" size="100,100">[[Charcter Priest]]
-[[Faker Street]] </tw-passagedata><tw-passagedata pid="12" name="Wierd Workshop" tags="" position="4639,475.99999999999994" size="100,100">You enter the Shop, hanging on the wall you see a white flag with an black eagle. It is the flag of Prussia. the workshop is filled with mysterious objects and apparatuses.
+//Inventor//</tw-passagedata><tw-passagedata pid="11" name="Church" tags="" position="5162,1073" size="100,100">[[Charcter Priest]]
+[[Faker Street]] </tw-passagedata><tw-passagedata pid="12" name="Wierd Workshop" tags="" position="5019,547" size="100,100">You enter the Shop, hanging on the wall you see a white flag with an black eagle. It is the flag of Prussia. the workshop is filled with mysterious objects and apparatuses.
 
 German Accent: Welcome in my modest shop! Everything you see iz for zale! I also take special requests. 
 
@@ -148,28 +159,34 @@ German Accent: Welcome in my modest shop! Everything you see iz for zale! I also
 [[Why did you come to London?]]
 
 
-</tw-passagedata><tw-passagedata pid="13" name="Weapons Shop" tags="" position="4120.333333333333,423" size="100,100">[[Faker Street]]
-[[Character Weaponsdealer]]</tw-passagedata><tw-passagedata pid="14" name="Character Weaponsdealer" tags="" position="4409,386" size="100,100">[[Faker Street]] </tw-passagedata><tw-passagedata pid="15" name="Charcter Priest" tags="" position="4670.333333333333,1141.6666666666665" size="100,100">[[Faker Street]] </tw-passagedata><tw-passagedata pid="16" name="10.00" tags="" position="3318,2341" size="100,100">[[11.00]]
+</tw-passagedata><tw-passagedata pid="13" name="Weapons Shop" tags="" position="4500,495" size="100,100">[[Faker Street]]
+[[Character Weaponsdealer]]</tw-passagedata><tw-passagedata pid="14" name="Character Weaponsdealer" tags="" position="4789,458" size="100,100">[[Faker Street]] </tw-passagedata><tw-passagedata pid="15" name="Charcter Priest" tags="" position="5050,1213" size="100,100">[[Faker Street]] </tw-passagedata><tw-passagedata pid="16" name="10.00" tags="" position="3498,2471" size="100,100">[[11.00]]
 
 //Priest//
 
 //Prostitute//
 
-//Boffington Teaclub//</tw-passagedata><tw-passagedata pid="17" name="11.00" tags="" position="3323,2531" size="100,100">[[12.00]]
+//Boffington Teaclub//</tw-passagedata><tw-passagedata pid="17" name="11.00" tags="" position="3503,2623" size="100,100">[[12.00]]
 
 //Pharmacist//
 
 //Rugdealer//
 
-//Carl Ueber//</tw-passagedata><tw-passagedata pid="18" name="12.00" tags="" position="3323,2741" size="100,100">//Criminal//
+//Carl Ueber//</tw-passagedata><tw-passagedata pid="18" name="12.00" tags="" position="3503,2833" size="100,100">//Criminal//
 //Detective//
 
 //Tumult High Event//
 
 [[100 Ending]]
 [[Overdone Ending]]
-[[Underperformance Ending]]</tw-passagedata><tw-passagedata pid="19" name="100 Ending" tags="" position="3161,3109" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="20" name="Overdone Ending" tags="" position="3311,3109" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="Underperformance Ending" tags="" position="3461,3079" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="22" name="Shadey Alley" tags="" position="3670,1725" size="100,100">[[Reek Street]] 
-[[Character Criminal]]</tw-passagedata><tw-passagedata pid="23" name="Shady Tavern" tags="" position="4318,2176" size="100,100">&lt;&lt;if $anger_prositute is true&gt;&gt;
+[[Underperformance Ending]]</tw-passagedata><tw-passagedata pid="19" name="100 Ending" tags="" position="3341,3239" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="20" name="Overdone Ending" tags="" position="3491,3201" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="Underperformance Ending" tags="" position="3641,3171" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="22" name="Shadey Alley" tags="" position="4486,2207" size="100,100">You enter a dark alley and instantly try not to vomit from the disgusting smell of garbage and filth that accumulated over many years there. You accidently step into something soft and take a look at your shoes when out of nowhere a shadow appears in front of you. A rather short man stands in front of you, with icy eyes staring directly at you. He wears remarkably flawless black clothes for someone that just appeared in a dark alley in the most notorious street of london. He smiles and asks:
+
+Hey! Psssssshhht! Today is yer special day. Hehehehe! 
+
+[[Turn around and walk away-&gt;Reek Street]]
+[[What do you mean by Special Day? Are you some kind of dealer?-&gt;Dealer?]]
+[[First you appear out of nowhere and then you speak to me without introducing yourself? Begone you filthy streetrat!-&gt;Agressive]]
+</tw-passagedata><tw-passagedata pid="23" name="Shady Tavern" tags="" position="4854,2465" size="100,100">&lt;&lt;if $anger_prositute is true&gt;&gt;
 You are blocked from entering the tavern by a big man with a dark hrumpf. Probably you should&#39;n have angered Miss Mary.
 
 &lt;&lt;else&gt;&gt;
@@ -180,7 +197,7 @@ A gentleman sits on one of the many couches and two rather lightly dressed women
 [[Return to the Street-&gt;Reek Street]] 
 [[Speak to her]]
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="24" name="Pharmacy" tags="" position="4271,1345" size="100,100">&lt;&lt;if $visitedPharmacist is true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="24" name="Pharmacy" tags="" position="4827,1629" size="100,100">&lt;&lt;if $visitedPharmacist is true&gt;&gt;
 Oh you agian. What do you take? The Medicine or the Alternative
 
 [[Just Medicine]] 
@@ -199,7 +216,7 @@ Ahh a customer well clothed! I don’t get much customers these days since the r
 [[What do you mean with entertaining?]]
 [[I would like to have medicine for my Masters bronchite-&gt;Just Medicine]]
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Character Criminal" tags="" position="4041,2044" size="100,100">[[Reek Street]] </tw-passagedata><tw-passagedata pid="26" name="Photography Shop" tags="" position="3011.3333333333335,904.3333333333334" size="100,100">
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Photography Shop" tags="" position="2967,1116" size="100,100">
 You push the giant shiny hand made glass door of the brand new building and step in. The store is one big room. Two well-dressed gentlemen sit together on a small table having a cup of tea and a chat, while another man in the back of the room is handling something with a big camera. In the other corner, a young lady in a brand new white dress practises some poses in front of a big picture of an empty london street in deep winter. There are also a lot of frames and shelves filled up with cameras, lenses and other stuff.
 The whole room is very clean and tidy. Everything shines and sparkles.
 One of the two chatting gentlemen interrupts the talking and turns his head around. He is a very big man, definitely overweight, wearing a dark brand new suit with a black top hat and a big moustache in his chubby face.
@@ -212,7 +229,7 @@ He lights his pipe and continues the talk with the other gentleman, also a very 
 
 [[Return to the Street-&gt;Blocksford Street]] 
 [[You stand still and listen to the gentlemen]]
-[[You decide to take a walk through the store and check it out a little bit.]]</tw-passagedata><tw-passagedata pid="27" name="Caclographer Workshop" tags="" position="2446,1406.3333333333333" size="100,100">&lt;&lt;if $visitedChalcographer is true&gt;&gt;
+[[You decide to take a walk through the store and check it out a little bit.]]</tw-passagedata><tw-passagedata pid="26" name="Caclographer Workshop" tags="" position="2402,1618" size="100,100">&lt;&lt;if $visitedChalcographer is true&gt;&gt;
 	Hello again dear Sir. My Offer still stands. 20 Pounds just name the 		details and the place.
 		[[Accept-&gt;Deal Chaclograpger]]
 		[[Return to the Street -&gt;Blocksford Street]] 
@@ -228,9 +245,9 @@ You take a step to the counter in the back section of the room when a fat cat su
 
 [[Hello?! Anybody home?]]] 
 [[Freaking Cat! God damn you dirty beast!]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Oriental Rugshop" tags="" position="2844,1701" size="100,100">[[Blocksford Street]] 
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Oriental Rugshop" tags="" position="2925,1896.3333333333333" size="100,100">[[Blocksford Street]] 
 
-</tw-passagedata><tw-passagedata pid="29" name="Wait and Listen" tags="" position="3366,493" size="100,100">You cower down a bit, tilt your head and hold your ear towards the door. You try to make out the muffled voices.
+</tw-passagedata><tw-passagedata pid="28" name="Wait and Listen" tags="" position="3338,241" size="100,100">You cower down a bit, tilt your head and hold your ear towards the door. You try to make out the muffled voices.
 //“... standing any chance! Hah! Your money’s as good as mine already, Hook!”//
 //“Don’t be too sure about that, Beazley! We will see.”//
 //“Do and think what you must, Hook. So, its a bet?”//
@@ -257,7 +274,7 @@ A brief moment of silence follows, only Beazleys hasty steps from the staircase 
 &#39;&#39;What do you do?&#39;&#39;
 
 [[Actually listen carefully]]
-[[Only listen halfway; and just try to snap up the most important bits]]</tw-passagedata><tw-passagedata pid="30" name="Enter Directly" tags="" position="3651,401" size="100,100">Heaving open the heavy doorwing, you step into a heated discussion, it seems.
+[[Only listen halfway; and just try to snap up the most important bits]]</tw-passagedata><tw-passagedata pid="29" name="Enter Directly" tags="" position="3623,149" size="100,100">Heaving open the heavy doorwing, you step into a heated discussion, it seems.
 //“You won’t be standing any chance! Hah! Your money’s as good as mine already, Hook!”//
 Hook is sitting behind his desk, obviously unnerved. On the opposite side: a skinny dude in a wavy coat, throwing gestures, reddened face. He wears a checkered scarf, tightly wrapped around the neck. No wonder his face is this red, he must be smothering, you think for yourself.
 Your enter most obviously startled the present gentlemen.
@@ -280,7 +297,7 @@ A short, awkward silence follows.
 
 [[Involve yourself into the discussion]]
 [[Extricate yourself from the discussion as best as you can]]
-</tw-passagedata><tw-passagedata pid="31" name="Happening Photographer" tags="" position="3462.3333333333335,2006.3333333333333" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="32" name="Happening Chalcographer" tags="" position="3188.6666666666665,2002.6666666666665" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="33" name="Involve yourself into the discussion" tags="" position="3862,1037.3333333333333" size="100,100">In a desperate attempt to seem smart; you just speak out the first thing that comes to your mind.
+</tw-passagedata><tw-passagedata pid="30" name="Happening Photographer" tags="" position="3633,2137" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="31" name="Happening Chalcographer" tags="" position="3382,2129" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="32" name="Involve yourself into the discussion" tags="" position="3834,673" size="100,100">In a desperate attempt to seem smart; you just speak out the first thing that comes to your mind.
 //“Uhh...we could….uhh, maybe...maybe the loser should come up for all the costs that came up throughout the bets process?”//
 //“Oh, really?”// Beazley purses his lips. //“So if you start to build a damn two-hundred meter tower down the at the docks; declare its going to be a museum, import an abundance of golden trinkets and ancient sculptures, art and all of them Brummagems, then I’m to come up for its costs once its built and done, like in, what, fourty years maybe!? Impossible.”//
 Hook laughs out loud. //“LOL!”//, he yells in a strange manner.
@@ -316,7 +333,7 @@ Hook gives you a few other tasks for the present day; and leaves you with that; 
 
 [[Accept it -&gt;Continue]] 
 [[Try to talk Hook out of the idea-&gt;Talk Hook out of the idea, explaining how nonsensical this all is.]]
-</tw-passagedata><tw-passagedata pid="34" name="Extricate yourself from the discussion as best as you can" tags="" position="3923,554" size="100,100">Quickly you stress to find an adequate answer without being insulting.
+</tw-passagedata><tw-passagedata pid="33" name="Extricate yourself from the discussion as best as you can" tags="" position="3965,56.66666666666666" size="100,100">Quickly you stress to find an adequate answer without being insulting.
 “Gentlemen, I can assure you I feel most honored to be asked this directly to join in on your active conversation. But; as you sure may both understand; neither my social status nor my very limited general knowledge allow me to participate in such a sophisticated discussion.”
 That was good, you think to yourself.
 “Coward.” Beazley’s response is delivered in a harsh dryness.
@@ -325,7 +342,7 @@ An appalled “Excuse me?” escapes you.
 “Don’t get your knickers in a twist boy, come on! Tell us what you think, won’t you?”, Hook asks, but it almost seems like an order.
 
 [[ Give in and think of a good idea-&gt;Involve yourself into the discussion]]
-[[You defend your position harshly and insist on not involving yourself]]</tw-passagedata><tw-passagedata pid="35" name="Actually listen carefully" tags="" position="3276,696" size="100,100">The sunshine, flooding the room in a gloomy orange light; really started to warm things up. While Hook starts to explain what the morning fuzz was all about; you take off your jacket and get comfortable in your seat, unlike before. By the time you find yourself all set and ready to go; you recognize, that even if you really wanted to listen; now Hook’s deep into the matter and you missed some information already. So you raise a hand lightly. “Pardon me, sir. Please, can you recapitulate the last few sentences?”
+[[You defend your position harshly and insist on not involving yourself]]</tw-passagedata><tw-passagedata pid="34" name="Actually listen carefully" tags="" position="3248,444" size="100,100">The sunshine, flooding the room in a gloomy orange light; really started to warm things up. While Hook starts to explain what the morning fuzz was all about; you take off your jacket and get comfortable in your seat, unlike before. By the time you find yourself all set and ready to go; you recognize, that even if you really wanted to listen; now Hook’s deep into the matter and you missed some information already. So you raise a hand lightly. “Pardon me, sir. Please, can you recapitulate the last few sentences?”
 “Ah, boy, pull yourself together, will you? Where were we again?”
 “Don’t worry sir. Just start over. You know what they say: ‘Emphasis through Repetition’”
 “Humbuck. Nobody says that.” He gives you a stern look; followed by a hand gesture similar to a throwaway move. Then he takes a deep breath, and starts over again.
@@ -346,7 +363,7 @@ He looks at you with a witty smirk.
 “You’re such a smart boy, sometimes, at least. I, most logically, want you to go outside; and make this disgrace of a house famous! Do your best, spend as much as you need -” he squints, “- but for god’s sake be considerate. But I’ll easily spend some grands to beat that nutcase. Especially…”
 his smirk returns, this time wider, “...since the loser of the bet has to come up for the costs, hah!”
  
- [[Continue]] </tw-passagedata><tw-passagedata pid="36" name="Only listen halfway; and just try to snap up the most important bits" tags="" position="3510,824" size="100,100">You act like you’re listening, nod in blind agreement; and somehow try to extract the most important info. Hook’s talking in high vocabulary again; and the longer he goes on, the more you have to focus; if you want to or not.
+ [[Continue]] </tw-passagedata><tw-passagedata pid="35" name="Only listen halfway; and just try to snap up the most important bits" tags="" position="3482,572" size="100,100">You act like you’re listening, nod in blind agreement; and somehow try to extract the most important info. Hook’s talking in high vocabulary again; and the longer he goes on, the more you have to focus; if you want to or not.
 You understand that there is a bet, something about a house on a certain “Berner Street”, and that you’ll have to organize something. Realizing that you’re not totally following; you slightly lift your hand and ask:” Excuse me sir, what exactly do I have to do again?”
 For a fraction of a second, an expression of disappointment hushes over Hook’s face.
 You think you understand him whispering a “Lord help me..” under his breath, as he starts over again. You’re all ear now; and listening to what he’s saying, you figure out pretty fast what there’s to do. 
@@ -365,7 +382,7 @@ But, as usual, there wasn’t all that much worth in discussing with him. He is 
 &#39;&#39;What do you do?&#39;&#39;
 [[Talk Hook out of the idea, explaining how nonsensical this all is.]]
 
-[[Agree, and do as he pleases.-&gt;Continue]]</tw-passagedata><tw-passagedata pid="37" name="Talk Hook out of the idea, explaining how nonsensical this all is." tags="" position="3666,803" size="100,100">Thinking about all the things you got explained to you; you realize that all of this is utter nonsense. Why would anyone even accept such a bet? What was there to prove?
+[[Agree, and do as he pleases.-&gt;Continue]]</tw-passagedata><tw-passagedata pid="36" name="Talk Hook out of the idea, explaining how nonsensical this all is." tags="" position="3638,551" size="100,100">Thinking about all the things you got explained to you; you realize that all of this is utter nonsense. Why would anyone even accept such a bet? What was there to prove?
 “Sir.” You strike a serious note as you speak.
 “Yes, boy?”
 “Are you sure this whole thing is a good idea, sir?”
@@ -390,7 +407,7 @@ And so, without ever knowing, you prevented the Berners Street Hoax from happeni
 &#39;&#39;The End&#39;&#39;
 [[Back to Start -&gt;Start]] 
 
-</tw-passagedata><tw-passagedata pid="38" name="Continue" tags="" position="3547,1193" size="100,100">
+</tw-passagedata><tw-passagedata pid="37" name="Continue" tags="" position="3519,941" size="100,100">
 And so, on the next day, you head over to Hook’s office again, ready to do as he pleased. 
 You will go out into the streets of London, and try to get as many people to visit the Berner Street 54 as you can. The more trouble you stir up, the better, that’s the whole plan. 
 You try to keep in mind that getting people that don’t like each other to the Berner Street at the same time, will increase the turmoil even more.
@@ -403,7 +420,7 @@ Make Berner Street famous, no matter what!
 &lt;&lt;set $phase_collection to true &gt;&gt;
 &lt;&lt;set $money to 85&gt;&gt;
 
-[[Get out the Map-&gt;Map]]</tw-passagedata><tw-passagedata pid="39" name="You defend your position harshly and insist on not involving yourself" tags="" position="3967,791" size="100,100">Gentlemen, all the peer-pressure and scoffing in the world wouldn’t change my mind. I am here to serve as an assistant, not an advisor. I am not qualified; and I strongly refuse to partake in this discussion, as already said. If I speak my mind; and my words and or ideas result in a catastrophe; I do not want to take the blame, gentlemen.” You look at Hook with a stern expression and continue: “Sir, I kindly request to be handed today’s to-do-list, so I may put myself to use.”
+[[Get out the Map-&gt;Map]]</tw-passagedata><tw-passagedata pid="38" name="You defend your position harshly and insist on not involving yourself" tags="" position="3955,543" size="100,100">Gentlemen, all the peer-pressure and scoffing in the world wouldn’t change my mind. I am here to serve as an assistant, not an advisor. I am not qualified; and I strongly refuse to partake in this discussion, as already said. If I speak my mind; and my words and or ideas result in a catastrophe; I do not want to take the blame, gentlemen.” You look at Hook with a stern expression and continue: “Sir, I kindly request to be handed today’s to-do-list, so I may put myself to use.”
 “...” 
 Silence. Both Beazley and Hook look at you, Beazley in some kind of disgust, Hook in disappointment. The silence continues for a few seconds, then Hook breaks the quietness with a sigh; stands up; opens his drawer; and takes out a folded piece of paper.
 “Well then, boy. Here.” He holds the paper towards you. “As you please. Though I think you should know, that your reaction beforehand definitely came around more brash and impertinent than anything you could have said concerning our little chat. Take this list, and leave. We’ll talk later, assistant.” Hook’s angry, and hands you the to-do-list with a snippy look.
@@ -423,7 +440,7 @@ You immediately turn around. Something’s not right. Not at all.
 “You’re fired. Go home.”
 “What?! Becau-”
 “Do. Not. Discuss with me. No law keeps me from doing this. You was supposed to be my assistant. And if my assistant has such a stick up his arse and can’t even involve himself in a lighthearted discussion; what is he good for? Every damn moron can do the paperwork and buy me darn apples and all that bric-a-brac, I employed you because I thought of you as a witty, good-willing youngster. Not a stuck-up bore. Go home now. Dismissed”      
-</tw-passagedata><tw-passagedata pid="40" name="PassageHeader" tags="" position="3161,258" size="100,100">&lt;&lt;if $phase_collection is true&gt;&gt;
+[[Return to Start -&gt;Start]] </tw-passagedata><tw-passagedata pid="39" name="PassageHeader" tags="" position="5885.666666666667,527" size="100,100">&lt;&lt;if $phase_collection is true&gt;&gt;
 	&lt;div class=&quot;gameheader&quot;&gt;
 	&lt;&lt;print $money&gt;&gt;£
 	&lt;/div&gt;
@@ -433,7 +450,7 @@ You immediately turn around. Something’s not right. Not at all.
 &lt;&lt;else&gt;&gt;
 
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="41" name="You stand still and listen to the gentlemen" tags="" position="2643,587" size="100,100">You give a nod, turn around a little bit and take a step beside. There are some magazines laying on another table. You take one of them, scroll through the pages a little bit and try to understand what the gentlemen are talking about.
+</tw-passagedata><tw-passagedata pid="40" name="You stand still and listen to the gentlemen" tags="" position="2599,799" size="100,100">You give a nod, turn around a little bit and take a step beside. There are some magazines laying on another table. You take one of them, scroll through the pages a little bit and try to understand what the gentlemen are talking about.
 
 … you have never seen anything like this, i’m telling you, Lance! You will be the first in the city to own it, i promise you!
 
@@ -469,7 +486,7 @@ He stands up, pushes back the chair adjusts his collar and comes straight toward
 
 
 [[I need a photographer]]
-</tw-passagedata><tw-passagedata pid="42" name="You decide to take a walk through the store and check it out a little bit." tags="" position="2979.6666666666665,587.6666666666666" size="100,100">[[Expensive Price]]</tw-passagedata><tw-passagedata pid="43" name="I need a photographer" tags="" position="2437.3333333333335,765" size="100,100">
+</tw-passagedata><tw-passagedata pid="41" name="You decide to take a walk through the store and check it out a little bit." tags="" position="2935,799" size="100,100">[[Expensive Price]]</tw-passagedata><tw-passagedata pid="42" name="I need a photographer" tags="" position="2393,977" size="100,100">
 //Aye, right place, right time! Although my timetable is quite full, i do have some time left for new commissions! What exactly are we talking about?//
 
 
@@ -478,23 +495,23 @@ He stands up, pushes back the chair adjusts his collar and comes straight toward
 //Alright, a portrait session coasts **15£**//
 
 [[ Listen, the Lady Tottenham is very well-known in the Borough, has a lot of connections to people you might be interested in. If you would do her this favour, she might do a bit of advertising for your work-&gt;cheaperprice]]
-</tw-passagedata><tw-passagedata pid="44" name="cheaperprice" tags="" position="2591,922" size="100,100">&lt;&lt;set $photographer_pricecheap to true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="43" name="cheaperprice" tags="" position="2547,1134" size="100,100">&lt;&lt;set $photographer_pricecheap to true&gt;&gt;
 Oh well in that Case I&#39;ll do it for merly 10£.
 
 [[Deal!-&gt;Deal Photographer]]
-</tw-passagedata><tw-passagedata pid="45" name="Deal Photographer" tags="" position="2734,1002.3333333333334" size="100,100">&lt;&lt;if $photographer_pricecheap is true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="44" name="Deal Photographer" tags="" position="2690,1214" size="100,100">&lt;&lt;if $photographer_pricecheap is true&gt;&gt;
 &lt;&lt;set $money -= 15&gt;&gt;
 Some Dialog
 &lt;&lt;else&gt;&gt;
 &lt;&lt;set $money -= 10&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $photographer to true&gt;&gt;
-[[Blocksford Street]] </tw-passagedata><tw-passagedata pid="46" name="Expensive Price" tags="" position="2728,794" size="100,100">&lt;&lt;set $photographer_pricecheap to false&gt;&gt;
+[[Blocksford Street]] </tw-passagedata><tw-passagedata pid="45" name="Expensive Price" tags="" position="2684,1006" size="100,100">&lt;&lt;set $photographer_pricecheap to false&gt;&gt;
 
 
 [[Deal! -&gt;Deal Photographer]]
 
-</tw-passagedata><tw-passagedata pid="47" name="Hello?! Anybody home?" tags="" position="2049.3333333333335,1056.3333333333333" size="100,100">
+</tw-passagedata><tw-passagedata pid="46" name="Hello?! Anybody home?" tags="" position="2005,1169" size="100,100">
 After a while, a small skinny man in old brown clothes enters the room from a back room behind the counter. He looks up to you, eyes you up and down, opens the microscope-kinda-lid of his horn glasses and clears his throat.
 
 I heard you, Sir, but i had to finish my work. You know, as an artist i need the flow. It’s hard to restart after getting disturbed. An artist like me needs to focus constantly to get the right result.
@@ -519,13 +536,13 @@ Well, sounds like a lot of work. I normally do blanket prices for this kind of w
 
 &lt;&lt;/linkappend&gt;&gt;/*Dialog 1*/
 
-</tw-passagedata><tw-passagedata pid="48" name="Freaking Cat! God damn you dirty beast!" tags="" position="2241,1518.0000000000002" size="100,100">[[Hello?! Anybody home?]] </tw-passagedata><tw-passagedata pid="49" name="Deal Chaclograpger" tags="" position="2009.3333333333333,1279.6666666666667" size="100,100">Sounds good! Saturday 10:00 o’clock? The address is 54 Berners Street.
+</tw-passagedata><tw-passagedata pid="47" name="Freaking Cat! God damn you dirty beast!" tags="" position="2197,1730" size="100,100">[[Hello?! Anybody home?]] </tw-passagedata><tw-passagedata pid="48" name="Deal Chaclograpger" tags="" position="1965,1491" size="100,100">Sounds good! Saturday 10:00 o’clock? The address is 54 Berners Street.
 
 &lt;&lt;set $money -= 10&gt;&gt;
 &lt;&lt;set $chalcographer to true&gt;&gt;
 
 [[Return to the Street -&gt;Blocksford Street]] 
-</tw-passagedata><tw-passagedata pid="50" name="Do you sell any weapons?" tags="" position="4757.333333333333,646" size="100,100">yes yes. I have the finest weapons that money can buy huehuehue… they are far better than from this moron Attling!
+</tw-passagedata><tw-passagedata pid="49" name="Do you sell any weapons?" tags="" position="5137,718" size="100,100">yes yes. I have the finest weapons that money can buy huehuehue… they are far better than from this moron Attling!
 
 I would like to order some of your finest pieces to 54 Bernerstreet, please deliver them on Monay
 
@@ -536,20 +553,20 @@ Dont you want to know what they do?
 No thank you i have to go now.. just bring them to 54 Bernerstreet
 
 Sure tell me what you have.
-[[Accep Offer-&gt;Deal Inventor]]</tw-passagedata><tw-passagedata pid="51" name="Why did you come to London?" tags="" position="4897.333333333334,504.3333333333333" size="100,100">[[Do you sell any weapons?]] </tw-passagedata><tw-passagedata pid="52" name="Deal Inventor" tags="" position="4907.333333333334,711.0000000000001" size="100,100">You make a Deal
-[[Faker Street]] </tw-passagedata><tw-passagedata pid="53" name="Speak to her" tags="" position="4501.333333333333,2256" size="100,100">Well, hello handsome - what gives us the pleasure to have such a fine gentlemen in our house? 
+[[Accep Offer-&gt;Deal Inventor]]</tw-passagedata><tw-passagedata pid="50" name="Why did you come to London?" tags="" position="5277,576" size="100,100">[[Do you sell any weapons?]] </tw-passagedata><tw-passagedata pid="51" name="Deal Inventor" tags="" position="5287,783" size="100,100">You make a Deal
+[[Faker Street]] </tw-passagedata><tw-passagedata pid="52" name="Speak to her" tags="" position="5057,2540" size="100,100">Well, hello handsome - what gives us the pleasure to have such a fine gentlemen in our house? 
 
 She lights up a cigarette and examines you from top to bottom.
 
 [[I’m here to ask if it’s possible to order one of your many services to my house.]]
 [[Excuse me I think I entered the wrong building...-&gt;Bad Offer]]
-</tw-passagedata><tw-passagedata pid="54" name="I’m here to ask if it’s possible to order one of your many services to my house." tags="" position="4501.333333333333,2406" size="100,100">Let me think…. Yes there is a possibility to order our services to your house - but of course in exchange to the normal price plus a small surcharge for transport and commodities. 
+</tw-passagedata><tw-passagedata pid="53" name="I’m here to ask if it’s possible to order one of your many services to my house." tags="" position="5057,2690" size="100,100">Let me think…. Yes there is a possibility to order our services to your house - but of course in exchange to the normal price plus a small surcharge for transport and commodities. 
 What kind of service do you want? Normally I could offer you any kind of service - from  dainty housemaids to salacious Nuns we have everything - but since we have to transport our Girls to yours, a flamboyant costume would attract too much attention. What is your address? It would be around &#39;&#39;25£&#39;&#39;.
 
 
 [[That’s a reasonable price. The address is 54 Bernerstreet. It will be on Monday-&gt;Deal Prositute]]
 
-[[That’s way too expensive! Let’s say 15£. What do you think?-&gt;Barter]] </tw-passagedata><tw-passagedata pid="55" name="Bad Offer" tags="" position="4464.666666666666,2077.6666666666665" size="100,100">Are you sure about that? Can I offer you at least a glass of our best champagne? 
+[[That’s way too expensive! Let’s say 15£. What do you think?-&gt;Barter]] </tw-passagedata><tw-passagedata pid="54" name="Bad Offer" tags="" position="5020,2361" size="100,100">Are you sure about that? Can I offer you at least a glass of our best champagne? 
 
 You have a very bad feeling about accepting the offer, as she opens a new bottle of champagne and pours it in two glasses. At least it’s not poisoned…
 &lt;&lt;set $anger_prositute to true&gt;&gt;
@@ -558,7 +575,7 @@ You have a very bad feeling about accepting the offer, as she opens a new bottle
 
 [[You decide it’s time to drink since you haven’t had a glass of champagne since your masters anniversary 3 month ago. You thankfully accept her offer.-&gt;Secret Prositute]]
 
-</tw-passagedata><tw-passagedata pid="56" name="Deal Prositute" tags="" position="4704.666666666666,2256" size="100,100">She smiles and reaches under the counter to bring out a bottle of champagne, opens it and takes a swig of it directly from the bottle. 
+</tw-passagedata><tw-passagedata pid="55" name="Deal Prositute" tags="" position="5260,2540" size="100,100">She smiles and reaches under the counter to bring out a bottle of champagne, opens it and takes a swig of it directly from the bottle. 
 
 I’ll let the girls dress up in a nun’s robe so they won’t attract too much attention. They&#39;ll come around 10 o&#39;clock... and don’t worry - they won’t wear anything under it. And if you want to visit us in the meantime, feel free to come whenever you feel like.
 
@@ -571,29 +588,33 @@ She bursts out in loud laughter and you smell her bad breath mixed with the smel
 &lt;&lt;else&gt;&gt;
 &lt;&lt;set $money -= 25&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;set $prostitute to true&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Barter" tags="" position="4734.666666666666,2541" size="100,100">She looks at you shocked as if you had hurt the last bit of pride that’s left in her.
+&lt;&lt;set $prostitute to true&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="Barter" tags="" position="5290,2825" size="100,100">She looks at you shocked as if you had hurt the last bit of pride that’s left in her.
 I already told you that I have to calculate the safe transport of my girls. Lowest I can go is 19 £...
 &lt;&lt;set $prostitue_pricecheap to true&gt;&gt;
 
 [[ Alright, I will accept the offer. Make sure to send them to 54 Bernerstreet on Monday-&gt;Deal Prositute]]
 
 
-[[That’s still too much. Let’s make a reasonable compromise: [insert price] and I promise to come and use your services again.-&gt;Fail Barter]]</tw-passagedata><tw-passagedata pid="58" name="Fail Barter" tags="" position="4874.666666666666,2327.6666666666665" size="100,100">She looks at you in anger and raises her voice.
+[[That’s still too much. Let’s make a reasonable compromise: [insert price] and I promise to come and use your services again.-&gt;Fail Barter]]</tw-passagedata><tw-passagedata pid="57" name="Fail Barter" tags="" position="5430,2611" size="100,100">She looks at you in anger and raises her voice.
 
 Who do you think I am? I am Mary O’Ral the Proud owner of this establishment and I welcome all my guest with the best offer there is in the whole city. If you’re not satisfied with our pricing, you are welcome to leave this place and search the city for cheaper services ! NOW GET OUT!
 
 &lt;&lt;set $anger_prositute to true&gt;&gt;
 
-[[I...-&gt;Reek Street]]</tw-passagedata><tw-passagedata pid="59" name="Secret Prositute" tags="" position="4343,2387.6666666666665" size="100,100">You wake up two days after in a alley and people are standing around you. 
+[[I...-&gt;Reek Street]]</tw-passagedata><tw-passagedata pid="58" name="Secret Prositute" tags="" position="4899,2671" size="100,100">You wake up two days after in a alley and people are standing around you. 
 “Tout va bien Monsieur?”
 “Je crois qu’il ne parle pas du francais…”
-You look to the horizon and see a huge metal Tower, resembling a crane of some sorts. Although it seems like it is still in construction you feel the finished building wouldn&#39;t be much prettier than this ugly metal skeleton of a building before you.  WHAT ON EARTH HAPPENED????
-</tw-passagedata><tw-passagedata pid="60" name="Happening Priest" tags="" position="3441.666666666667,2341.666666666667" size="100,100">Happening Priest</tw-passagedata><tw-passagedata pid="61" name="Happening Prositute" tags="" position="3178.333333333333,2351.666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="62" name="What do you mean with entertaining?" tags="" position="4507.666666666667,1288.3333333333335" size="100,100">Ahhhh you’re new to this neighborhood am I right?
+You look to the horizon and see a huge metal Tower, resembling a crane of some sorts. Although it seems like it is still in construction you feel the finished building wouldn&#39;t be much prettier than this ugly metal skeleton of a building before you. 
+
+&#39;&#39;WHAT ON EARTH HAPPENED?&#39;&#39;
+
+[[Return to Start-&gt;Start]] 
+</tw-passagedata><tw-passagedata pid="59" name="Happening Priest" tags="" position="3625,2469" size="100,100">Happening Priest</tw-passagedata><tw-passagedata pid="60" name="Happening Prositute" tags="" position="3360,2474" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="61" name="What do you mean with entertaining?" tags="" position="5063,1572" size="100,100">Ahhhh you’re new to this neighborhood am I right?
 I meant if you would need something that helps your body to recover AND has a feature of entertainment. Like every drugstore we only sell the best medicine and of course our special mixtures which recipes are passed down generation after generation for the last 120 years!
 And as I allow myself to say we’ve been passed out generation after generation because of them too. So do you want the special mixtures or the traditional medicine?
 
 [[Of course I will try the special mixtures. What kind of special mixtures do you have?-&gt;Alternative Medicine]]
-[[Actually I’m just looking for a simple medicine for my masters bronchite. Do you have anything like that?-&gt;Just Medicine]]</tw-passagedata><tw-passagedata pid="63" name="Just Medicine" tags="" position="4441,1501.6666666666665" size="100,100">Hmmm yes we have all different kinds of medicine for bronchite! For example those two.
+[[Actually I’m just looking for a simple medicine for my masters bronchite. Do you have anything like that?-&gt;Just Medicine]]</tw-passagedata><tw-passagedata pid="62" name="Just Medicine" tags="" position="4997,1785" size="100,100">Hmmm yes we have all different kinds of medicine for bronchite! For example those two.
 He walks up to a shelf and takes two glasses looks at them. You wait as he inspects the inside of the glasses carefully for several minutes. You wait patiently and after some time you clear your throat again to wake him up out of his daydream. 
 Oh sorry I was lost in reverie. 
 He walks up to you and passes you the two glasses. 
@@ -603,7 +624,7 @@ You remember that your task is to order the services to Bernerstreet 54.
 
 [[You know what? I’d like to order those two and in addition some of your special mixture.What kind of mixtures do you have?-&gt;Alternative Medicine]]
 
-[[I will come back to your store later this day. I have some urgent business to do. My apologies.-&gt;Goodbye]]</tw-passagedata><tw-passagedata pid="64" name="Alternative Medicine" tags="" position="4597.666666666667,1443.3333333333335" size="100,100">Ahhh you chose wisely! I have this special mixture that works well with bronchite! It’s called the Chinese Dragonleaf water. We imported the best oriental herbs for this product. 
+[[I will come back to your store later this day. I have some urgent business to do. My apologies.-&gt;Goodbye]]</tw-passagedata><tw-passagedata pid="63" name="Alternative Medicine" tags="" position="5153,1727" size="100,100">Ahhh you chose wisely! I have this special mixture that works well with bronchite! It’s called the Chinese Dragonleaf water. We imported the best oriental herbs for this product. 
 
 He hands you a small jar with a dark greenish liquid inside. You look at the label. 
 It says:
@@ -616,7 +637,7 @@ Who on earth would allow this man to sell these kind of mixtures?
 [[ I think i will just stay with the normal medicine. Can you bring them on Monday to 54 Berners Street? -&gt;Deal Pharmacist]]
 
 [[ I don’t have much time - I’ll visit your store later this day.-&gt;Goodbye]]
-</tw-passagedata><tw-passagedata pid="65" name="Deal Pharmacist" tags="" position="4491,1651.6666666666663" size="100,100">Excuse me what?
+</tw-passagedata><tw-passagedata pid="64" name="Deal Pharmacist" tags="" position="5047,1935" size="100,100">Excuse me what?
 I said could you sent those bottles to 54 Bernerstreet on Monday?
 Send those bottles where on Sunday?
 Send them to 54 Berners Street on Monday!
@@ -631,10 +652,61 @@ That makes 14£ up front.
 You pay and leave the place with a slight suspicion that the drugs will never arrive at Berners Street 54….
 &lt;&lt;set $money -=14&gt;&gt;
 &lt;&lt;set $pharmacist to true&gt;&gt;
-[[Return to the Street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="66" name="Goodbye" tags="" position="4234.333333333333,1466.6666666666665" size="100,100">What a shame! I’m looking forward to welcome you again sometimes!
+[[Return to the Street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="65" name="Goodbye" tags="" position="4790,1750" size="100,100">What a shame! I’m looking forward to welcome you again sometimes!
 
 You leave the building with a sense of guilt. Although he was a very  … special kind of drugstore owner - he seemed to be friendly and passionate about his customers. 
 
 &lt;&lt;set $visitedPharmacist to true&gt;&gt;
 
-[[Reek Street]] </tw-passagedata></tw-storydata>
+[[Reek Street]] </tw-passagedata><tw-passagedata pid="66" name="Dealer?" tags="" position="4279.333333333334,2277.333333333333" size="100,100">Hehehehehe! You don’t know me? The notorious, the feared, the shameless O’Flannigan!!  A DEALER! Indeed I call myself a dealer. A death dealer! And as I said today is your lucky day - I am in a good mood so I’ll make ya a special offer: I will raid, kill, steal, rob and beat up people for half the price! What do you say? 
+
+[[I would be delighted to accept your offer! In fact, I was searching for someone to take care of my old mothers retirement, if you know what I mean.-&gt;InitialOffer Criminal]]
+[[That’s an interesting offer you have but unfortunately I have to decline. It’s not the kind of business I am looking for.-&gt;Agressive]]</tw-passagedata><tw-passagedata pid="67" name="Agressive" tags="" position="4497.666666666666,2337" size="100,100">Do I have to slice you in two to take me seriously? Noone insults me, the notorious,  the feared, the shameless O’Flannigan! 
+He takes out a short knife and a gun and points both towards you.
+
+[[RUN!]]
+[[You know what? Maybe we can talk about this matter of pride like real men. Since I don’t carry much money with me at the moment how about i use your services and pay a little extra in advance? I will come back later.-&gt;No Deal Criminal]]</tw-passagedata><tw-passagedata pid="68" name="InitialOffer Criminal" tags="" position="4279.333333333334,2427.333333333333" size="100,100">Hehehehehe! So you’re gettin’ tired of yer old hag? HUEHEUEHEUEHE! HIAHAIAHAIAH HUOHOHOHO HIEHIEHEIHE!!!! What do you want me to do? Poison? Stab? Or do you have a special request? 
+
+His laugh tells you that he’s not entirely sane. He starts to get fidgety out of excitement like a kid whose  mother just promised him a candybar. You now know why he’s one of the most famous criminals in London. Even a police officer wouldn’t touch a crackpot like him. 
+
+
+[[I just want you to steal something from her. A diamond ring which you can find in her jewelry case. Don’t hurt anyone if it isn’t necessary.-&gt;FinalOffer Criminal]]
+
+[[Let me think about your offer again. I&#39;m not quite sure if I really need your services.-&gt;Agressive]]</tw-passagedata><tw-passagedata pid="69" name="FinalOffer Criminal" tags="" position="4441,2547.333333333333" size="100,100">Oh you want me to steal something for ye? You came to the right guy!
+&quot;It&#39;s not like you just forced me into this deal&quot;
+He ignores your comment. 
+I can steal anytime, anywhere for .... let&#39;s say 20£. This is a one-time offer! Watcha say?
+
+[[That sounds good! Go to Berners Street 54 at 12 o&#39;clock.-&gt;Deal Criminal]]
+
+
+
+[[You know what? I&#39;ll give you 5£ right now and come back in 10 minutes with more so I can pay you the rest.-&gt;No Deal Criminal]]
+
+
+
+
+</tw-passagedata><tw-passagedata pid="70" name="Deal Criminal" tags="" position="4364.333333333334,2697.333333333333" size="100,100">Alright you got yourself a deal.
+
+&lt;&lt;set $money -=20&gt;&gt;
+&lt;&lt;set $criminal to true&gt;&gt;
+[[Leave the street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="71" name="No Deal Criminal" tags="" position="4516,2697.333333333333" size="100,100">Alright you got yourself a deal... tough a small one.
+&lt;&lt;set $money -=5&gt;&gt;
+[[Leave the street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="72" name="RUN!" tags="" position="4439.333333333333,2437.333333333333" size="100,100">As you try to escape you suddenly hear a loud bang followed by unbearable pain in your chest. You fall down and see O’Flannigans malicious smile before everything turns dark. 
+
+&#39;&#39;YOU DIE&#39;&#39;
+
+[[Return to Start-&gt;Start]] 
+</tw-passagedata><tw-passagedata pid="73" name="Weapons Dealer Happening" tags="" position="3640,2293" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="74" name="Inventor Happening" tags="" position="3362,2287" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="75" name="Happening Pharmacist" tags="" position="3625,2622" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="76" name="Happening Rugdealer" tags="" position="3353,2622" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="77" name="Happening Criminal" tags="" position="3347,2836" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="78" name="Happening Detecitive" tags="" position="3632,2832" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="79" name="_randompassage" tags="" position="3546,1507" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="80" name="Detective" tags="" position="4616,1526" size="100,100">As you pass by the many rundown buildings in Reekstreet, you suddenly feel something on your shoulder. You turn around and look into the face of a man in his thirties, with a dark beard and horn-rimmed spectacles. He looks at you with a worn out look.
+
+[[Approch Him]]</tw-passagedata><tw-passagedata pid="81" name="Normal Reek Street Text" tags="" position="4327,1773" size="100,100">Normal Reek Street Text</tw-passagedata><tw-passagedata pid="82" name="Approch Him" tags="" position="4370.333333333333,1402.3333333333333" size="100,100">Excuse me sir, I never saw you here in this area - and as I can see you are a servant to someone. Your clothes are too expensive for a day laborer and too cheap for a  businessman. Your shoe soles have been replaced already 2 times, you must walk around a lot, yet your posture tells me that you trained yourself to keep your back up straight. You see this?
+He points at your left forearm.
+See those white particles on your jacket? Those are cotton fibers. You MUST be a servant, only servants use white cloth on their left forearm to serve meals and beverages. 
+He stares at you intensely and you start to feel a little bit uneasy.
+
+Excuse me! I didn’t introduce myself: I am Herlock Sholmes an aspiring private detective. Currently I am searching for the most notorious criminal in this area -  but this madman’s mind is too arbitrarily for me to fully understand. You might’ve heard of him already.  Do you have a brief moment of time to answer some questions?
+
+[[Of course! How can I help you?-&gt;Help]]
+[[Mind your own business! I’m sure someone as brilliant as you can track down some criminal by yourself.-&gt;Dissmiss]]</tw-passagedata><tw-passagedata pid="83" name="Help" tags="" position="4232,1339" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="84" name="Dissmiss" tags="" position="4503.666666666666,1327.3333333333333" size="100,100">I feel flattered by your words but I also feel that you don’t have the time or nerves to help me out in this matter… And if you ever need a detective: Visit me at Faker Street 221B. Although I mostly spend my time outside of the house. Farewell!
+He turns around and walks away.
+</tw-passagedata></tw-storydata>
