@@ -62,6 +62,8 @@ width: 200px;
 
 
 
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">Dialog.addClickHandler("#some-element", null, function () {
     Dialog.setup("My Dialog Title", "my-dialog-class");
     Dialog.wiki(Story.get("MyDialogContents").processText());
@@ -81,7 +83,9 @@ Config.history.controls = false;
 
 
 
-</script><tw-passagedata pid="1" name="Start" tags="" position="5888.666666666667,370" size="100,100">Bernerstreet ist die Geschichte eines Dieners im 18 Jhrd. der in die Wirren des grössten Steiches des Jahrhunderts gerät.
+
+
+</script><tw-passagedata pid="1" name="Start" tags="" position="5888,370" size="100,100">Bernerstreet ist die Geschichte eines Dieners im 18 Jhrd. der in die Wirren des grössten Steiches des Jahrhunderts gerät.
 [[Goto-&gt;Intro]]
 
 
@@ -179,7 +183,9 @@ German Accent: Welcome in my modest shop! Everything you see iz for zale! I also
 
 [[100 Ending]]
 [[Overdone Ending]]
-[[Underperformance Ending]]</tw-passagedata><tw-passagedata pid="19" name="100 Ending" tags="" position="3341,3239" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="20" name="Overdone Ending" tags="" position="3491,3201" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="Underperformance Ending" tags="" position="3641,3171" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="22" name="Shadey Alley" tags="" position="4486,2207" size="100,100">You enter a dark alley and instantly try not to vomit from the disgusting smell of garbage and filth that accumulated over many years there. You accidently step into something soft and take a look at your shoes when out of nowhere a shadow appears in front of you. A rather short man stands in front of you, with icy eyes staring directly at you. He wears remarkably flawless black clothes for someone that just appeared in a dark alley in the most notorious street of london. He smiles and asks:
+[[Underperformance Ending]]</tw-passagedata><tw-passagedata pid="19" name="100 Ending" tags="" position="3341,3239" size="100,100">[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="20" name="Overdone Ending" tags="" position="3483,3201" size="100,100">[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="21" name="Underperformance Ending" tags="" position="3641,3171" size="100,100">Double-click this passage to edit it.
+
+[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="22" name="Shadey Alley" tags="" position="4486,2207" size="100,100">You enter a dark alley and instantly try not to vomit from the disgusting smell of garbage and filth that accumulated over many years there. You accidently step into something soft and take a look at your shoes when out of nowhere a shadow appears in front of you. A rather short man stands in front of you, with icy eyes staring directly at you. He wears remarkably flawless black clothes for someone that just appeared in a dark alley in the most notorious street of london. He smiles and asks:
 
 Hey! Psssssshhht! Today is yer special day. Hehehehe! 
 
@@ -245,7 +251,7 @@ You take a step to the counter in the back section of the room when a fat cat su
 
 [[Hello?! Anybody home?]]] 
 [[Freaking Cat! God damn you dirty beast!]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Oriental Rugshop" tags="" position="2925,1896.3333333333333" size="100,100">[[Blocksford Street]] 
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="27" name="Oriental Rugshop" tags="" position="2925,1896" size="100,100">[[Blocksford Street]] 
 
 </tw-passagedata><tw-passagedata pid="28" name="Wait and Listen" tags="" position="3338,241" size="100,100">You cower down a bit, tilt your head and hold your ear towards the door. You try to make out the muffled voices.
 //“... standing any chance! Hah! Your money’s as good as mine already, Hook!”//
@@ -333,7 +339,7 @@ Hook gives you a few other tasks for the present day; and leaves you with that; 
 
 [[Accept it -&gt;Continue]] 
 [[Try to talk Hook out of the idea-&gt;Talk Hook out of the idea, explaining how nonsensical this all is.]]
-</tw-passagedata><tw-passagedata pid="33" name="Extricate yourself from the discussion as best as you can" tags="" position="3965,56.66666666666666" size="100,100">Quickly you stress to find an adequate answer without being insulting.
+</tw-passagedata><tw-passagedata pid="33" name="Extricate yourself from the discussion as best as you can" tags="" position="3965,56" size="100,100">Quickly you stress to find an adequate answer without being insulting.
 “Gentlemen, I can assure you I feel most honored to be asked this directly to join in on your active conversation. But; as you sure may both understand; neither my social status nor my very limited general knowledge allow me to participate in such a sophisticated discussion.”
 That was good, you think to yourself.
 “Coward.” Beazley’s response is delivered in a harsh dryness.
@@ -440,7 +446,7 @@ You immediately turn around. Something’s not right. Not at all.
 “You’re fired. Go home.”
 “What?! Becau-”
 “Do. Not. Discuss with me. No law keeps me from doing this. You was supposed to be my assistant. And if my assistant has such a stick up his arse and can’t even involve himself in a lighthearted discussion; what is he good for? Every damn moron can do the paperwork and buy me darn apples and all that bric-a-brac, I employed you because I thought of you as a witty, good-willing youngster. Not a stuck-up bore. Go home now. Dismissed”      
-[[Return to Start -&gt;Start]] </tw-passagedata><tw-passagedata pid="39" name="PassageHeader" tags="" position="5885.666666666667,527" size="100,100">&lt;&lt;if $phase_collection is true&gt;&gt;
+[[Return to Start -&gt;Start]] </tw-passagedata><tw-passagedata pid="39" name="PassageHeader" tags="" position="5885,527" size="100,100">&lt;&lt;if $phase_collection is true&gt;&gt;
 	&lt;div class=&quot;gameheader&quot;&gt;
 	&lt;&lt;print $money&gt;&gt;£
 	&lt;/div&gt;
@@ -658,21 +664,21 @@ You leave the building with a sense of guilt. Although he was a very  … specia
 
 &lt;&lt;set $visitedPharmacist to true&gt;&gt;
 
-[[Reek Street]] </tw-passagedata><tw-passagedata pid="66" name="Dealer?" tags="" position="4279.333333333334,2277.333333333333" size="100,100">Hehehehehe! You don’t know me? The notorious, the feared, the shameless O’Flannigan!!  A DEALER! Indeed I call myself a dealer. A death dealer! And as I said today is your lucky day - I am in a good mood so I’ll make ya a special offer: I will raid, kill, steal, rob and beat up people for half the price! What do you say? 
+[[Reek Street]] </tw-passagedata><tw-passagedata pid="66" name="Dealer?" tags="" position="4279,2277" size="100,100">Hehehehehe! You don’t know me? The notorious, the feared, the shameless O’Flannigan!!  A DEALER! Indeed I call myself a dealer. A death dealer! And as I said today is your lucky day - I am in a good mood so I’ll make ya a special offer: I will raid, kill, steal, rob and beat up people for half the price! What do you say? 
 
 [[I would be delighted to accept your offer! In fact, I was searching for someone to take care of my old mothers retirement, if you know what I mean.-&gt;InitialOffer Criminal]]
-[[That’s an interesting offer you have but unfortunately I have to decline. It’s not the kind of business I am looking for.-&gt;Agressive]]</tw-passagedata><tw-passagedata pid="67" name="Agressive" tags="" position="4497.666666666666,2337" size="100,100">Do I have to slice you in two to take me seriously? Noone insults me, the notorious,  the feared, the shameless O’Flannigan! 
+[[That’s an interesting offer you have but unfortunately I have to decline. It’s not the kind of business I am looking for.-&gt;Agressive]]</tw-passagedata><tw-passagedata pid="67" name="Agressive" tags="" position="4497,2337" size="100,100">Do I have to slice you in two to take me seriously? Noone insults me, the notorious,  the feared, the shameless O’Flannigan! 
 He takes out a short knife and a gun and points both towards you.
 
 [[RUN!]]
-[[You know what? Maybe we can talk about this matter of pride like real men. Since I don’t carry much money with me at the moment how about i use your services and pay a little extra in advance? I will come back later.-&gt;No Deal Criminal]]</tw-passagedata><tw-passagedata pid="68" name="InitialOffer Criminal" tags="" position="4279.333333333334,2427.333333333333" size="100,100">Hehehehehe! So you’re gettin’ tired of yer old hag? HUEHEUEHEUEHE! HIAHAIAHAIAH HUOHOHOHO HIEHIEHEIHE!!!! What do you want me to do? Poison? Stab? Or do you have a special request? 
+[[You know what? Maybe we can talk about this matter of pride like real men. Since I don’t carry much money with me at the moment how about i use your services and pay a little extra in advance? I will come back later.-&gt;No Deal Criminal]]</tw-passagedata><tw-passagedata pid="68" name="InitialOffer Criminal" tags="" position="4279,2427" size="100,100">Hehehehehe! So you’re gettin’ tired of yer old hag? HUEHEUEHEUEHE! HIAHAIAHAIAH HUOHOHOHO HIEHIEHEIHE!!!! What do you want me to do? Poison? Stab? Or do you have a special request? 
 
 His laugh tells you that he’s not entirely sane. He starts to get fidgety out of excitement like a kid whose  mother just promised him a candybar. You now know why he’s one of the most famous criminals in London. Even a police officer wouldn’t touch a crackpot like him. 
 
 
 [[I just want you to steal something from her. A diamond ring which you can find in her jewelry case. Don’t hurt anyone if it isn’t necessary.-&gt;FinalOffer Criminal]]
 
-[[Let me think about your offer again. I&#39;m not quite sure if I really need your services.-&gt;Agressive]]</tw-passagedata><tw-passagedata pid="69" name="FinalOffer Criminal" tags="" position="4441,2547.333333333333" size="100,100">Oh you want me to steal something for ye? You came to the right guy!
+[[Let me think about your offer again. I&#39;m not quite sure if I really need your services.-&gt;Agressive]]</tw-passagedata><tw-passagedata pid="69" name="FinalOffer Criminal" tags="" position="4441,2547" size="100,100">Oh you want me to steal something for ye? You came to the right guy!
 &quot;It&#39;s not like you just forced me into this deal&quot;
 He ignores your comment. 
 I can steal anytime, anywhere for .... let&#39;s say 20£. This is a one-time offer! Watcha say?
@@ -686,20 +692,20 @@ I can steal anytime, anywhere for .... let&#39;s say 20£. This is a one-time of
 
 
 
-</tw-passagedata><tw-passagedata pid="70" name="Deal Criminal" tags="" position="4364.333333333334,2697.333333333333" size="100,100">Alright you got yourself a deal.
+</tw-passagedata><tw-passagedata pid="70" name="Deal Criminal" tags="" position="4364,2697" size="100,100">Alright you got yourself a deal.
 
 &lt;&lt;set $money -=20&gt;&gt;
 &lt;&lt;set $criminal to true&gt;&gt;
-[[Leave the street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="71" name="No Deal Criminal" tags="" position="4516,2697.333333333333" size="100,100">Alright you got yourself a deal... tough a small one.
+[[Leave the street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="71" name="No Deal Criminal" tags="" position="4516,2697" size="100,100">Alright you got yourself a deal... tough a small one.
 &lt;&lt;set $money -=5&gt;&gt;
-[[Leave the street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="72" name="RUN!" tags="" position="4439.333333333333,2437.333333333333" size="100,100">As you try to escape you suddenly hear a loud bang followed by unbearable pain in your chest. You fall down and see O’Flannigans malicious smile before everything turns dark. 
+[[Leave the street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="72" name="RUN!" tags="" position="4684,2385" size="100,100">As you try to escape you suddenly hear a loud bang followed by unbearable pain in your chest. You fall down and see O’Flannigans malicious smile before everything turns dark. 
 
 &#39;&#39;YOU DIE&#39;&#39;
 
 [[Return to Start-&gt;Start]] 
 </tw-passagedata><tw-passagedata pid="73" name="Weapons Dealer Happening" tags="" position="3640,2293" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="74" name="Inventor Happening" tags="" position="3362,2287" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="75" name="Happening Pharmacist" tags="" position="3625,2622" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="76" name="Happening Rugdealer" tags="" position="3353,2622" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="77" name="Happening Criminal" tags="" position="3347,2836" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="78" name="Happening Detecitive" tags="" position="3632,2832" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="79" name="_randompassage" tags="" position="3546,1507" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="80" name="Detective" tags="" position="4616,1526" size="100,100">As you pass by the many rundown buildings in Reekstreet, you suddenly feel something on your shoulder. You turn around and look into the face of a man in his thirties, with a dark beard and horn-rimmed spectacles. He looks at you with a worn out look.
 
-[[Approch Him]]</tw-passagedata><tw-passagedata pid="81" name="Normal Reek Street Text" tags="" position="4327,1773" size="100,100">Normal Reek Street Text</tw-passagedata><tw-passagedata pid="82" name="Approch Him" tags="" position="4370.333333333333,1402.3333333333333" size="100,100">Excuse me sir, I never saw you here in this area - and as I can see you are a servant to someone. Your clothes are too expensive for a day laborer and too cheap for a  businessman. Your shoe soles have been replaced already 2 times, you must walk around a lot, yet your posture tells me that you trained yourself to keep your back up straight. You see this?
+[[Approch Him]]</tw-passagedata><tw-passagedata pid="81" name="Normal Reek Street Text" tags="" position="4327,1773" size="100,100">Normal Reek Street Text</tw-passagedata><tw-passagedata pid="82" name="Approch Him" tags="" position="4370,1402" size="100,100">Excuse me sir, I never saw you here in this area - and as I can see you are a servant to someone. Your clothes are too expensive for a day laborer and too cheap for a  businessman. Your shoe soles have been replaced already 2 times, you must walk around a lot, yet your posture tells me that you trained yourself to keep your back up straight. You see this?
 He points at your left forearm.
 See those white particles on your jacket? Those are cotton fibers. You MUST be a servant, only servants use white cloth on their left forearm to serve meals and beverages. 
 He stares at you intensely and you start to feel a little bit uneasy.
@@ -707,6 +713,6 @@ He stares at you intensely and you start to feel a little bit uneasy.
 Excuse me! I didn’t introduce myself: I am Herlock Sholmes an aspiring private detective. Currently I am searching for the most notorious criminal in this area -  but this madman’s mind is too arbitrarily for me to fully understand. You might’ve heard of him already.  Do you have a brief moment of time to answer some questions?
 
 [[Of course! How can I help you?-&gt;Help]]
-[[Mind your own business! I’m sure someone as brilliant as you can track down some criminal by yourself.-&gt;Dissmiss]]</tw-passagedata><tw-passagedata pid="83" name="Help" tags="" position="4232,1339" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="84" name="Dissmiss" tags="" position="4503.666666666666,1327.3333333333333" size="100,100">I feel flattered by your words but I also feel that you don’t have the time or nerves to help me out in this matter… And if you ever need a detective: Visit me at Faker Street 221B. Although I mostly spend my time outside of the house. Farewell!
+[[Mind your own business! I’m sure someone as brilliant as you can track down some criminal by yourself.-&gt;Dissmiss]]</tw-passagedata><tw-passagedata pid="83" name="Help" tags="" position="4232,1339" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="84" name="Dissmiss" tags="" position="4503,1327" size="100,100">I feel flattered by your words but I also feel that you don’t have the time or nerves to help me out in this matter… And if you ever need a detective: Visit me at Faker Street 221B. Although I mostly spend my time outside of the house. Farewell!
 He turns around and walks away.
 </tw-passagedata></tw-storydata>
