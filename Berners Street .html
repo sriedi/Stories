@@ -80,11 +80,13 @@ width: 200px;
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">Dialog.addClickHandler("#some-element", null, function () {
     Dialog.setup("My Dialog Title", "my-dialog-class");
     Dialog.wiki(Story.get("MyDialogContents").processText());
 });
 Config.history.controls = false;
+
 
 
 
@@ -159,13 +161,13 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 [[Map]] 
 [[Shadey Alley]]
 [[Shady Tavern]]
-[[Pharmacy]]</tw-passagedata><tw-passagedata pid="7" name="Interlude" tags="" position="3582.3333333333335,1750" size="100,100">&lt;&lt;set $phase_colletction to false&gt;&gt;
+[[Pharmacy]]</tw-passagedata><tw-passagedata pid="7" name="Interlude" tags="" position="3582,1750" size="100,100">&lt;&lt;set $phase_collection to false &gt;&gt;
 
 [[Monday]]
-</tw-passagedata><tw-passagedata pid="8" name="Monday" tags="" position="3485.666666666667,1930" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="8" name="Monday" tags="" position="3485,1928.3333333333333" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
 &lt;&lt;set $tumult to 0&gt;&gt;
 [[8.00]]
-</tw-passagedata><tw-passagedata pid="9" name="8.00" tags="" position="3503.666666666667,2138.6666666666665" size="100,100">&lt;&lt;linkappend &quot;Wait for a while&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="9" name="8.00" tags="" position="3503,2138" size="100,100">&lt;&lt;linkappend &quot;Wait for a while&quot;&gt;&gt;
 	&lt;&lt;if $photographer is true&gt;&gt;
 		&lt;&lt;include &quot;Happening Photographer&quot;&gt;&gt;
 		&lt;&lt;set $photographer_present to true&gt;&gt;
@@ -182,7 +184,7 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 	&lt;&lt;/linkappend&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
                        
-</tw-passagedata><tw-passagedata pid="10" name="9.00" tags="" position="3506,2286.3333333333335" size="100,100">&lt;&lt;linkappend &quot;Wait for a while&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="10" name="9.00" tags="" position="3506,2286" size="100,100">&lt;&lt;linkappend &quot;Wait for a while&quot;&gt;&gt;
 	&lt;&lt;if $inventor is true&gt;&gt;
 		&lt;&lt;include &quot;Happening Inventor&quot;&gt;&gt;
 		&lt;&lt;set $inventor_present to true&gt;&gt;
@@ -223,7 +225,7 @@ Welcome, welcome… the name is George Attling, call me george. how can I help y
 [[Indeed sir, I am looking for a weapon for self defence.-&gt;Self Defece]]</tw-passagedata><tw-passagedata pid="14" name="Charcter Priest" tags="" position="5050,1213" size="100,100">“scans you for a second with his judgmental eyes before he says with a calm smile “Of course, I will be there Monday 10 o&#39;clock.”
 &lt;&lt;set $priest to true&gt;&gt;
 
-[[Thank you father-&gt;Faker Street]] </tw-passagedata><tw-passagedata pid="15" name="10.00" tags="" position="3496.3333333333335,2469.3333333333335" size="100,100">&lt;&lt;set _randompassage to either(
+[[Thank you father-&gt;Faker Street]] </tw-passagedata><tw-passagedata pid="15" name="10.00" tags="" position="3496,2469" size="100,100">&lt;&lt;set _randompassage to either(
     &#39;Normal Text&#39;,
 	&#39;Normal Text&#39;,
     &#39;Boffington Teaclub&#39;
@@ -263,7 +265,7 @@ Welcome, welcome… the name is George Attling, call me george. how can I help y
 		[[Continue-&gt;12.00]]
 	&lt;&lt;/linkappend&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
-</tw-passagedata><tw-passagedata pid="17" name="12.00" tags="" position="3498.0000000000005,2831.3333333333335" size="100,100">&lt;&lt;linkappend &quot;Wait for a while&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="17" name="12.00" tags="" position="3498,2831" size="100,100">&lt;&lt;linkappend &quot;Wait for a while&quot;&gt;&gt;
 	&lt;&lt;if $criminal is true&gt;&gt;
 		&lt;&lt;include &quot;Happening Criminal&quot;&gt;&gt;
 	&lt;&lt;else&gt;&gt;
@@ -281,8 +283,8 @@ Welcome, welcome… the name is George Attling, call me george. how can I help y
 
 
 
-</tw-passagedata><tw-passagedata pid="18" name="100 Ending" tags="" position="3341,3240.6666666666665" size="100,100">You have won! 100 Tumult
-[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="19" name="Overdone Ending" tags="" position="3483,3202.6666666666665" size="100,100">You have won but overdone
+</tw-passagedata><tw-passagedata pid="18" name="100 Ending" tags="" position="3341,3240" size="100,100">You have won! 100 Tumult
+[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="19" name="Overdone Ending" tags="" position="3483,3202" size="100,100">You have won but overdone
 [[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="20" name="Underperformance Ending" tags="" position="3641,3171" size="100,100">You have Failed
 
 [[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="21" name="Shadey Alley" tags="" position="4486,2207" size="100,100">You enter a dark alley and instantly try not to vomit from the disgusting smell of garbage and filth that accumulated over many years there. You accidently step into something soft and take a look at your shoes when out of nowhere a shadow appears in front of you. A rather short man stands in front of you, with icy eyes staring directly at you. He wears remarkably flawless black clothes for someone that just appeared in a dark alley in the most notorious street of london. He smiles and asks:
@@ -423,7 +425,7 @@ A short, awkward silence follows.
 
 [[Involve yourself into the discussion]]
 [[Extricate yourself from the discussion as best as you can]]
-</tw-passagedata><tw-passagedata pid="29" name="Happening Photographer" tags="" position="3627.3333333333335,2136.3333333333335" size="100,100">
+</tw-passagedata><tw-passagedata pid="29" name="Happening Photographer" tags="" position="3627,2136" size="100,100">
 8 o’clock, saturday morning, the Berners Street just awakes from a peaceful sleep. Some early birds are whistling and flying from roofs to trees and back. A little cat crosses slowly the street, a stray dog exactly observes her but is obviously too tired to attack.
 
 A brown carriage with not less that eight horses in front comes around the corner. The coachman climbs down his seat and opens the door. A big man in an very expensive suit steps put on his hat, adjusts his tie and removes a little dust with his hand from his shoulder. Then he just stands there and looks up to the house.
@@ -494,7 +496,7 @@ He turns around and walks away angry, shouting to the coachman:
 
 “Load! Immediately! God damn it!”
 
-&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Happening Chalcographer" tags="" position="3368.3333333333335,2130" size="100,100">&lt;&lt;if $photographer_present is true&gt;&gt;
+&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Happening Chalcographer" tags="" position="3366.3333333333335,2130" size="100,100">&lt;&lt;if $photographer_present is true&gt;&gt;
 
 A small skinny man in old brown clothes comes around the corner, looks at the facades of the houses, trying to catch the numbers. As soon as he spotted the photographer, he walks straight to him:
 
@@ -515,6 +517,7 @@ The coachman tries to calm him down but gets also hit very badly. He runs away, 
 The photographer still beats the old engraver, while some neighbours run out of their doors and try to stop the photographer. A young man accidentally hits an elder neighbour who immediately takes revenge by taking a big camera from the carriage and smashes it towards his head. There is blood on the street. Of course someone called the police
 
 &lt;&lt;set $tumult += 15&gt;&gt;
+
 &lt;&lt;else&gt;&gt;
 8 o’clock, saturday morning, the Berners Street just awakes from a peaceful sleep. Some early birds are whistling and flying from roofs to trees and back. A little cat crosses slowly the street, a stray dog exactly observes her but is obviously too tired to attack.
 
@@ -558,7 +561,7 @@ The engraver takes a break, a deep breath and finally steps back a little bit.
 
 E: Sir, this will have dramatic repercussions! I am an artist! I will not put up with that! To your disadvantage, i do know a lot of influential people in this part of the city! Note!!
 The engraver turns around and leaves the place quickly.
-
+&lt;&lt;set $tumult += 9&gt;&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Involve yourself into the discussion" tags="" position="3834,673" size="100,100">In a desperate attempt to seem smart; you just speak out the first thing that comes to your mind.
 //“Uhh...we could….uhh, maybe...maybe the loser should come up for all the costs that came up throughout the bets process?”//
 //“Oh, really?”// Beazley purses his lips. //“So if you start to build a damn two-hundred meter tower down the at the docks; declare its going to be a museum, import an abundance of golden trinkets and ancient sculptures, art and all of them Brummagems, then I’m to come up for its costs once its built and done, like in, what, fourty years maybe!? Impossible.”//
@@ -669,7 +672,7 @@ And so, without ever knowing, you prevented the Berners Street Hoax from happeni
 &#39;&#39;The End&#39;&#39;
 [[Back to Start -&gt;Start]] 
 
-</tw-passagedata><tw-passagedata pid="36" name="Continue" tags="" position="3519,942" size="100,100">
+</tw-passagedata><tw-passagedata pid="36" name="Continue" tags="" position="3512.3333333333335,937.0000000000001" size="100,100">
 And so, on the next day, you head over to Hook’s office again, ready to do as he pleased. 
 You will go out into the streets of London, and try to get as many people to visit the Berner Street 54 as you can. The more trouble you stir up, the better, that’s the whole plan. 
 You try to keep in mind that getting people that don’t like each other to the Berner Street at the same time, will increase the turmoil even more.
@@ -680,7 +683,7 @@ So you step out into another frosty London fall morning, ready to engage in your
 Make Berner Street famous, no matter what!
 
 &lt;&lt;set $phase_collection to true &gt;&gt;
-&lt;&lt;set $money to 85&gt;&gt;
+&lt;&lt;set $money to 95&gt;&gt;
 
 [[Get out the Map-&gt;Map]]</tw-passagedata><tw-passagedata pid="37" name="You defend your position harshly and insist on not involving yourself" tags="" position="3956,543" size="100,100">Gentlemen, all the peer-pressure and scoffing in the world wouldn’t change my mind. I am here to serve as an assistant, not an advisor. I am not qualified; and I strongly refuse to partake in this discussion, as already said. If I speak my mind; and my words and or ideas result in a catastrophe; I do not want to take the blame, gentlemen.” You look at Hook with a stern expression and continue: “Sir, I kindly request to be handed today’s to-do-list, so I may put myself to use.”
 “...” 
@@ -834,7 +837,7 @@ She lights up a cigarette and examines you from top to bottom.
 </tw-passagedata><tw-passagedata pid="52" name="I’m here to ask if it’s possible to order one of your many services to my house." tags="" position="5057,2690" size="100,100">Let me think…. Yes there is a possibility to order our services to your house - but of course in exchange to the normal price plus a small surcharge for transport and commodities. 
 What kind of service do you want? Normally I could offer you any kind of service - from  dainty housemaids to salacious Nuns we have everything - but since we have to transport our Girls to yours, a flamboyant costume would attract too much attention. What is your address? It would be around &#39;&#39;25£&#39;&#39;.
 
-&lt;&lt;if $money gte to 25&gt;&gt;
+&lt;&lt;if $money gte 25&gt;&gt;
 [[That’s a reasonable price. The address is 54 Bernerstreet. It will be on Monday-&gt;Deal Prositute]]
 &lt;&lt;/if&gt;&gt;
 [[That’s way too expensive! Let’s say 15£. What do you think?-&gt;Barter]] </tw-passagedata><tw-passagedata pid="53" name="Bad Offer" tags="" position="5020,2361" size="100,100">Are you sure about that? Can I offer you at least a glass of our best champagne? 
@@ -863,7 +866,7 @@ She bursts out in loud laughter and you smell her bad breath mixed with the smel
 I already told you that I have to calculate the safe transport of my girls. Lowest I can go is 19 £...
 &lt;&lt;set $prostitue_pricecheap to true&gt;&gt;
 
-&lt;&lt;if $money gte to 19&gt;&gt;
+&lt;&lt;if $money gte 19&gt;&gt;
 [[ Alright, I will accept the offer. Make sure to send them to 54 Bernerstreet on Monday-&gt;Deal Prositute]]
 &lt;&lt;/if&gt;&gt;
 
@@ -920,7 +923,7 @@ The nuns disappeared in all this rumble in a sidealley.
 &lt;&lt;else&gt;&gt;
 Benjamin Waters, the Priest arrives at the street. As he moves to his destination he gets greeted by the people with respect passing by. However, before arriving at the House a gang of young kids, mostly boys gather around him and start teasing him. they try to steal his suitcase and pull on his black clothes. At first the priest acted as if nothing happens while the pedestrians on the street watch the situation from a far. Suddenly, the holy Man loses his temper and and curses the lord in a shouting manner. the people, especially the women are shocked at his outrage. they will not forget that.
 &lt;&lt;set $tumutl +=5&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Happening Prostitue" tags="" position="3361.6666666666665,2472.3333333333335" size="100,100">&lt;&lt;if $priest_present is true&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Happening Prostitue" tags="" position="3361,2472" size="100,100">&lt;&lt;if $priest_present is true&gt;&gt;
 A  Priest appears behind the corner and walks up to the House. He sees the three nuns.
 
 Benjamin: Hello sisters! What brings you here on such a sad day?
@@ -1163,7 +1166,7 @@ Dave: Wait! I think you’re right! IT MUST HAVE BEEN THAT GOBERMOUCH FROM FAKER
 
 He takes out 4 Jars out of his backpack and throws them on the street.  An alcoholic smell spreads over the street as he takes out a box of matches and throws them in a swift move to the wet ground. The mixture, which flowed over the street instantly catches fire and the whole street in front of the house starts burning.
 Dave: HERE YOU GO! This is for your “hospitality”! And now I’m gonna go to Bloxford street and burn this Flabbergabs rugs down!
-&lt;&lt;set $tumult += 6&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="Happening Rugdealer" tags="" position="3353,2623.6666666666665" size="100,100">&lt;&lt;if $pharmacist_present is true&gt;&gt;
+&lt;&lt;set $tumult += 6&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="Happening Rugdealer" tags="" position="3353,2623" size="100,100">&lt;&lt;if $pharmacist_present is true&gt;&gt;
 Suddenly a well dressed gentleman walks up to the house. With him, he pulls a cart with several giant rugs on it. Dave, whose attention is focused on the burning street, first glances at the gentleman and then sees the rugs.
 
 Dave: YOU! YOU FOPDOODLE STOLE MY CUSTOMERS. AND NOW YOU THINK YOU CAN PLAY ME FOR A SUCKER?!?! 
@@ -1221,7 +1224,7 @@ Suddenly the servant takes out a rifle and shots in the air twice. The Rugdealer
  &quot;Go to hell y&#39;stuck up bastards! You were just robbed by the notorious, the feared, the shameless Shamous O’Flannigan!! &quot; 
 He starts running away.
 The servant and the maid watch him leave out of the window.
-&lt;&lt;set $tumult += 9&gt;&gt;</tw-passagedata><tw-passagedata pid="77" name="Happening Detective" tags="" position="3633.6666666666665,2830.3333333333335" size="100,100">
+&lt;&lt;set $tumult += 9&gt;&gt;</tw-passagedata><tw-passagedata pid="77" name="Happening Detective" tags="" position="3633,2830" size="100,100">
 Same as the normal Happening but the Detective catches O’Flannigan and maybe they shoot around with their guns??
 &lt;&lt;set $tumult += 19&gt;&gt;</tw-passagedata><tw-passagedata pid="78" name="Detective" tags="" position="4363,1532" size="100,100">As you pass by the many rundown buildings in Reekstreet, you suddenly feel something on your shoulder. You turn around and look into the face of a man in his thirties, with a dark beard and horn-rimmed spectacles. He looks at you with a worn out look.
 
@@ -1252,16 +1255,17 @@ He walks away and disappears in the next alley.
 
 [[Hard to say. My employer, Mrs. Tottenham wants to replace all the rugs in her house. The current ones are very old and used. We need different colors and sizes. I think the best way to find out would be if you could visit us.-&gt;Replace Rugs]]
 
-[[Oh I just wanted to look around-&gt;Blocksford Street]]</tw-passagedata><tw-passagedata pid="86" name="Replace Rugs" tags="" position="2601,1848" size="100,100">Sounds like a big job! Well, as i said, i am very busy at the moment. I could visit the Lady at monday, but we have to agree a down payment of 16£.
+[[Oh I just wanted to look around-&gt;Blocksford Street]]</tw-passagedata><tw-passagedata pid="86" name="Replace Rugs" tags="" position="2639.3333333333335,1826.333333333333" size="100,100">Sounds like a big job! Well, as i said, i am very busy at the moment. I could visit the Lady at monday, but we have to agree a down payment of 16£.
 
-&lt;&lt;if $money is lt 16&gt;&gt;
+&lt;&lt;if $money lt 16&gt;&gt;
 [[I don&#39;t have enough money... Goodbye Sir-&gt;Blocksford Street]] 
-&lt;&lt;else&gt;&gt;
 
+&lt;&lt;else&gt;&gt;
 [[Great, Monday, 11 o&#39;clock, 54 Berners Street. Alright?-&gt;DealRugdealer]]
 [[Hmmm, that seems a little too much for something we do not buy yet. The Lady wouldn’t accept that. You have to reduce the price a little bit.-&gt;Cheaper Price]]
+
 [[Way too much for just an down payment. I’m sorry!-&gt;Even Cheaper]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="87" name="DealRugdealer" tags="" position="2346,1905" size="100,100">Good! See you there, Sir!
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="87" name="DealRugdealer" tags="" position="2399.3333333333335,1731.6666666666667" size="100,100">Good! See you there, Sir!
 &lt;&lt;if $rugdealer_pricecheap is 1&gt;&gt;
   &lt;&lt;set $money -=12&gt;&gt;
   &lt;&lt;set $rugdealer to true&gt;&gt;
@@ -1297,14 +1301,13 @@ He walks away and disappears in the next alley.
 	&lt;&lt;set $angered_calcographer to true&gt;&gt;
 	Alright boy, get out of my house!
 	[[Leave the Shop-&gt;Blocksford Street]] 
-&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="92" name="Dog Portrait" tags="" position="1776,1570" size="100,100">Oh, dogs are my speciality. What size are we talking about?
+&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="92" name="Dog Portrait" tags="" position="1779.3333333333333,1566.6666666666667" size="100,100">Oh, dogs are my speciality. What size are we talking about?
 
 Well, it should be a big portrait. I mean a giant one. I mean, it’s a memorial!
 
 Well, sounds like a lot of work. I normally do blanket prices for this kind of work. Let’s say 20£.
 
-&lt;&lt;if $money lt 20&gt;&gt;
-
+&lt;&lt;if $money gte 20&gt;&gt;
 [[Sounds good! Monday 8 o’clock? The address is 54 Berners Street.-&gt;Deal Chaclograpger]]
 &lt;&lt;else&gt;&gt;
 [[I can&#39;t afford that-&gt;Blocksford Street]] 
@@ -1336,7 +1339,7 @@ I have this selection set of revolvers for only 25£.
 	&lt;&lt;set $weaponsdealer to true&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="96" name="Boffington Teaclub" tags="" position="3206.666666666667,2466.6666666666674" size="100,100">You hear a high pitched chattering, like a flock of chickens shortly before feeding. You turn around. A group of elderly Women dressed in black come towards you. A skinny Madame with a book under her left armpit and an unusually long neck highers her screeching voice to one of the women with a Sunscreen Umbrella. 
+[[Leave the shop-&gt;Faker Street]] </tw-passagedata><tw-passagedata pid="96" name="Boffington Teaclub" tags="" position="3206,2466" size="100,100">You hear a high pitched chattering, like a flock of chickens shortly before feeding. You turn around. A group of elderly Women dressed in black come towards you. A skinny Madame with a book under her left armpit and an unusually long neck highers her screeching voice to one of the women with a Sunscreen Umbrella. 
 As I said my dearest Ventulia the latest work of Charles Hoppes is for all it’s flaws in it’s representation of women as mere reflections of men definitely not subtitle for a reading circle discussion. As I already told Mary women are not supposed to interrogate into this misadventure named politics. 
 Another women, you presume her name might be the previously mentioned Ventulia counters the skinny locknecked woman: No Desmeralda that’s not what I said, as I agree with your previous assertion of the role of a woman of class in a gentlemans society is the one of a mere observer might be correct I still think everyone of us should at least know what we talk about. 
 Desmeralda replies: I think that matter should be put at rest over some tea and cake.
@@ -1369,7 +1372,7 @@ In the big stir you created you leap out of eyes reach of the flock and move you
 &lt;/span&gt;
 
 
-</tw-passagedata><tw-passagedata pid="97" name="Normal Text" tags="" position="3065.0000000000005,2480" size="100,100">The tumult around Berners Street increses more and more people gather to see the unfolding chaos in front of the house.</tw-passagedata><tw-passagedata pid="98" name="Tumult Debug" tags="" position="3646.6666666666674,1913.333333333333" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="97" name="Normal Text" tags="" position="3065,2480" size="100,100">The tumult around Berners Street increses more and more people gather to see the unfolding chaos in front of the house.</tw-passagedata><tw-passagedata pid="98" name="Tumult Debug" tags="" position="3646,1913" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
 &lt;&lt;set $tumult to 0&gt;&gt;
 [[8.00]]
 
@@ -1382,7 +1385,7 @@ In the big stir you created you leap out of eyes reach of the flock and move you
 &lt;&lt;set $rugdealer to true&gt;&gt;
 &lt;&lt;set $pharmacist to false&gt;&gt;
 &lt;&lt;set $criminal to true&gt;&gt;
-&lt;&lt;set $detective to false&gt;&gt;</tw-passagedata><tw-passagedata pid="99" name="Rateing" tags="" position="3513.3333333333335,2981.6666666666674" size="100,100">&lt;&lt;if $tumult gte 105&gt;&gt;
+&lt;&lt;set $detective to false&gt;&gt;</tw-passagedata><tw-passagedata pid="99" name="Rateing" tags="" position="3513,2981" size="100,100">&lt;&lt;if $tumult gte 105&gt;&gt;
 	&lt;&lt;goto &quot;Overdone Ending&quot;&gt;&gt;	
 &lt;&lt;elseif $tumult gte 100&gt;&gt;
 	&lt;&lt;goto &quot;100 Ending&quot;&gt;&gt;
