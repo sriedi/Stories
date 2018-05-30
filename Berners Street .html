@@ -1228,6 +1228,8 @@ He starts running away.
 The servant and the maid watch him leave out of the window.
 &lt;&lt;set $tumult += 9&gt;&gt;</tw-passagedata><tw-passagedata pid="77" name="Happening Detective" tags="" position="3633,2830" size="100,100">
 Same as the normal Happening but the Detective catches O’Flannigan and maybe they shoot around with their guns??
+
+Gang Gang yo ihr Kinder ihr stinkt ganz toll wie die rinder
 &lt;&lt;set $tumult += 19&gt;&gt;</tw-passagedata><tw-passagedata pid="78" name="Detective" tags="" position="4363,1532" size="100,100">As you pass by the many rundown buildings in Reekstreet, you suddenly feel something on your shoulder. You turn around and look into the face of a man in his thirties, with a dark beard and horn-rimmed spectacles. He looks at you with a worn out look.
 
 [[Approch Him]]</tw-passagedata><tw-passagedata pid="79" name="Normal Reek Street Text" tags="" position="4327,1773" size="100,100">Normal Reek Street Text</tw-passagedata><tw-passagedata pid="80" name="Approch Him" tags="" position="4118,1339" size="100,100">Excuse me sir, I never saw you here in this area - and as I can see you are a servant to someone. Your clothes are too expensive for a day laborer and too cheap for a  businessman. Your shoe soles have been replaced already 2 times, you must walk around a lot, yet your posture tells me that you trained yourself to keep your back up straight. You see this?
@@ -1257,7 +1259,11 @@ He walks away and disappears in the next alley.
 
 [[Hard to say. My employer, Mrs. Tottenham wants to replace all the rugs in her house. The current ones are very old and used. We need different colors and sizes. I think the best way to find out would be if you could visit us.-&gt;Replace Rugs]]
 
+<<<<<<< HEAD
 [[Oh I just wanted to look around-&gt;Blocksford Street]]</tw-passagedata><tw-passagedata pid="86" name="Replace Rugs" tags="" position="2657.3333333333335,1791" size="100,100">Sounds like a big job! Well, as i said, i am very busy at the moment. I could visit the Lady at monday, but we have to agree a down payment of 16£.
+=======
+[[Oh I just wanted to look around-&gt;Blocksford Street]]</tw-passagedata><tw-passagedata pid="86" name="Replace Rugs" tags="" position="2639,1826" size="100,100">Sounds like a big job! Well, as i said, i am very busy at the moment. I could visit the Lady at monday, but we have to agree a down payment of 16£.
+>>>>>>> 66561a4d0e20a076b5531227ef5d3a1ab9025fcb
 
 &lt;&lt;if $money lt 16&gt;&gt;
 [[I don&#39;t have enough money... Goodbye Sir-&gt;Blocksford Street]] 
@@ -1267,7 +1273,11 @@ He walks away and disappears in the next alley.
 [[Hmmm, that seems a little too much for something we do not buy yet. The Lady wouldn’t accept that. You have to reduce the price a little bit.-&gt;Cheaper Price]]
 
 [[Way too much for just an down payment. I’m sorry!-&gt;Even Cheaper]]
+<<<<<<< HEAD
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="87" name="DealRugdealer" tags="" position="2430.6666666666665,1789.3333333333333" size="100,100">Good! See you there, Sir!
+=======
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="87" name="DealRugdealer" tags="" position="2399,1731" size="100,100">Good! See you there, Sir!
+>>>>>>> 66561a4d0e20a076b5531227ef5d3a1ab9025fcb
 &lt;&lt;if $rugdealer_pricecheap is 1&gt;&gt;
   &lt;&lt;set $money -=12&gt;&gt;
   &lt;&lt;set $rugdealer to true&gt;&gt;
