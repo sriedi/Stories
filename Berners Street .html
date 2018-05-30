@@ -81,11 +81,13 @@ width: 200px;
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">Dialog.addClickHandler("#some-element", null, function () {
     Dialog.setup("My Dialog Title", "my-dialog-class");
     Dialog.wiki(Story.get("MyDialogContents").processText());
 });
 Config.history.controls = false;
+
 
 
 
@@ -164,7 +166,7 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 [[Pharmacy]]</tw-passagedata><tw-passagedata pid="7" name="Interlude" tags="" position="3582,1750" size="100,100">&lt;&lt;set $phase_collection to false &gt;&gt;
 
 [[Monday]]
-</tw-passagedata><tw-passagedata pid="8" name="Monday" tags="" position="3485,1928.3333333333333" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="8" name="Monday" tags="" position="3485,1928" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
 &lt;&lt;set $tumult to 0&gt;&gt;
 [[8.00]]
 </tw-passagedata><tw-passagedata pid="9" name="8.00" tags="" position="3503,2138" size="100,100">&lt;&lt;linkappend &quot;Wait for a while&quot;&gt;&gt;
@@ -496,7 +498,7 @@ He turns around and walks away angry, shouting to the coachman:
 
 “Load! Immediately! God damn it!”
 
-&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Happening Chalcographer" tags="" position="3366.3333333333335,2130" size="100,100">&lt;&lt;if $photographer_present is true&gt;&gt;
+&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Happening Chalcographer" tags="" position="3366,2130" size="100,100">&lt;&lt;if $photographer_present is true&gt;&gt;
 
 A small skinny man in old brown clothes comes around the corner, looks at the facades of the houses, trying to catch the numbers. As soon as he spotted the photographer, he walks straight to him:
 
@@ -672,7 +674,7 @@ And so, without ever knowing, you prevented the Berners Street Hoax from happeni
 &#39;&#39;The End&#39;&#39;
 [[Back to Start -&gt;Start]] 
 
-</tw-passagedata><tw-passagedata pid="36" name="Continue" tags="" position="3512.3333333333335,937.0000000000001" size="100,100">
+</tw-passagedata><tw-passagedata pid="36" name="Continue" tags="" position="3512,937" size="100,100">
 And so, on the next day, you head over to Hook’s office again, ready to do as he pleased. 
 You will go out into the streets of London, and try to get as many people to visit the Berner Street 54 as you can. The more trouble you stir up, the better, that’s the whole plan. 
 You try to keep in mind that getting people that don’t like each other to the Berner Street at the same time, will increase the turmoil even more.
@@ -1226,6 +1228,8 @@ He starts running away.
 The servant and the maid watch him leave out of the window.
 &lt;&lt;set $tumult += 9&gt;&gt;</tw-passagedata><tw-passagedata pid="77" name="Happening Detective" tags="" position="3633,2830" size="100,100">
 Same as the normal Happening but the Detective catches O’Flannigan and maybe they shoot around with their guns??
+
+Gang Gang yo ihr Kinder ihr stinkt ganz toll wie die rinder
 &lt;&lt;set $tumult += 19&gt;&gt;</tw-passagedata><tw-passagedata pid="78" name="Detective" tags="" position="4363,1532" size="100,100">As you pass by the many rundown buildings in Reekstreet, you suddenly feel something on your shoulder. You turn around and look into the face of a man in his thirties, with a dark beard and horn-rimmed spectacles. He looks at you with a worn out look.
 
 [[Approch Him]]</tw-passagedata><tw-passagedata pid="79" name="Normal Reek Street Text" tags="" position="4327,1773" size="100,100">Normal Reek Street Text</tw-passagedata><tw-passagedata pid="80" name="Approch Him" tags="" position="4118,1339" size="100,100">Excuse me sir, I never saw you here in this area - and as I can see you are a servant to someone. Your clothes are too expensive for a day laborer and too cheap for a  businessman. Your shoe soles have been replaced already 2 times, you must walk around a lot, yet your posture tells me that you trained yourself to keep your back up straight. You see this?
@@ -1255,7 +1259,7 @@ He walks away and disappears in the next alley.
 
 [[Hard to say. My employer, Mrs. Tottenham wants to replace all the rugs in her house. The current ones are very old and used. We need different colors and sizes. I think the best way to find out would be if you could visit us.-&gt;Replace Rugs]]
 
-[[Oh I just wanted to look around-&gt;Blocksford Street]]</tw-passagedata><tw-passagedata pid="86" name="Replace Rugs" tags="" position="2639.3333333333335,1826.333333333333" size="100,100">Sounds like a big job! Well, as i said, i am very busy at the moment. I could visit the Lady at monday, but we have to agree a down payment of 16£.
+[[Oh I just wanted to look around-&gt;Blocksford Street]]</tw-passagedata><tw-passagedata pid="86" name="Replace Rugs" tags="" position="2639,1826" size="100,100">Sounds like a big job! Well, as i said, i am very busy at the moment. I could visit the Lady at monday, but we have to agree a down payment of 16£.
 
 &lt;&lt;if $money lt 16&gt;&gt;
 [[I don&#39;t have enough money... Goodbye Sir-&gt;Blocksford Street]] 
@@ -1265,7 +1269,7 @@ He walks away and disappears in the next alley.
 [[Hmmm, that seems a little too much for something we do not buy yet. The Lady wouldn’t accept that. You have to reduce the price a little bit.-&gt;Cheaper Price]]
 
 [[Way too much for just an down payment. I’m sorry!-&gt;Even Cheaper]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="87" name="DealRugdealer" tags="" position="2399.3333333333335,1731.6666666666667" size="100,100">Good! See you there, Sir!
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="87" name="DealRugdealer" tags="" position="2399,1731" size="100,100">Good! See you there, Sir!
 &lt;&lt;if $rugdealer_pricecheap is 1&gt;&gt;
   &lt;&lt;set $money -=12&gt;&gt;
   &lt;&lt;set $rugdealer to true&gt;&gt;
@@ -1301,7 +1305,7 @@ He walks away and disappears in the next alley.
 	&lt;&lt;set $angered_calcographer to true&gt;&gt;
 	Alright boy, get out of my house!
 	[[Leave the Shop-&gt;Blocksford Street]] 
-&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="92" name="Dog Portrait" tags="" position="1779.3333333333333,1566.6666666666667" size="100,100">Oh, dogs are my speciality. What size are we talking about?
+&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="92" name="Dog Portrait" tags="" position="1779,1566" size="100,100">Oh, dogs are my speciality. What size are we talking about?
 
 Well, it should be a big portrait. I mean a giant one. I mean, it’s a memorial!
 
