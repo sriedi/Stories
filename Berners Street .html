@@ -259,7 +259,13 @@ Welcome, welcome… the name is George Attling, call me george. how can I help y
 	&lt;&lt;/linkappend&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="16" name="11.00" tags="" position="3503,2623" size="100,100">&lt;&lt;linkappend &quot;Wait for a while&quot;&gt;&gt;
+</tw-passagedata><tw-passagedata pid="16" name="11.00" tags="" position="3504.6666666666665,2623" size="100,100">&lt;&lt;set _randompassage to either(
+    &#39;Normal Text&#39;,
+	&#39;Normal Text&#39;,
+    &#39;Carl Uber&#39;
+)&gt;&gt;
+
+&lt;&lt;linkappend &quot;Wait for a while&quot;&gt;&gt;
 	&lt;&lt;if $pharmacist is true&gt;&gt;
 		&lt;&lt;include &quot;Happening Pharmacist&quot;&gt;&gt;
 		&lt;&lt;set $pharmacist_present to true&gt;&gt;
@@ -272,8 +278,14 @@ Welcome, welcome… the name is George Attling, call me george. how can I help y
 		  &lt;&lt;else&gt;&gt;
 			  A few people walk by and stop to watch the unfolding chaos.
 		&lt;&lt;/if&gt;&gt;
+		&lt;&lt;linkappend &quot;Wait&quot;&gt;&gt;
+		&lt;&lt;if $tumult lte 70&gt;&gt;
+		 	 &lt;&lt;include _randompassage&gt;&gt;
+		&lt;&lt;/if&gt;&gt;
 		[[Continue-&gt;12.00]]
+		 &lt;&lt;/linkappend&gt;&gt;
 	&lt;&lt;/linkappend&gt;&gt;
+	
 &lt;&lt;/linkappend&gt;&gt;
 </tw-passagedata><tw-passagedata pid="17" name="12.00" tags="" position="3498,2831" size="100,100">&lt;&lt;linkappend &quot;Wait for a while&quot;&gt;&gt;
 	&lt;&lt;if $criminal is true&gt;&gt;
@@ -293,9 +305,9 @@ Welcome, welcome… the name is George Attling, call me george. how can I help y
 
 
 
-</tw-passagedata><tw-passagedata pid="18" name="100 Ending" tags="" position="3341,3240" size="100,100">You have won! 100 Tumult
+</tw-passagedata><tw-passagedata pid="18" name="100 Ending" tags="" position="3319.3333333333335,3198.3333333333335" size="100,100">You have won! 100 Tumult
 [[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="19" name="Overdone Ending" tags="" position="3483,3200" size="100,100">You have won but overdone
-[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="20" name="Underperformance Ending" tags="" position="3641,3171" size="100,100">You have Failed
+[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="20" name="Underperformance Ending" tags="" position="3649.3333333333335,3184.3333333333335" size="100,100">You have Failed
 
 [[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="21" name="Shadey Alley" tags="" position="4486,2207" size="100,100">You enter a dark alley and instantly try not to vomit from the disgusting smell of garbage and filth that accumulated over many years there. You accidently step into something soft and take a look at your shoes when out of nowhere a shadow appears in front of you. A rather short man stands in front of you, with icy eyes staring directly at you. He wears remarkably flawless black clothes for someone that just appeared in a dark alley in the most notorious street of london. He smiles and asks:
 
@@ -436,7 +448,7 @@ A short, awkward silence follows.
 
 [[Involve yourself into the discussion]]
 [[Extricate yourself from the discussion as best as you can]]
-</tw-passagedata><tw-passagedata pid="29" name="Happening Photographer" tags="" position="3627,2136" size="100,100">
+</tw-passagedata><tw-passagedata pid="29" name="Happening Photographer" tags="" position="3628.6666666666665,2136" size="100,100">
 8 o’clock, saturday morning, the Berners Street just awakes from a peaceful sleep. Some early birds are whistling and flying from roofs to trees and back. A little cat crosses slowly the street, a stray dog exactly observes her but is obviously too tired to attack.
 
 A brown carriage with not less that eight horses in front comes around the corner. The coachman climbs down his seat and opens the door. A big man in an very expensive suit steps put on his hat, adjusts his tie and removes a little dust with his hand from his shoulder. Then he just stands there and looks up to the house.
@@ -507,7 +519,7 @@ He turns around and walks away angry, shouting to the coachman:
 
 “Load! Immediately! God damn it!”
 
-&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Happening Chalcographer" tags="" position="3366,2130" size="100,100">&lt;&lt;if $photographer_present is true&gt;&gt;
+&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="30" name="Happening Chalcographer" tags="" position="3367.6666666666665,2130" size="100,100">&lt;&lt;if $photographer_present is true&gt;&gt;
 A small skinny man in old brown clothes comes around the corner, looks at the facades of the houses, trying to catch the numbers. As soon as he spotted the photographer, he walks straight to him:
 
 Engraver: “Oh no, it’s you.. that cocky photographer. Still trying to make art with your funny flashlightbox?”
@@ -525,7 +537,7 @@ Lance: “You dirty old creep! It was you! You ordered me to them and now you’
 The Engraver wants to say something but gets surprised by the strong hit of the photographers fist. He falls face down to the floor, two knocked out teeth lay in a pool of blood. He wants to crawl away but the photographer starts to kick his body.
 The coachman tries to calm him down but gets also hit very badly. He runs away, rumples on doors and windows of the neighbours and screams for help.
 The photographer still beats the old engraver, while some neighbours run out of their doors and try to stop the photographer. A young man accidentally hits an elder neighbour who immediately takes revenge by taking a big camera from the carriage and smashes it towards his head. There is blood on the street. Of course someone called the police
-&lt;&lt;set $tumult += 15&gt;&gt;
+&lt;&lt;set $tumult += 20&gt;&gt;
 
 &lt;&lt;else&gt;&gt;
 8 o’clock, saturday morning, the Berners Street just awakes from a peaceful sleep. Some early birds are whistling and flying from roofs to trees and back. A little cat crosses slowly the street, a stray dog exactly observes her but is obviously too tired to attack.
@@ -692,7 +704,7 @@ So you step out into another frosty London fall morning, ready to engage in your
 Make Berner Street famous, no matter what!
 
 &lt;&lt;set $phase_collection to true &gt;&gt;
-&lt;&lt;set $money to 95&gt;&gt;
+&lt;&lt;set $money to 98&gt;&gt;
 
 [[Get out the Map-&gt;Map]]</tw-passagedata><tw-passagedata pid="37" name="You defend your position harshly and insist on not involving yourself" tags="" position="3956,543" size="100,100">Gentlemen, all the peer-pressure and scoffing in the world wouldn’t change my mind. I am here to serve as an assistant, not an advisor. I am not qualified; and I strongly refuse to partake in this discussion, as already said. If I speak my mind; and my words and or ideas result in a catastrophe; I do not want to take the blame, gentlemen.” You look at Hook with a stern expression and continue: “Sir, I kindly request to be handed today’s to-do-list, so I may put myself to use.”
 “...” 
@@ -916,10 +928,10 @@ Priest: LIES - all LIES! God won’t forget your blasphemy!!
 
 The policemen immediately run towards the priest blowing their police whistles, causing more people to watch the scene. They detain the priest and start to interrogate him.
 The nuns disappeared in all this rumble in a sidealley.
-&lt;&lt;set $tumult += 16&gt;&gt;
+&lt;&lt;set $tumult += 18&gt;&gt;
 &lt;&lt;else&gt;&gt;
 Benjamin Waters, the Priest arrives at the street. As he moves to his destination he gets greeted by the people with respect passing by. However, before arriving at the House a gang of young kids, mostly boys gather around him and start teasing him. they try to steal his suitcase and pull on his black clothes. At first the priest acted as if nothing happens while the pedestrians on the street watch the situation from a far. Suddenly, the holy Man loses his temper and and curses the lord in a shouting manner. the people, especially the women are shocked at his outrage. they will not forget that.
-&lt;&lt;set $tumutl +=5&gt;&gt;
+&lt;&lt;set $tumutl +=6&gt;&gt;
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="Happening Prostitue" tags="" position="3361,2472" size="100,100">&lt;&lt;if $priest_present is true&gt;&gt;
 A  Priest appears behind the corner and walks up to the House. He sees the three nuns.
 
@@ -955,7 +967,7 @@ Priest: LIES - all LIES! God won’t forget your blasphemy!!
 
 The policemen immediately run towards the priest blowing their police whistles, causing more people to watch the scene. They detain the priest and start to interrogate him.
 The nuns disappeared in all this rumble in a sidealley.
-&lt;&lt;set $tumult += 16&gt;&gt;
+&lt;&lt;set $tumult += 20&gt;&gt;
 
 &lt;&lt;else&gt;&gt;
 
@@ -1115,7 +1127,6 @@ With a red head George opens his briefcase and draws his colt revolver that is a
 
 The people stand still in shock, before they run away screaming in fear for their lives.
 
-
 with the pistols: he will challenge the inventor to a duel and die.
 
 As George Attling arrives at the street he freezes in place as he spots Hans Bernhard Wicht with his smoking carriage full of noisy machines. “Haaaaans!!   HAAAANS !!” he shouts angry, walking swiftly towards the carriage “Hans, Bernhard, Wicht” the other people present stop chatting and start watching the unusual encounter. 
@@ -1126,7 +1137,7 @@ What are you going to do George, shoot me? “ he replies with an arrogant voice
  
 That is exactly what I am going to do George. With a red head George opens his briefcase and presents the duel pistols to Hans. It is time we settle this once and for all George. I challenge you to a Duel! As he dropped the word duel, silence overtook the street. people stopped chattering and gathered around Hans and George. “So, Hans, do you accept or are you too afraid?” “So be it” replied Hans, with these words both of them started preparing the weapons for the duel, they get in to position, one of the crowd steps forward and presents his handkerchief. Both parties aim their loaded pistols to the side “when the handkerchief touches the floor you shall fire” announced the man before he let go of the piece of cloth. The moment it touched the ground. Both pistols fire nearly simultaneously. the loud noise
 causes everyone to freeze in place, George Attling falls to the ground while his opponent the German inventor Hans stands untouched in shock. The crowd around them splits in two and run to the aid of the two duellists “He is dead” shouts one of the bystanders. Quickly Hans and a big part of the crowd leaves the street as the police arrives to the scene.
-&lt;&lt;set $tumult += 20&gt;&gt;
+&lt;&lt;set $tumult += 24&gt;&gt;
 &lt;&lt;else&gt;&gt;
 As George Attling arrives at the street with his package he walks up to the house. 
 
@@ -1136,8 +1147,8 @@ The people around stop, looking at the weapon, quickly chatter is can be heard a
 
 Attling knew that rumors will spread around the city quicker than a fire.
 &lt;&lt;set $tumult += 7&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="71" name="Happening Inventor" tags="" position="3362,2287" size="100,100">The Scientists arrives with a carriage full of mysterious devices made out of brass and , visible brass gears are moving, smoke and steam is escaping the mechanical parts. shorty after arrival the the vehicle catches fire, Hans leaves his carriage and tries to put the fire out with his jacket before his coat also starts to burn. “Scheisse!” he says quietly before addressing the other people present, “Please move on, there is no reason to be worried I, Hans Bernhard Wicht have everything under contro..” A loud noise interrupts the Inventor as his equipment starts to fall apart first in small explosions following by a big one that catapults buring parts in all direction hitting people and causing their clothes to catch fire. The people run and clear the street screaming.
-&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="72" name="Happening Pharmacist" tags="" position="3625,2622" size="100,100">A tiny man with thick glasses walks up to the house.As he stops in front of 54 Bernerstreet he suddenly looks around confused. Then he turns around and walks down the street where he came from. After about 50 meters, he stops again, turns around and walks again in the direction of the house. After he repeated this 5 to 6 times, he finally stops in front of the house and walks up to the door. 
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="71" name="Happening Inventor" tags="" position="3365.3333333333335,2285.3333333333335" size="100,100">The Scientists arrives with a carriage full of mysterious devices made out of brass and , visible brass gears are moving, smoke and steam is escaping the mechanical parts. shorty after arrival the the vehicle catches fire, Hans leaves his carriage and tries to put the fire out with his jacket before his coat also starts to burn. “Scheisse!” he says quietly before addressing the other people present, “Please move on, there is no reason to be worried I, Hans Bernhard Wicht have everything under contro..” A loud noise interrupts the Inventor as his equipment starts to fall apart first in small explosions following by a big one that catapults buring parts in all direction hitting people and causing their clothes to catch fire. The people run and clear the street screaming.
+&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="72" name="Happening Pharmacist" tags="" position="3626.6666666666665,2622" size="100,100">A tiny man with thick glasses walks up to the house.As he stops in front of 54 Bernerstreet he suddenly looks around confused. Then he turns around and walks down the street where he came from. After about 50 meters, he stops again, turns around and walks again in the direction of the house. After he repeated this 5 to 6 times, he finally stops in front of the house and walks up to the door. 
 
 *knock knock*
 
@@ -1163,7 +1174,7 @@ Dave: Wait! I think you’re right! IT MUST HAVE BEEN THAT GOBERMOUCH FROM FAKER
 
 He takes out 4 Jars out of his backpack and throws them on the street.  An alcoholic smell spreads over the street as he takes out a box of matches and throws them in a swift move to the wet ground. The mixture, which flowed over the street instantly catches fire and the whole street in front of the house starts burning.
 Dave: HERE YOU GO! This is for your “hospitality”! And now I’m gonna go to Bloxford street and burn this Flabbergabs rugs down!
-&lt;&lt;set $tumult += 6&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="Happening Rugdealer" tags="" position="3353,2623" size="100,100">&lt;&lt;if $pharmacist_present is true&gt;&gt;
+&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="Happening Rugdealer" tags="" position="3353,2623" size="100,100">&lt;&lt;if $pharmacist_present is true&gt;&gt;
 Suddenly a well dressed gentleman walks up to the house. With him, he pulls a cart with several giant rugs on it. Dave, whose attention is focused on the burning street, first glances at the gentleman and then sees the rugs.
 
 Dave: YOU! YOU FOPDOODLE STOLE MY CUSTOMERS. AND NOW YOU THINK YOU CAN PLAY ME FOR A SUCKER?!?! 
@@ -1181,7 +1192,7 @@ Victor: Your ancestors were probably burned on the stake for being accused for w
 Dave: WAIT I’M GONNA TEACH YOU THE UNLIMITED POWER OF MY DRUGS!!  I’M GONNA SEND YER UGLY FACE STRAIGHT TO HELL! 
 
 Dave takes two more glasses out of his backpack and throws one of them at the cart filled with rugs. The alcoholic fluid distributes fast on the burning street and immediately catches fire. Victor tries desperately to save his rugs from the fire and manages to pull one of the rugs from the cart. During this brief moment, Dave throws another bottle - it hits Victor on the head, shatters and he falls on the street unconscious. The Second bottle sprayed the mixture all over Victor’s body and he too starts burning. Several people watching the scene start screaming for the police and the firefighters. But it’s already too late. After a few minutes the only remains of Victor are a black burned bread-like corpse on the ground next to his cart. Dave used the turmoil to escape safely in a sidealley. 
-&lt;&lt;set $tumult += 18&gt;&gt;
+&lt;&lt;set $tumult += 20&gt;&gt;
 &lt;&lt;else&gt;&gt;
 Suddenly a man pulling a cart full of carpets comes around the corner. As he reaches the entrance of number 54, he stops, carefully releases the cart, pulls off his hat, bows to the crowd and shouts:
 
@@ -1213,7 +1224,7 @@ The Rugdealer gets very angry now:
 
 Suddenly the servant takes out a rifle and shots in the air twice. The Rugdealer runs away and hides behind his cart. Hundreds of birds are quickly leaving their nests on the roofs of the houses. People are running around. A man accidentally tramples a young cat. Her dying meow gets lost in the screaming of the death fearing people. There is a lot of panic in the Berners Street.
 &lt;&lt;set $tumult += 9&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="74" name="Happening Criminal" tags="" position="3347,2836" size="100,100">It is now 12.00 and you see O&#39;Flannigans shilouette hushing over the street directly to the door. He knocks two times, puts something that somewhat looks like bloodstained knife in front of the door and hides right next to it. The door opens and a maid appears. At first she looks confused, then she sees the Knife and screams loud.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="74" name="Happening Criminal" tags="" position="3350.3333333333335,2836" size="100,100">It is now 12.00 and you see O&#39;Flannigans shilouette hushing over the street directly to the door. He knocks two times, puts something that somewhat looks like bloodstained knife in front of the door and hides right next to it. The door opens and a maid appears. At first she looks confused, then she sees the Knife and screams loud.
 &quot;Lady [insert Name of the owner of the house] !! Lady [insert Name of the owner of the house]!! 
  She goes back in and you can hear her shouting Lady [insert Name of the owner of the house] name several times. During the small timegap, O&#39;Flannigan sneaks into the house. for the next couple of minutes you hear nothing. Then out of nothing you hear a scream followed by the bursting sound of a chair crashing through the window in the 1st floor.
  &quot; Get him!&quot;
@@ -1223,20 +1234,16 @@ He starts running away.
 The servant and the maid watch him leave out of the window.
 &lt;&lt;set $tumult += 9&gt;&gt;
 
-
-HAPPENING WITH ENEMY
-
-Suddenly O&#39;Flannigan falls on the ground. He swears a few more sentences as he gets up. But in the middle of his motion he stops and looks around like a lost child. 
+</tw-passagedata><tw-passagedata pid="75" name="Happening Detective" tags="" position="3636.333333333333,2830" size="100,100">Suddenly O&#39;Flannigan falls on the ground. He swears a few more sentences as he gets up. But in the middle of his motion he stops and looks around like a lost child. 
 Herlock Sholmes appears behind a bush and slowly walks towards Shamous, while he still struggles to get up. 
 //You fell in to my trap! I actually didn&#39;t believe it would work out. How does it feel to be glued to the ground?// 
 //YOU! WHO ARE YOU??? I&#39;ve never seen you in this town!//
 //You could say that I am quite the opposite of you - a detective genius who is unpredicteable for others. It took quite the calculations to come up with a plan for catching someone like you.//
 Herlock reaches his hand behind his back and takes out handcuffs. O&#39;Flannigan sees the opportunity, takes out a round object from his jacket and throws it on the ground. A lound bang followed by a thick cloud of smoke that spreads on the street leads to people panicking on the street. For a few seconds you can&#39;t hear nothing. Then Suddenly you hear gunshots and groaning from the middle of the cloud. The smoke thins out and both Herlock and Shamous lie on the sidewalk. 
 // CALL A DOCTOR!! // 
-Herlock groans in pain and holds his chest, which is covered in blood while Shamous still lies motionless on the ground.</tw-passagedata><tw-passagedata pid="75" name="Happening Detective" tags="" position="3633,2830" size="100,100">
-Same as the normal Happening but the Detective catches O’Flannigan and maybe they shoot around with their guns??
+Herlock groans in pain and holds his chest, which is covered in blood while Shamous still lies motionless on the ground.
 
-&lt;&lt;set $tumult += 19&gt;&gt;</tw-passagedata><tw-passagedata pid="76" name="Detective" tags="" position="4363,1532" size="100,100">As you pass by the many rundown buildings in Reekstreet, you suddenly feel something on your shoulder. You turn around and look into the face of a man in his thirties, with a dark beard and horn-rimmed spectacles. He looks at you with a worn out look.
+&lt;&lt;set $tumult += 23&gt;&gt;</tw-passagedata><tw-passagedata pid="76" name="Detective" tags="" position="4363,1532" size="100,100">As you pass by the many rundown buildings in Reekstreet, you suddenly feel something on your shoulder. You turn around and look into the face of a man in his thirties, with a dark beard and horn-rimmed spectacles. He looks at you with a worn out look.
 
 [[Approch Him]]</tw-passagedata><tw-passagedata pid="77" name="Normal Reek Street Text" tags="" position="4327,1773" size="100,100">Normal Reek Street Text</tw-passagedata><tw-passagedata pid="78" name="Approch Him" tags="" position="4118,1339" size="100,100">//Excuse me sir, I never saw you here in this area - and as I can see you are a servant to someone. Your clothes are too expensive for a day laborer and too cheap for a  businessman. Your shoe soles have been replaced already 2 times, you must walk around a lot, yet your posture tells me that you trained yourself to keep your back up straight. You see this?//
 He points at your left forearm.
@@ -1352,7 +1359,7 @@ I have this selection set of revolvers for only 25£.
 	&lt;&lt;set $weaponsdealer to true&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
-[[Leave the shop-&gt;Faker Street]] </tw-passagedata><tw-passagedata pid="94" name="Boffington Teaclub" tags="" position="3206,2466" size="100,100">You hear a high pitched chattering, like a flock of chickens shortly before feeding. You turn around. A group of elderly Women dressed in black come towards you. A skinny Madame with a book under her left armpit and an unusually long neck highers her screeching voice to one of the women with a Sunscreen Umbrella. 
+[[Leave the shop-&gt;Faker Street]] </tw-passagedata><tw-passagedata pid="94" name="Boffington Teaclub" tags="" position="3207.6666666666665,2467.6666666666665" size="100,100">You hear a high pitched chattering, like a flock of chickens shortly before feeding. You turn around. A group of elderly Women dressed in black come towards you. A skinny Madame with a book under her left armpit and an unusually long neck highers her screeching voice to one of the women with a Sunscreen Umbrella. 
 As I said my dearest Ventulia the latest work of Charles Hoppes is for all it’s flaws in it’s representation of women as mere reflections of men definitely not subtitle for a reading circle discussion. As I already told Mary women are not supposed to interrogate into this misadventure named politics. 
 Another women, you presume her name might be the previously mentioned Ventulia counters the skinny locknecked woman: No Desmeralda that’s not what I said, as I agree with your previous assertion of the role of a woman of class in a gentlemans society is the one of a mere observer might be correct I still think everyone of us should at least know what we talk about. 
 Desmeralda replies: I think that matter should be put at rest over some tea and cake.
@@ -1385,11 +1392,11 @@ In the big stir you created you leap out of eyes reach of the flock and move you
 &lt;/span&gt;
 
 
-</tw-passagedata><tw-passagedata pid="95" name="Normal Text" tags="" position="3065,2480" size="100,100">The tumult around Berners Street increses more and more people gather to see the unfolding chaos in front of the house.</tw-passagedata><tw-passagedata pid="96" name="Tumult Debug" tags="" position="3646,1913" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="95" name="Normal Text" tags="" position="3065,2471.6666666666665" size="100,100">The tumult around Berners Street increses more and more people gather to see the unfolding chaos in front of the house.</tw-passagedata><tw-passagedata pid="96" name="Tumult Debug" tags="" position="3646,1914.6666666666667" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
 &lt;&lt;set $tumult to 0&gt;&gt;
 [[8.00]]
 
-&lt;&lt;set $photographer to true&gt;&gt;
+&lt;&lt;set $photographer to false&gt;&gt;
 &lt;&lt;set $chalcographer to true&gt;&gt;
 &lt;&lt;set $inventor to true&gt;&gt;
 &lt;&lt;set $weaponsdealer to true&gt;&gt;
@@ -1498,7 +1505,7 @@ Just as you touch a beautiful small patterned red rug, somebody suddenly tapps o
 
 Hey, what’s the keyword?
 
-[[Excuse me?-&gt;What Keyword?]]</tw-passagedata><tw-passagedata pid="113" name="What Keyword?" tags="" position="3010.0000000000005,2131" size="100,100">The keyword for.. you know.. C’mon, i bet you’re not here for carpets!
+[[Excuse me?-&gt;What Keyword?]]</tw-passagedata><tw-passagedata pid="113" name="What Keyword?" tags="" position="2985.0000000000005,2142.6666666666665" size="100,100">The keyword for.. you know.. C’mon, i bet you’re not here for carpets!
 
 The keyword for what?
 
@@ -1519,4 +1526,35 @@ Can i help you now, Sir?
 [[With pleasure.]]
 
 [[Oh I have to leave.-&gt;Blocksford Street]]
+</tw-passagedata><tw-passagedata pid="114" name="Carl Uber" tags="" position="3748.3333333333335,2617.3333333333335" size="100,100">A grey painted cab with a sketchy drawn initial U on it’s doors pulls a hard break in front of you. The man on the couch wears a grey top hat also with this ominous initial. “Greetings Lad…” he breaks his voice as behind him another tow cabs rally down the streets and only on the last blimp avoid the collision with the cabbie in the middle of the street. “Some one called for Carl Ubers Cabs?” shouts a cubby Irishman from one of the other cabs. “Brian I told you that’s a drive for the Boss!” The Tophated snarks in his direction. “I pay you not by the hour just to do the orders I can do.”  He looks to the other cabbie, a donter with dirty clothes and a face like he seems to have nearly dosed of. “And what a you doing here Harold?...HAROLD?” The old man seems to have awoken from his daytime senility and spouts indistinct silabas. “What? No I said I’m going to Berners Street you were supposed to pick up the cabs from Mayfair. It says it clearly on your chalkboard.”
+He looks down to you. “Did you order the Services of Carl Ubers Cabbie Service?”
+
+&lt;span id=&quot;output&quot;&gt;
+&lt;&lt;click &quot;I’m not sure. Do you have a licence?&quot;&gt;&gt;
+&lt;&lt;replace &quot;#output&quot;&gt;&gt;
+&lt;span&gt;	
+Don’t you dare! This is the new form of cab organising!
+
+The Irish guy spits and shouts to Carl: Yea if you don’t pay your workers, Carl.
+
+You know Bog-trotter&#39; you can leave any time!
+
+What did you call me?
+
+The Irish Guy jumps down his cab and jumps onto Carl Uber. His horses shoo and run wild and his cab crashes into a building across the street. In the rubble the irish and carl uber exchange punches. The horses draw the cab further down the street and cause mayhem on the sidewalks as people try to evade the rolling horses dragging the remains of Carl Ubers cab through the street of London.
+		&lt;/span&gt;
+	&lt;&lt;/replace&gt;&gt;
+	&lt;&lt;set $tumult += 15&gt;&gt;
+&lt;&lt;/click&gt;&gt;
+
+&lt;&lt;click &quot;No thanks.&quot;&gt;&gt;
+	&lt;&lt;replace &quot;#output&quot;&gt;&gt;
+		&lt;span&gt; “You see guys?” He turns around “Now it’s another hour wasted. This costs me hundreds of pounds. Where am I going to live with such bad business.” He makes his point not only overly dramatic, but also lifts his top hat to reveal his bald spot underneath. “Well at least you have a house, Carl”, the Irishman replies, “We live in our be damned cabs.” Before the Cabbie finished Carl Uber forced the reins of his horses and drove of with an unsavely speed down the road, as if the mentioning of his employees working conditions somehow seemed to unease him. 		&lt;/span&gt;
+	&lt;&lt;/replace&gt;&gt;
+	&lt;&lt;set $tumult -= 10&gt;&gt;
+&lt;&lt;/click&gt;&gt;
+
+&lt;/span&gt;
+
+
 </tw-passagedata></tw-storydata>
