@@ -153,16 +153,26 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 [[Go Home-&gt;Interlude]]
 </tw-passagedata><tw-passagedata pid="4" name="Blocksford Street" tags="" position="2910,1518" size="100,100">You are on the Blocksfordstreet
 [[Map]]
+&lt;&lt;if $photographer isnot true&gt;&gt;
 [[Photography Shop]]
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $chaclographer isnot true&gt;&gt;
 [[Caclographer Workshop]]
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $rugdealer isnot true&gt;&gt;
 [[Oriental Rugshop]]
-</tw-passagedata><tw-passagedata pid="5" name="Faker Street" tags="" position="4690,1031" size="100,100">You are on the Faker Street
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Faker Street" tags="" position="4688.333333333333,1031" size="100,100">You are on the Faker Street
 
 [[Map]] 
-
+&lt;&lt;if $priest isnot true&gt;&gt;
 [[Church]]
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $inventor isnot true&gt;&gt;
 [[Wierd Workshop]]
-[[Weapons Shop]]</tw-passagedata><tw-passagedata pid="6" name="Reek Street" tags="" position="4511,1775" size="100,100">You are on Reek Street
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $weaponsdealer isnot true&gt;&gt;
+[[Weapons Shop]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Reek Street" tags="" position="4512.666666666667,1773.3333333333333" size="100,100">You are on Reek Street
 
 &lt;&lt;if $visitedDetective isnot true&gt;&gt;
 &lt;&lt;set _randompassage to either(
@@ -173,9 +183,15 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 &lt;&lt;/if&gt;&gt;
 
 [[Map]] 
+&lt;&lt;if $visited_criminal isnot true&gt;&gt;
 [[Shadey Alley]]
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $prostitute isnot true&gt;&gt;
 [[Shady Tavern]]
-[[Pharmacy]]</tw-passagedata><tw-passagedata pid="7" name="Interlude" tags="" position="3582,1750" size="100,100">&lt;&lt;set $phase_collection to false &gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $$pharmacist isnot true&gt;&gt;
+[[Pharmacy]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Interlude" tags="" position="3582,1750" size="100,100">&lt;&lt;set $phase_collection to false &gt;&gt;
 
 [[Monday]]
 </tw-passagedata><tw-passagedata pid="8" name="Monday" tags="" position="3485,1928" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
@@ -331,7 +347,7 @@ A gentleman sits on one of the many couches and two rather lightly dressed women
 [[Return to the Street-&gt;Reek Street]] 
 [[Speak to her]]
 &lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="23" name="Pharmacy" tags="" position="4827,1629" size="100,100">&lt;&lt;if $visitedPharmacist is true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="23" name="Pharmacy" tags="" position="4822,1629" size="100,100">&lt;&lt;if $visitedPharmacist is true&gt;&gt;
 Oh you agian. What do you take? The Medicine or the Alternative
 
 [[Just Medicine]] 
@@ -1109,12 +1125,14 @@ He ignores your comment.
 &lt;&lt;/if&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="67" name="Deal Criminal" tags="" position="4364,2697" size="100,100">//Alright you got yourself a deal.//
+</tw-passagedata><tw-passagedata pid="67" name="Deal Criminal" tags="" position="4365.666666666667,2693.6666666666665" size="100,100">//Alright you got yourself a deal.//
 
 &lt;&lt;set $money -=20&gt;&gt;
 &lt;&lt;set $criminal to true&gt;&gt;
-[[Leave the street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="68" name="No Deal Criminal" tags="" position="4516,2698" size="100,100">//Alright you got yourself a deal... though a small one.//
+&lt;&lt;set $visited_criminal to true&gt;&gt;
+[[Leave the street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="68" name="No Deal Criminal" tags="" position="4517.666666666667,2698" size="100,100">//Alright you got yourself a deal... though a small one.//
 &lt;&lt;set $money -=5&gt;&gt;
+&lt;&lt;set $visited_criminal to true&gt;&gt;
 [[Leave the street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="69" name="RUN!" tags="" position="4684,2385" size="100,100">As you try to escape you suddenly hear a loud bang followed by unbearable pain in your chest. You fall down and see O’Flannigans malicious smile before everything turns dark. 
 
 &#39;&#39;YOU DIE&#39;&#39;
@@ -1178,7 +1196,7 @@ Dave: Wait! I think you’re right! IT MUST HAVE BEEN THAT GOBERMOUCH FROM FAKER
 
 He takes out 4 Jars out of his backpack and throws them on the street.  An alcoholic smell spreads over the street as he takes out a box of matches and throws them in a swift move to the wet ground. The mixture, which flowed over the street instantly catches fire and the whole street in front of the house starts burning.
 Dave: HERE YOU GO! This is for your “hospitality”! And now I’m gonna go to Bloxford street and burn this Flabbergabs rugs down!
-&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="Happening Rugdealer" tags="" position="3353,2623" size="100,100">&lt;&lt;if $pharmacist_present is true&gt;&gt;
+&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="Happening Rugdealer" tags="" position="3354.6666666666665,2623" size="100,100">&lt;&lt;if $pharmacist_present is true&gt;&gt;
 Suddenly a well dressed gentleman walks up to the house. With him, he pulls a cart with several giant rugs on it. Dave, whose attention is focused on the burning street, first glances at the gentleman and then sees the rugs.
 
 Dave: YOU! YOU FOPDOODLE STOLE MY CUSTOMERS. AND NOW YOU THINK YOU CAN PLAY ME FOR A SUCKER?!?! 
@@ -1249,7 +1267,7 @@ Herlock groans in pain and holds his chest, which is covered in blood while Sham
 
 &lt;&lt;set $tumult += 23&gt;&gt;</tw-passagedata><tw-passagedata pid="76" name="Detective" tags="" position="4363,1532" size="100,100">As you pass by the many rundown buildings in Reekstreet, you suddenly feel something on your shoulder. You turn around and look into the face of a man in his thirties, with a dark beard and horn-rimmed spectacles. He looks at you with a worn out look.
 
-[[Approch Him]]</tw-passagedata><tw-passagedata pid="77" name="Normal Reek Street Text" tags="" position="4327,1773" size="100,100">Normal Reek Street Text</tw-passagedata><tw-passagedata pid="78" name="Approch Him" tags="" position="4118,1339" size="100,100">//Excuse me sir, I never saw you here in this area - and as I can see you are a servant to someone. Your clothes are too expensive for a day laborer and too cheap for a  businessman. Your shoe soles have been replaced already 2 times, you must walk around a lot, yet your posture tells me that you trained yourself to keep your back up straight. You see this?//
+[[Approch Him]]</tw-passagedata><tw-passagedata pid="77" name="Normal Reek Street Text" tags="" position="4327,1773" size="100,100">The People are as shady as this Street is.</tw-passagedata><tw-passagedata pid="78" name="Approch Him" tags="" position="4118,1339" size="100,100">//Excuse me sir, I never saw you here in this area - and as I can see you are a servant to someone. Your clothes are too expensive for a day laborer and too cheap for a  businessman. Your shoe soles have been replaced already 2 times, you must walk around a lot, yet your posture tells me that you trained yourself to keep your back up straight. You see this?//
 He points at your left forearm.
 //See those white particles on your jacket? Those are cotton fibers. You MUST be a servant, only servants use white cloth on their left forearm to serve meals and beverages. 
 He stares at you intensely and you start to feel a little bit uneasy.//
@@ -1363,7 +1381,7 @@ I have this selection set of revolvers for only 25£.
 	&lt;&lt;set $weaponsdealer to true&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
-[[Leave the shop-&gt;Faker Street]] </tw-passagedata><tw-passagedata pid="94" name="Boffington Teaclub" tags="" position="3207,2467" size="100,100">You hear a high pitched chattering, like a flock of chickens shortly before feeding. You turn around. A group of elderly Women dressed in black come towards you. A skinny Madame with a book under her left armpit and an unusually long neck highers her screeching voice to one of the women with a Sunscreen Umbrella. 
+[[Leave the shop-&gt;Faker Street]] </tw-passagedata><tw-passagedata pid="94" name="Boffington Teaclub" tags="" position="3218.6666666666665,2437" size="100,100">You hear a high pitched chattering, like a flock of chickens shortly before feeding. You turn around. A group of elderly Women dressed in black come towards you. A skinny Madame with a book under her left armpit and an unusually long neck highers her screeching voice to one of the women with a Sunscreen Umbrella. 
 As I said my dearest Ventulia the latest work of Charles Hoppes is for all it’s flaws in it’s representation of women as mere reflections of men definitely not subtitle for a reading circle discussion. As I already told Mary women are not supposed to interrogate into this misadventure named politics. 
 Another women, you presume her name might be the previously mentioned Ventulia counters the skinny locknecked woman: No Desmeralda that’s not what I said, as I agree with your previous assertion of the role of a woman of class in a gentlemans society is the one of a mere observer might be correct I still think everyone of us should at least know what we talk about. 
 Desmeralda replies: I think that matter should be put at rest over some tea and cake.
@@ -1396,7 +1414,7 @@ In the big stir you created you leap out of eyes reach of the flock and move you
 &lt;/span&gt;
 
 
-</tw-passagedata><tw-passagedata pid="95" name="Normal Text" tags="" position="3065,2471" size="100,100">The tumult around Berners Street increses more and more people gather to see the unfolding chaos in front of the house.</tw-passagedata><tw-passagedata pid="96" name="Tumult Debug" tags="" position="3644,1912" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="95" name="Normal Text" tags="" position="3216.6666666666665,2569.3333333333335" size="100,100">The tumult around Berners Street increses more and more people gather to see the unfolding chaos in front of the house.</tw-passagedata><tw-passagedata pid="96" name="Tumult Debug" tags="" position="3644,1912" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
 &lt;&lt;set $tumult to 0&gt;&gt;
 [[8.00]]
 
@@ -1502,14 +1520,14 @@ You really think this is a discount, huh? I am an Artist! Well, go visit a crapp
 [[Well, i just wanted to ask the way to the photographers store. It’s the same Street, isn’t it?-&gt;AngeredChalcographer]]</tw-passagedata><tw-passagedata pid="111" name="Anger Artist" tags="" position="1730,1693" size="100,100">&lt;&lt;set $angered_calcographer to true&gt;&gt;
 What about; get out of my shop?!
 
-[[Leave the Shop-&gt;Blocksford Street]] </tw-passagedata><tw-passagedata pid="112" name="Keyword" tags="" position="3141,2136" size="100,100">As you wish, Sir! You’ll find me over here!
+[[Leave the Shop-&gt;Blocksford Street]] </tw-passagedata><tw-passagedata pid="112" name="Keyword" tags="" position="3049.3333333333335,2197.6666666666665" size="100,100">As you wish, Sir! You’ll find me over here!
 
 You take a look around the crowded shop. There are at least thousands of rugs in this tiny shop. You wonder how this gentleman could transport them all over the sea.
 Just as you touch a beautiful small patterned red rug, somebody suddenly tapps on your shoulder. You turn around quickly. There is a small man looking up to you.
 
 Hey, what’s the keyword?
 
-[[Excuse me?-&gt;What Keyword?]]</tw-passagedata><tw-passagedata pid="113" name="What Keyword?" tags="" position="2985,2142" size="100,100">The keyword for.. you know.. C’mon, i bet you’re not here for carpets!
+[[Excuse me?-&gt;What Keyword?]]</tw-passagedata><tw-passagedata pid="113" name="What Keyword?" tags="" position="2761.6666666666665,2237" size="100,100">The keyword for.. you know.. C’mon, i bet you’re not here for carpets!
 
 The keyword for what?
 
