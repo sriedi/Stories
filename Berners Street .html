@@ -13,11 +13,51 @@ color:#ffffff;
 
 .gameheader{
 width: 100%;
-height: 10vh;
-background-color:#e4b31d;
-text-align: center;
+position:relative;
+height:10vh;
+margin-bottom:5vh;
 }
-
+.topbar_left{
+background-image: url("http://bsh.zeitsturm.ch/img/TopBar_Left.png");
+background-size: auto 10vh;
+background-repeat:no-repeat;
+background-position:right center;
+min-width:15%;
+min-height:100%;
+position:absolute;
+left:0;
+display:inline-block;
+}
+.topbar_middle{
+background-image: url("http://bsh.zeitsturm.ch/img/TopBar_Middle.png");
+background-repeat:repeat-x;
+background-size: auto 10vh;
+background-position:left center;
+text-align:center;
+font-size:1.8em;
+font-style:bold;
+color:#ffffff;
+min-width:70%;
+min-height:100%;
+position:absolute;
+left:15%;
+right:15%;
+display:inline-block;
+}
+.data{
+vertical-align: middle;
+}
+.topbar_right{
+background-image: url("http://bsh.zeitsturm.ch/img/TopBar_Right.png");
+background-size:auto 10vh ;
+background-repeat:no-repeat;
+background-position:left center;
+min-width:15%;
+min-height:100%;
+position:absolute;
+right:0;
+display:inline-block;
+}
 
 #redmap
 {
@@ -56,6 +96,7 @@ right: 10%;
 height: 200px;
 width: 200px; 
 }
+
 
 
 
@@ -127,12 +168,14 @@ Config.history.controls = false;
 
 
 
-</script><tw-passagedata pid="1" name="Start" tags="" position="5888,370" size="100,100">The Berners Street Hoax is the biggest prank of the 19th century. Can you pull it off?
+
+</script><tw-passagedata pid="1" name="Start" tags="" position="5889.666666666667,368.3333333333333" size="100,100">The Berners Street Hoax is the biggest prank of the 19th century. Can you pull it off?
 
 [[Let&#39;s Go-&gt;Intro]]
 
 
-</tw-passagedata><tw-passagedata pid="2" name="Intro" tags="" position="3465,0" size="100,100">
+&lt;&lt;set $phase_collection to false &gt;&gt;
+&lt;&lt;set $phase_tumult to false &gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Intro" tags="" position="3465,0" size="100,100">
 T’was a mediocrely foggy day; one of many typical London fall mornings. You take the corner towards Hook’s bureau; evade a few people rushing; and look down the street. 
 The city’s awakening; the ubiquitous noise of people slowly increases together with the sun climbing the sky westwards. A few carriages were rolling on the manky streets already; a couple of maids were transporting bins of laundry, chit-chatting with each other in shrill soprane tones of voice. 
 
@@ -162,7 +205,7 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $rugdealer isnot true&gt;&gt;
 [[Oriental Rugshop]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Faker Street" tags="" position="4688.333333333333,1031" size="100,100">You are on the Faker Street
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Faker Street" tags="" position="4688,1031" size="100,100">You are on the Faker Street
 
 [[Map]] 
 &lt;&lt;if $priest isnot true&gt;&gt;
@@ -173,7 +216,7 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $weaponsdealer isnot true&gt;&gt;
 [[Weapons Shop]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Reek Street" tags="" position="4512.666666666667,1773.3333333333333" size="100,100">You are on Reek Street
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Reek Street" tags="" position="4512,1773" size="100,100">You are on Reek Street
 
 &lt;&lt;if $visitedDetective isnot true&gt;&gt;
 &lt;&lt;set _randompassage to either(
@@ -195,7 +238,7 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Interlude" tags="" position="3582,1750" size="100,100">&lt;&lt;set $phase_collection to false &gt;&gt;
 
 [[Monday]]
-</tw-passagedata><tw-passagedata pid="8" name="Monday" tags="" position="3485,1929.6666666666667" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="8" name="Monday" tags="" position="3485,1929" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
 &lt;&lt;set $tumult to 0&gt;&gt;
 [[8.00]]
 </tw-passagedata><tw-passagedata pid="9" name="8.00" tags="" position="3498,2138" size="100,100">&lt;&lt;linkappend &quot;Wait for a while&quot;&gt;&gt;
@@ -203,13 +246,13 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 		&lt;&lt;include &quot;Happening Photographer&quot;&gt;&gt;
 		&lt;&lt;set $photographer_present to true&gt;&gt;
 	&lt;&lt;else&gt;&gt;
-		Nothing else happens.
+		&lt;&lt;include &quot;Tumult Handler&quot;&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
 	&lt;&lt;linkappend &quot;Wait for 5 more Minutes&quot;&gt;&gt;
 		&lt;&lt;if $chalcographer is true&gt;&gt;
 		  &lt;&lt;include &quot;Happening Chalcographer&quot;&gt;&gt;
 		  &lt;&lt;else&gt;&gt;
-			  A few people walk by and stop to watch the unfolding chaos.
+			  &lt;&lt;include &quot;Tumult Handler&quot;&gt;&gt;
 		&lt;&lt;/if&gt;&gt;
 		[[Continue-&gt;9.00]]
 	&lt;&lt;/linkappend&gt;&gt;
@@ -220,13 +263,13 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 		&lt;&lt;include &quot;Happening Inventor&quot;&gt;&gt;
 		&lt;&lt;set $inventor_present to true&gt;&gt;
 	&lt;&lt;else&gt;&gt;
-		Nothing else happens.
+		&lt;&lt;include &quot;Tumult Handler&quot;&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
 	&lt;&lt;linkappend &quot;Wait for 5 more Minutes&quot;&gt;&gt;
 		&lt;&lt;if $weaponsdealer is true&gt;&gt;
 		  &lt;&lt;include &quot;Happening Weaponsdealer&quot;&gt;&gt;
 		  &lt;&lt;else&gt;&gt;
-			  A few people walk by and stop to watch the unfolding chaos.
+			  &lt;&lt;include &quot;Tumult Handler&quot;&gt;&gt;
 		&lt;&lt;/if&gt;&gt;
 		[[Continue-&gt;10.00]]
 	&lt;&lt;/linkappend&gt;&gt;
@@ -267,13 +310,13 @@ Welcome, welcome… the name is George Attling, call me george. how can I help y
 		&lt;&lt;include &quot;Happening Prostitue&quot;&gt;&gt;
 		&lt;&lt;set $prostitute_present to true&gt;&gt;
 	&lt;&lt;else&gt;&gt;
-		Nothing else happens.
+		&lt;&lt;include &quot;Tumult Handler&quot;&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
 	&lt;&lt;linkappend &quot;Wait for 5 more Minutes&quot;&gt;&gt;
 		&lt;&lt;if $priest is true&gt;&gt;
 		  &lt;&lt;include &quot;Happening Priest&quot;&gt;&gt;
 		  &lt;&lt;else&gt;&gt;
-			  A few people walk by and stop to watch the unfolding chaos.
+			  &lt;&lt;include &quot;Tumult Handler&quot;&gt;&gt;
 		&lt;&lt;/if&gt;&gt;
 		&lt;&lt;include _randompassage &gt;&gt;
 		[[Continue-&gt;11.00]]
@@ -291,13 +334,13 @@ Welcome, welcome… the name is George Attling, call me george. how can I help y
 		&lt;&lt;include &quot;Happening Pharmacist&quot;&gt;&gt;
 		&lt;&lt;set $pharmacist_present to true&gt;&gt;
 	&lt;&lt;else&gt;&gt;
-		Nothing else happens.
+		&lt;&lt;include &quot;Tumult Handler&quot;&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
 	&lt;&lt;linkappend &quot;Wait for 5 more Minutes&quot;&gt;&gt;
 		&lt;&lt;if $rugdealer is true&gt;&gt;
 		  &lt;&lt;include &quot;Happening Rugdealer&quot;&gt;&gt;
 		  &lt;&lt;else&gt;&gt;
-			  A few people walk by and stop to watch the unfolding chaos.
+			 &lt;&lt;include &quot;Tumult Handler&quot;&gt;&gt;
 		&lt;&lt;/if&gt;&gt;
 		&lt;&lt;linkappend &quot;Wait&quot;&gt;&gt;
 		&lt;&lt;if $tumult lte 70&gt;&gt;
@@ -312,13 +355,13 @@ Welcome, welcome… the name is George Attling, call me george. how can I help y
 	&lt;&lt;if $criminal is true&gt;&gt;
 		&lt;&lt;include &quot;Happening Criminal&quot;&gt;&gt;
 	&lt;&lt;else&gt;&gt;
-		Nothing else happens.
+		&lt;&lt;include &quot;Tumult Handler&quot;&gt;&gt;
 	&lt;&lt;/if&gt;&gt;
 	&lt;&lt;linkappend &quot;Wait for 5 more Minutes&quot;&gt;&gt;
 		&lt;&lt;if $detective is true&gt;&gt;
 		  &lt;&lt;include &quot;Happening Detective&quot;&gt;&gt;
 		  &lt;&lt;else&gt;&gt;
-			  A few people walk by and stop to watch the unfolding chaos.
+			  &lt;&lt;include &quot;Tumult Handler&quot;&gt;&gt;
 		&lt;&lt;/if&gt;&gt;
 		[[Contiue-&gt;Rateing]]	
 	&lt;&lt;/linkappend&gt;&gt;
@@ -326,9 +369,38 @@ Welcome, welcome… the name is George Attling, call me george. how can I help y
 
 
 
-</tw-passagedata><tw-passagedata pid="18" name="100 Ending" tags="" position="3319,3198" size="100,100">You have won! 100 Tumult
-[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="19" name="Overdone Ending" tags="" position="3483,3200" size="100,100">You have won but overdone
-[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="20" name="Underperformance Ending" tags="" position="3649,3184" size="100,100">You have Failed
+</tw-passagedata><tw-passagedata pid="18" name="100 Ending" tags="" position="3319,3198" size="100,100">You look down upon the riot upon you, and you can’t hold a grimy smirk from taking hold of your expression. You’ve done it. There’s a small fire burning somewhere; some people started beating each other up; you hear screams and shouts from enraged discussions all around you…
+It is done. Berner Street had become absolute Mayhem, a small, seemingly unimportant spot in the city; engulfed in chaos. 
+“Boy! Boy!” Hook runs towards you, half smiling, half in shock.
+“Mister! I did it, now haven’t I?”
+“Oh, boy-o.” He pauses to catch some breath. “You absolutely, abso-hecking-lutely have outdone yourself, boy. Let me give you this well deserved hug! And a raise! A raise for sure!”
+And so, without a chance for defense, you get overpowered by Hook’s hug, and endure the most literally “breathtaking” experience with the thought of your raise; while Berner Street descends into madness right by your side.
+
+[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="19" name="Overdone Ending" tags="" position="3481.3333333333335,3200" size="100,100">
+You watch the Berner Street; and get weak at the knees.
+A fire has erupted in one of the houses, and it’s flames are starting to set the roof of the house next to it on fire. You hear someone scream “MURDER!!” and panic erupts; while the fire brigade gets stuck on the way to the scene.
+Helplessly you observe the fire spreading further and further, the screams of the people intensifying. At a certain point you start running for your life; as destructive Chaos starts taking hold of the whole quarter. People trampling over each other in mindless fear; the police, arriving way too late gets stuck on the fire brigade trucks and the people in between; as the brigade can’t seem to decide if they should fight the fire or leave. It’s absolute terror; and you run, run as fast as you can.
+Before you can even get a hold of your thoughts and look where you’re running, you see him. Hook. He’s running towards you, but something isn’t right.
+Like everything else right now.
+You reach Hook breathless and yip as loud as you can “Leave! Run!”
+Then he crashed down to the ground. Trying to catch him, his weight pulls you down with him. You quickly straighten up and check Hook.
+His face is pale. His eyes blurry, staring into nothingness.
+“Mr. Hook, what...no!”
+“Oh boy….what have you done…”
+
+And so, in an alternative timeline than ours right now, you became the cause for the second great London Fire, that caused hundreds of peoples lives, and made many homeless. You’ve overdone it; most sadly. But can anyone really blame you? Hook gave you this explicit order. Oh, Hook is dying. Yeah, right.
+Well, if that’s the case, you’ll be definitely blamed anyway.
+
+
+
+[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="20" name="Underperformance Ending" tags="" position="3649,3184" size="100,100">You stand there, and look upon the Berner Street 44 and its surroundings...and are actually a bit disappointed. There’s some murmurs and maybe a dispute here and there, but it doesn’t seem like any aggressive group dynamics might kick in, nor are there any outrageous quarrels to be seen.
+You hear steps behind you.
+“Hmm, boy, disappointing.” It’s Hook. And his expression mirrors what he said.
+“I’m sorry, mister Hook. I gave my best. I can understand your disappointment.”
+“Yeah, yeah. I’ll do it myself next time.” And as he turns around and walks away, you hear him whisper “It’s always the same...useless, all’of em.”
+And so, you write history in a different way than expected. Instead of writing it, you delete an event from the books of history, and the Berner Street Hoax never happened.
+
+
 
 [[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="21" name="Shadey Alley" tags="" position="4486,2207" size="100,100">You enter a dark alley and instantly try not to vomit from the disgusting smell of garbage and filth that accumulated over many years there. You accidently step into something soft and take a look at your shoes when out of nowhere a shadow appears in front of you. A rather short man stands in front of you, with icy eyes staring directly at you. He wears remarkably flawless black clothes for someone that just appeared in a dark alley in the most notorious street of london. He smiles and asks:
 
@@ -714,7 +786,7 @@ And so, without ever knowing, you prevented the Berners Street Hoax from happeni
 &#39;&#39;The End&#39;&#39;
 [[Back to Start -&gt;Start]] 
 
-</tw-passagedata><tw-passagedata pid="36" name="Continue" tags="" position="3512,937" size="100,100">
+</tw-passagedata><tw-passagedata pid="36" name="Continue" tags="" position="3522.0000000000005,927" size="100,100">
 And so, on the next day, you head over to Hook’s office again, ready to do as he pleased. 
 You will go out into the streets of London, and try to get as many people to visit the Berner Street 54 as you can. The more trouble you stir up, the better, that’s the whole plan. 
 You try to keep in mind that getting people that don’t like each other to the Berner Street at the same time, will increase the turmoil even more.
@@ -725,7 +797,7 @@ So you step out into another frosty London fall morning, ready to engage in your
 Make Berner Street famous, no matter what!
 
 &lt;&lt;set $phase_collection to true &gt;&gt;
-&lt;&lt;set $money to 98&gt;&gt;
+&lt;&lt;set $money to 100&gt;&gt;
 
 [[Get out the Map-&gt;Map]]</tw-passagedata><tw-passagedata pid="37" name="You defend your position harshly and insist on not involving yourself" tags="" position="3956,543" size="100,100">Gentlemen, all the peer-pressure and scoffing in the world wouldn’t change my mind. I am here to serve as an assistant, not an advisor. I am not qualified; and I strongly refuse to partake in this discussion, as already said. If I speak my mind; and my words and or ideas result in a catastrophe; I do not want to take the blame, gentlemen.” You look at Hook with a stern expression and continue: “Sir, I kindly request to be handed today’s to-do-list, so I may put myself to use.”
 “...” 
@@ -747,18 +819,29 @@ You immediately turn around. Something’s not right. Not at all.
 “You’re fired. Go home.”
 “What?! Becau-”
 “Do. Not. Discuss with me. No law keeps me from doing this. You was supposed to be my assistant. And if my assistant has such a stick up his arse and can’t even involve himself in a lighthearted discussion; what is he good for? Every damn moron can do the paperwork and buy me darn apples and all that bric-a-brac, I employed you because I thought of you as a witty, good-willing youngster. Not a stuck-up bore. Go home now. Dismissed”      
-[[Return to Start -&gt;Start]] </tw-passagedata><tw-passagedata pid="38" name="PassageHeader" tags="" position="5885,527" size="100,100">&lt;&lt;if $phase_collection is true&gt;&gt;
-	&lt;div class=&quot;gameheader&quot;&gt;
-	&lt;&lt;print $money&gt;&gt;£
-	&lt;/div&gt;
-&lt;&lt;elseif $phase_tumult is true&gt;&gt;
-	&lt;div class=&quot;gameheader&quot;&gt;
-	&#39;&#39;Tumult&#39;&#39; &lt;&lt;print $tumult&gt;&gt;
-	&lt;/div&gt;
+[[Return to Start -&gt;Start]] </tw-passagedata><tw-passagedata pid="38" name="PassageHeader" tags="" position="5885,525.3333333333334" size="100,100">&lt;&lt;if $phase_collection is true&gt;&gt;\
+&lt;div class=&quot;gameheader&quot;&gt;\
+	&lt;div class=&quot;topbar_left&quot;&gt;\
+	&lt;/div&gt;\
+	&lt;div class=&quot;topbar_middle&quot;&gt;\
+		&lt;span class=&quot;data&quot;&gt;&lt;&lt;print $money&gt;&gt;£&lt;/span&gt;\
+	&lt;/div&gt;\
+	&lt;div class=&quot;topbar_right&quot;&gt;\
+	&lt;/div&gt;\
+&lt;/div&gt;\
+&lt;&lt;elseif $phase_tumult is true&gt;&gt;\
+&lt;div class=&quot;gameheader&quot;&gt;\
+	&lt;div class=&quot;topbar_left&quot;&gt;\
+	&lt;/div&gt;\
+	&lt;div class=&quot;topbar_middle&quot;&gt;\
+	&lt;span class=&quot;data&quot;&gt;&#39;&#39;Tumult&#39;&#39; &lt;&lt;print $tumult&gt;&gt;&lt;/span&gt;\
+	&lt;/div&gt;\
+	&lt;div class=&quot;topbar_right&quot;&gt;\
+	&lt;/div&gt;\
+	&lt;br style=&quot;clear:left&quot;/&gt;\
+&lt;/div&gt;\
 &lt;&lt;else&gt;&gt;
-
-&lt;&lt;/if&gt;&gt;
-</tw-passagedata><tw-passagedata pid="39" name="You stand still and listen to the gentlemen" tags="" position="2302,491" size="100,100">You give a nod, turn around a little bit and take a step beside. There are some magazines laying on another table. You take one of them, scroll through the pages a little bit and try to understand what the gentlemen are talking about.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="You stand still and listen to the gentlemen" tags="" position="2302,491" size="100,100">You give a nod, turn around a little bit and take a step beside. There are some magazines laying on another table. You take one of them, scroll through the pages a little bit and try to understand what the gentlemen are talking about.
 
 &lt;&lt;set $photographer_info to true&gt;&gt;
 … you have never seen anything like this, i’m telling you, Lance! You will be the first in the city to own it, i promise you!
@@ -853,7 +936,7 @@ Well I&#39;ll bring some of my finest Models to 54 Berners Street. For only 15£
 [[Accep Offer-&gt;Deal Inventor]]
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
-&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Why did you come to London?" tags="" position="5277,576" size="100,100">I was exiled from Berlin for my… controversial experiments. they claimed I caused the city fire. He points at a newspaper article that says (Geisteskranker Tüftler in Berlin verursacht  Stadtbrand) of course… this is not true…
+&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Why did you come to London?" tags="" position="5282,577.6666666666666" size="100,100">I was exiled from Berlin for my… controversial experiments. they claimed I caused the city fire. He points at a newspaper article that says (Geisteskranker Tüftler in Berlin verursacht  Stadtbrand) of course… this is not true…
 
 [[Do you sell any weapons?]] </tw-passagedata><tw-passagedata pid="48" name="Deal Inventor" tags="" position="5287,783" size="100,100">Very well I&#39;ll be there at 9.00 o&#39;clock.
 &lt;&lt;set $money -= 15&gt;&gt;
@@ -1126,12 +1209,12 @@ He ignores your comment.
 &lt;&lt;/if&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="67" name="Deal Criminal" tags="" position="4365.666666666667,2693.6666666666665" size="100,100">//Alright you got yourself a deal.//
+</tw-passagedata><tw-passagedata pid="67" name="Deal Criminal" tags="" position="4365,2693" size="100,100">//Alright you got yourself a deal.//
 
 &lt;&lt;set $money -=20&gt;&gt;
 &lt;&lt;set $criminal to true&gt;&gt;
 &lt;&lt;set $visited_criminal to true&gt;&gt;
-[[Leave the street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="68" name="No Deal Criminal" tags="" position="4517.666666666667,2698" size="100,100">//Alright you got yourself a deal... though a small one.//
+[[Leave the street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="68" name="No Deal Criminal" tags="" position="4517,2698" size="100,100">//Alright you got yourself a deal... though a small one.//
 &lt;&lt;set $money -=5&gt;&gt;
 &lt;&lt;set $visited_criminal to true&gt;&gt;
 [[Leave the street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="69" name="RUN!" tags="" position="4684,2385" size="100,100">As you try to escape you suddenly hear a loud bang followed by unbearable pain in your chest. You fall down and see O’Flannigans malicious smile before everything turns dark. 
@@ -1197,7 +1280,7 @@ Dave: Wait! I think you’re right! IT MUST HAVE BEEN THAT GOBERMOUCH FROM FAKER
 
 He takes out 4 Jars out of his backpack and throws them on the street.  An alcoholic smell spreads over the street as he takes out a box of matches and throws them in a swift move to the wet ground. The mixture, which flowed over the street instantly catches fire and the whole street in front of the house starts burning.
 Dave: HERE YOU GO! This is for your “hospitality”! And now I’m gonna go to Bloxford street and burn this Flabbergabs rugs down!
-&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="Happening Rugdealer" tags="" position="3354.6666666666665,2623" size="100,100">&lt;&lt;if $pharmacist_present is true&gt;&gt;
+&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="Happening Rugdealer" tags="" position="3354,2623" size="100,100">&lt;&lt;if $pharmacist_present is true&gt;&gt;
 Suddenly a well dressed gentleman walks up to the house. With him, he pulls a cart with several giant rugs on it. Dave, whose attention is focused on the burning street, first glances at the gentleman and then sees the rugs.
 
 Dave: YOU! YOU FOPDOODLE STOLE MY CUSTOMERS. AND NOW YOU THINK YOU CAN PLAY ME FOR A SUCKER?!?! 
@@ -1382,7 +1465,7 @@ I have this selection set of revolvers for only 25£.
 	&lt;&lt;set $weaponsdealer to true&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 
-[[Leave the shop-&gt;Faker Street]] </tw-passagedata><tw-passagedata pid="94" name="Boffington Teaclub" tags="" position="3218.6666666666665,2437" size="100,100">You hear a high pitched chattering, like a flock of chickens shortly before feeding. You turn around. A group of elderly Women dressed in black come towards you. A skinny Madame with a book under her left armpit and an unusually long neck highers her screeching voice to one of the women with a Sunscreen Umbrella. 
+[[Leave the shop-&gt;Faker Street]] </tw-passagedata><tw-passagedata pid="94" name="Boffington Teaclub" tags="" position="3218,2437" size="100,100">You hear a high pitched chattering, like a flock of chickens shortly before feeding. You turn around. A group of elderly Women dressed in black come towards you. A skinny Madame with a book under her left armpit and an unusually long neck highers her screeching voice to one of the women with a Sunscreen Umbrella. 
 As I said my dearest Ventulia the latest work of Charles Hoppes is for all it’s flaws in it’s representation of women as mere reflections of men definitely not subtitle for a reading circle discussion. As I already told Mary women are not supposed to interrogate into this misadventure named politics. 
 Another women, you presume her name might be the previously mentioned Ventulia counters the skinny locknecked woman: No Desmeralda that’s not what I said, as I agree with your previous assertion of the role of a woman of class in a gentlemans society is the one of a mere observer might be correct I still think everyone of us should at least know what we talk about. 
 Desmeralda replies: I think that matter should be put at rest over some tea and cake.
@@ -1415,7 +1498,7 @@ In the big stir you created you leap out of eyes reach of the flock and move you
 &lt;/span&gt;
 
 
-</tw-passagedata><tw-passagedata pid="95" name="Normal Text" tags="" position="3216.6666666666665,2569.3333333333335" size="100,100">The tumult around Berners Street increses more and more people gather to see the unfolding chaos in front of the house.</tw-passagedata><tw-passagedata pid="96" name="Tumult Debug" tags="" position="3644,1912" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="95" name="Normal Text" tags="" position="3216,2569" size="100,100">The tumult around Berners Street increses more and more people gather to see the unfolding chaos in front of the house.</tw-passagedata><tw-passagedata pid="96" name="Tumult Debug" tags="" position="3644,1912" size="100,100">&lt;&lt;set $phase_tumult to true&gt;&gt;
 &lt;&lt;set $tumult to 0&gt;&gt;
 [[8.00]]
 
@@ -1428,13 +1511,16 @@ In the big stir you created you leap out of eyes reach of the flock and move you
 &lt;&lt;set $rugdealer to true&gt;&gt;
 &lt;&lt;set $pharmacist to true&gt;&gt;
 &lt;&lt;set $criminal to false&gt;&gt;
-&lt;&lt;set $detective to false&gt;&gt;</tw-passagedata><tw-passagedata pid="97" name="Rateing" tags="" position="3513,2981" size="100,100">&lt;&lt;if $tumult gte 105&gt;&gt;
+&lt;&lt;set $detective to false&gt;&gt;</tw-passagedata><tw-passagedata pid="97" name="Rateing" tags="" position="3513,2981" size="100,100">&lt;&lt;include &quot;Tumult Handler&quot;&gt;&gt;
+&lt;&lt;linkappend &quot;Continue&quot;&gt;&gt;
+&lt;&lt;if $tumult gte 105&gt;&gt;
 	&lt;&lt;goto &quot;Overdone Ending&quot;&gt;&gt;	
 &lt;&lt;elseif $tumult gte 100&gt;&gt;
 	&lt;&lt;goto &quot;100 Ending&quot;&gt;&gt;
 &lt;&lt;elseif $tumult lt 100&gt;&gt;
 	&lt;&lt;goto &quot;Underperformance Ending&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
+&lt;&lt;/linkappend&gt;&gt;
 
 </tw-passagedata><tw-passagedata pid="98" name="Album" tags="" position="1706,580" size="100,100">Braw! I have a lot of experience in family portrait. How big is the family?
 
@@ -1447,12 +1533,13 @@ Ouch! That’s a lot of work! But i love long portrait sessions like this! Well,
 &lt;&lt;/if&gt;&gt;
 [[The Lady can’t afford that, i am sorry!-&gt;No Deal Photographer]]
 &lt;&lt;if $photographer_intel is true&gt;&gt;
-[[Listen, the Lady Tottenham is very well-known in the Borough, has a lot of connections to people you might be interested in. If you would do her this favour, she might do a bit of advertising for your work-&gt;Barter Phographer]]</tw-passagedata><tw-passagedata pid="99" name="Dog" tags="" position="2181,585" size="100,100">Well, i have to say that i have an allergic reaction to any pets. I’m sorry, i can’t do this!
+[[Listen, the Lady Tottenham is very well-known in the Borough, has a lot of connections to people you might be interested in. If you would do her this favour, she might do a bit of advertising for your work-&gt;Barter Phographer]]
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="99" name="Dog" tags="" position="2181,585" size="100,100">Well, i have to say that i have an allergic reaction to any pets. I’m sorry, i can’t do this!
 
 [[Are you sure that there is no way? The Lady would pay very well!-&gt;Pay Well]]
 
 [[ Too bad, see you!-&gt;Blocksford Street]]
-</tw-passagedata><tw-passagedata pid="100" name="Barter Phographer" tags="" position="1446,777.6666666666666" size="100,100">Who is the Lady again?
+</tw-passagedata><tw-passagedata pid="100" name="Barter Phographer" tags="" position="1446,777" size="100,100">Who is the Lady again?
 
 &lt;&lt;linkappend &quot;Her late husband was a key man in the travelling business of london decades ago. She is still kindly regarded by a lot of travel agencies and publishers.&quot;&gt;&gt;
 
@@ -1521,14 +1608,14 @@ You really think this is a discount, huh? I am an Artist! Well, go visit a crapp
 [[Well, i just wanted to ask the way to the photographers store. It’s the same Street, isn’t it?-&gt;AngeredChalcographer]]</tw-passagedata><tw-passagedata pid="111" name="Anger Artist" tags="" position="1730,1693" size="100,100">&lt;&lt;set $angered_calcographer to true&gt;&gt;
 What about; get out of my shop?!
 
-[[Leave the Shop-&gt;Blocksford Street]] </tw-passagedata><tw-passagedata pid="112" name="Keyword" tags="" position="3049.3333333333335,2197.6666666666665" size="100,100">As you wish, Sir! You’ll find me over here!
+[[Leave the Shop-&gt;Blocksford Street]] </tw-passagedata><tw-passagedata pid="112" name="Keyword" tags="" position="3049,2197" size="100,100">As you wish, Sir! You’ll find me over here!
 
 You take a look around the crowded shop. There are at least thousands of rugs in this tiny shop. You wonder how this gentleman could transport them all over the sea.
 Just as you touch a beautiful small patterned red rug, somebody suddenly tapps on your shoulder. You turn around quickly. There is a small man looking up to you.
 
 Hey, what’s the keyword?
 
-[[Excuse me?-&gt;What Keyword?]]</tw-passagedata><tw-passagedata pid="113" name="What Keyword?" tags="" position="2761.6666666666665,2237" size="100,100">The keyword for.. you know.. C’mon, i bet you’re not here for carpets!
+[[Excuse me?-&gt;What Keyword?]]</tw-passagedata><tw-passagedata pid="113" name="What Keyword?" tags="" position="2761,2237" size="100,100">The keyword for.. you know.. C’mon, i bet you’re not here for carpets!
 
 The keyword for what?
 
@@ -1580,4 +1667,35 @@ The Irish Guy jumps down his cab and jumps onto Carl Uber. His horses shoo and r
 &lt;/span&gt;
 
 
-</tw-passagedata><tw-passagedata pid="115" name="Tumult 10" tags="" position="3986.6666666666665,2746.666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="116" name="Tumult 30" tags="" position="3981.6666666666665,2880.0000000000005" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="117" name="Tumult 40" tags="" position="3991.6666666666665,3020.0000000000005" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="118" name="Tumult 60" tags="" position="3981.666666666667,3140.0000000000005" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="119" name="Tumult 100" tags="" position="3981.6666666666665,3260.0000000000005" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="115" name="Tumult 10" tags="" position="3979.3333333333335,2732.6666666666665" size="100,100">There is a bit of activity going on...oh, wait. No, it’s just a
+swarm of crows flying off.
+</tw-passagedata><tw-passagedata pid="116" name="Tumult 30" tags="" position="3981,2880" size="100,100">Berner Street seems more lively than usual. 
+Which...means not much, sadly.
+</tw-passagedata><tw-passagedata pid="117" name="Tumult 40" tags="" position="3979.3333333333335,3013.3333333333335" size="100,100">The general mood seems to be bad. Although the people 
+making up this “general mood” aren’t many yet.
+</tw-passagedata><tw-passagedata pid="118" name="Tumult 60" tags="" position="3987.6666666666665,3138.3333333333335" size="100,100">There’s actually a bigger group of people gathered 
+around the house now. You seem some people from the sidewalks joining in.
+</tw-passagedata><tw-passagedata pid="119" name="Tumult 90" tags="" position="3984.3333333333335,3260" size="100,100">Now there is actual chaos spreading slowly. The air is 
+filled with agitation; and an aggressive mood seems to take hold of the people walking into the bunch.
+</tw-passagedata><tw-passagedata pid="120" name="Tumult Handler" tags="" position="3977,2596.666666666667" size="100,100">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;if $tumult lte 10&gt;&gt;
+	&lt;&lt;include &quot;Tumult 0&quot;&gt;&gt;
+&lt;&lt;elseif $tumult lt 30&gt;&gt;
+	&lt;&lt;include &quot;Tumult 10&quot;&gt;&gt;
+&lt;&lt;elseif $tumult lt 40&gt;&gt;
+	&lt;&lt;include &quot;Tumult 30&quot;&gt;&gt;
+&lt;&lt;elseif $tumult lt 60&gt;&gt;
+	&lt;&lt;include &quot;Tumult 40&quot;&gt;&gt;
+&lt;&lt;elseif $tumult lt 90&gt;&gt;
+	&lt;&lt;include &quot;Tumult 60&quot;&gt;&gt;
+&lt;&lt;elseif $tumult lt 100&gt;&gt;
+	&lt;&lt;include &quot;Tumult 90&quot;&gt;&gt;
+&lt;&lt;elseif $tumult gt 100&gt;&gt;
+	&lt;&lt;include &quot;Tumult Overdone&quot;&gt;&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;
+</tw-passagedata><tw-passagedata pid="121" name="Tumult 100" tags="" position="3990.0000000000005,3400" size="100,100">Are you smelling a fire? Yeah. Definitely a fire.
+And the droning noise of discussions everywhere, yes, you can feel it. This is absolute chaos!
+</tw-passagedata><tw-passagedata pid="122" name="Tumult Overdone" tags="" position="3990.0000000000005,3520.0000000000005" size="100,100">You start trembling when looking at 
+the street. Violent mayhem. You feel your face paling; and start heavily worrying.
+</tw-passagedata><tw-passagedata pid="123" name="Tumult 0" tags="" position="4111.666666666667,2733.3333333333335" size="100,100">Most literally, nothing is happening. Like, absolute lull.</tw-passagedata></tw-storydata>
