@@ -44,9 +44,7 @@ left:15%;
 right:15%;
 display:inline-block;
 }
-.data{
-vertical-align: middle;
-}
+
 .topbar_right{
 background-image: url("http://bsh.zeitsturm.ch/img/TopBar_Right.png");
 background-size:auto 10vh ;
@@ -56,6 +54,11 @@ min-width:15%;
 min-height:100%;
 position:absolute;
 right:0;
+display:inline-block;
+}
+.icon{
+height:2.5rem;
+vertical-align:middle;
 display:inline-block;
 }
 
@@ -129,6 +132,7 @@ width: 200px;
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">Dialog.addClickHandler("#some-element", null, function () {
     Dialog.setup("My Dialog Title", "my-dialog-class");
     Dialog.wiki(Story.get("MyDialogContents").processText());
@@ -169,7 +173,8 @@ Config.history.controls = false;
 
 
 
-</script><tw-passagedata pid="1" name="Start" tags="" position="5749.666666666667,355" size="100,100">The Berners Street Hoax is the biggest prank of the 19th century. Can you pull it off?
+
+</script><tw-passagedata pid="1" name="Start" tags="" position="5749,355" size="100,100">The Berners Street Hoax is the biggest prank of the 19th century. Can you pull it off?
 
 [[Let&#39;s Go-&gt;Intro]]
 
@@ -376,7 +381,7 @@ It is done. Berner Street had become absolute Mayhem, a small, seemingly unimpor
 “Oh, boy-o.” He pauses to catch some breath. “You absolutely, abso-hecking-lutely have outdone yourself, boy. Let me give you this well deserved hug! And a raise! A raise for sure!”
 And so, without a chance for defense, you get overpowered by Hook’s hug, and endure the most literally “breathtaking” experience with the thought of your raise; while Berner Street descends into madness right by your side.
 
-[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="19" name="Overdone Ending" tags="" position="3481.3333333333335,3200" size="100,100">
+[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="19" name="Overdone Ending" tags="" position="3481,3200" size="100,100">
 You watch the Berner Street; and get weak at the knees.
 A fire has erupted in one of the houses, and it’s flames are starting to set the roof of the house next to it on fire. You hear someone scream “MURDER!!” and panic erupts; while the fire brigade gets stuck on the way to the scene.
 Helplessly you observe the fire spreading further and further, the screams of the people intensifying. At a certain point you start running for your life; as destructive Chaos starts taking hold of the whole quarter. People trampling over each other in mindless fear; the police, arriving way too late gets stuck on the fire brigade trucks and the people in between; as the brigade can’t seem to decide if they should fight the fire or leave. It’s absolute terror; and you run, run as fast as you can.
@@ -786,7 +791,7 @@ And so, without ever knowing, you prevented the Berners Street Hoax from happeni
 &#39;&#39;The End&#39;&#39;
 [[Back to Start -&gt;Start]] 
 
-</tw-passagedata><tw-passagedata pid="36" name="Continue" tags="" position="3522.0000000000005,928.6666666666666" size="100,100">
+</tw-passagedata><tw-passagedata pid="36" name="Continue" tags="" position="3522,931.3333333333334" size="100,100">
 And so, on the next day, you head over to Hook’s office again, ready to do as he pleased. 
 You will go out into the streets of London, and try to get as many people to visit the Berner Street 54 as you can. The more trouble you stir up, the better, that’s the whole plan. 
 You try to keep in mind that getting people that don’t like each other to the Berner Street at the same time, will increase the turmoil even more.
@@ -819,12 +824,12 @@ You immediately turn around. Something’s not right. Not at all.
 “You’re fired. Go home.”
 “What?! Becau-”
 “Do. Not. Discuss with me. No law keeps me from doing this. You was supposed to be my assistant. And if my assistant has such a stick up his arse and can’t even involve himself in a lighthearted discussion; what is he good for? Every damn moron can do the paperwork and buy me darn apples and all that bric-a-brac, I employed you because I thought of you as a witty, good-willing youngster. Not a stuck-up bore. Go home now. Dismissed”      
-[[Return to Start -&gt;Start]] </tw-passagedata><tw-passagedata pid="38" name="PassageHeader" tags="" position="5885,525.3333333333334" size="100,100">&lt;&lt;if $phase_collection is true&gt;&gt;\
+[[Return to Start -&gt;Start]] </tw-passagedata><tw-passagedata pid="38" name="PassageHeader" tags="" position="5733.333333333333,570" size="100,100">&lt;&lt;if $phase_collection is true&gt;&gt;\
 &lt;div class=&quot;gameheader&quot;&gt;\
 	&lt;div class=&quot;topbar_left&quot;&gt;\
 	&lt;/div&gt;\
 	&lt;div class=&quot;topbar_middle&quot;&gt;\
-		&lt;span class=&quot;data&quot;&gt;&lt;&lt;print $money&gt;&gt;£&lt;/span&gt;\
+		&lt;img class=&quot;icon&quot; src=&quot;http://bsh.zeitsturm.ch/img/Wallet.png&quot;/&gt;&lt;span class=&quot;data&quot;&gt;&lt;&lt;print $money&gt;&gt;£&lt;/span&gt;\
 	&lt;/div&gt;\
 	&lt;div class=&quot;topbar_right&quot;&gt;\
 	&lt;/div&gt;\
@@ -936,7 +941,7 @@ Well I&#39;ll bring some of my finest Models to 54 Berners Street. For only 15£
 [[Accep Offer-&gt;Deal Inventor]]
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
-&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Why did you come to London?" tags="" position="5282,577.6666666666666" size="100,100">I was exiled from Berlin for my… controversial experiments. they claimed I caused the city fire. He points at a newspaper article that says (Geisteskranker Tüftler in Berlin verursacht  Stadtbrand) of course… this is not true…
+&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Why did you come to London?" tags="" position="5282,577" size="100,100">I was exiled from Berlin for my… controversial experiments. they claimed I caused the city fire. He points at a newspaper article that says (Geisteskranker Tüftler in Berlin verursacht  Stadtbrand) of course… this is not true…
 
 [[Do you sell any weapons?]] </tw-passagedata><tw-passagedata pid="48" name="Deal Inventor" tags="" position="5287,783" size="100,100">Very well I&#39;ll be there at 9.00 o&#39;clock.
 &lt;&lt;set $money -= 15&gt;&gt;
@@ -1374,14 +1379,14 @@ He walks away and disappears in the next alley.
 
 [[I’m not gonna tell you more than this: Go to 54 Bernerstreet on [enter Date and time]. He will be there. He always carries a gun and a knife. Be prepared! I have to go now -  my master is waiting...-&gt;DealDetective]]</tw-passagedata><tw-passagedata pid="82" name="DealDetective" tags="" position="4388,1136" size="100,100">//Hmmmm… I don’t know if I can trust you in this matter. I will think about this throughly. If i don’t have any clue until [enter date] , I will maybe show up at 54 Berners street.//
 &lt;&lt;set $detective to true&gt;&gt;
-[[Return to the Street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="83" name="With pleasure." tags="" position="2909.3333333333335,1990.6666666666667" size="100,100">Well, as you can see, there is a wide selection. Do you have any favourites? Colors? Patterns? Size?
+[[Return to the Street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="83" name="With pleasure." tags="" position="2909,1990" size="100,100">Well, as you can see, there is a wide selection. Do you have any favourites? Colors? Patterns? Size?
 
 [[Hard to say. My employer, Mrs. Tottenham wants to replace all the rugs in her house. The current ones are very old and used. We need different colors and sizes. I think the best way to find out would be if you could visit us.-&gt;Replace Rugs]]
 
 [[I need a really big blue rug with dense pattern. Have you got something like that?-&gt;Big Rug]]
 
 [[Oh I have to leave.-&gt;Blocksford Street]]
-</tw-passagedata><tw-passagedata pid="84" name="Replace Rugs" tags="" position="2640,2004.3333333333333" size="100,100">Sounds like a big job! Well, as i said, i am very busy at the moment. I could visit the Lady at monday, but we have to agree a down payment of 16£.
+</tw-passagedata><tw-passagedata pid="84" name="Replace Rugs" tags="" position="2640,2004" size="100,100">Sounds like a big job! Well, as i said, i am very busy at the moment. I could visit the Lady at monday, but we have to agree a down payment of 16£.
 
 &lt;&lt;if $money lt 16&gt;&gt;
 [[I don&#39;t have enough money... Goodbye Sir-&gt;Blocksford Street]] 
@@ -1616,7 +1621,7 @@ Just as you touch a beautiful small patterned red rug, somebody suddenly tapps o
 
 Hey, what’s the keyword?
 
-[[Excuse me?-&gt;What Keyword?]]</tw-passagedata><tw-passagedata pid="113" name="What Keyword?" tags="" position="2731,2248.6666666666665" size="100,100">The keyword for.. you know.. C’mon, i bet you’re not here for carpets!
+[[Excuse me?-&gt;What Keyword?]]</tw-passagedata><tw-passagedata pid="113" name="What Keyword?" tags="" position="2731,2248" size="100,100">The keyword for.. you know.. C’mon, i bet you’re not here for carpets!
 
 The keyword for what?
 
@@ -1668,17 +1673,17 @@ The Irish Guy jumps down his cab and jumps onto Carl Uber. His horses shoo and r
 &lt;/span&gt;
 
 
-</tw-passagedata><tw-passagedata pid="115" name="Tumult 10" tags="" position="3979.3333333333335,2732.6666666666665" size="100,100">There is a bit of activity going on...oh, wait. No, it’s just a
+</tw-passagedata><tw-passagedata pid="115" name="Tumult 10" tags="" position="3979,2732" size="100,100">There is a bit of activity going on...oh, wait. No, it’s just a
 swarm of crows flying off.
 </tw-passagedata><tw-passagedata pid="116" name="Tumult 30" tags="" position="3981,2880" size="100,100">Berner Street seems more lively than usual. 
 Which...means not much, sadly.
-</tw-passagedata><tw-passagedata pid="117" name="Tumult 40" tags="" position="3979.3333333333335,3013.3333333333335" size="100,100">The general mood seems to be bad. Although the people 
+</tw-passagedata><tw-passagedata pid="117" name="Tumult 40" tags="" position="3979,3013" size="100,100">The general mood seems to be bad. Although the people 
 making up this “general mood” aren’t many yet.
-</tw-passagedata><tw-passagedata pid="118" name="Tumult 60" tags="" position="3987.6666666666665,3138.3333333333335" size="100,100">There’s actually a bigger group of people gathered 
+</tw-passagedata><tw-passagedata pid="118" name="Tumult 60" tags="" position="3987,3138" size="100,100">There’s actually a bigger group of people gathered 
 around the house now. You seem some people from the sidewalks joining in.
-</tw-passagedata><tw-passagedata pid="119" name="Tumult 90" tags="" position="3984.3333333333335,3260" size="100,100">Now there is actual chaos spreading slowly. The air is 
+</tw-passagedata><tw-passagedata pid="119" name="Tumult 90" tags="" position="3984,3260" size="100,100">Now there is actual chaos spreading slowly. The air is 
 filled with agitation; and an aggressive mood seems to take hold of the people walking into the bunch.
-</tw-passagedata><tw-passagedata pid="120" name="Tumult Handler" tags="" position="3977,2596.666666666667" size="100,100">&lt;&lt;nobr&gt;&gt;
+</tw-passagedata><tw-passagedata pid="120" name="Tumult Handler" tags="" position="3977,2596" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $tumult lte 10&gt;&gt;
 	&lt;&lt;include &quot;Tumult 0&quot;&gt;&gt;
 &lt;&lt;elseif $tumult lt 30&gt;&gt;
@@ -1695,11 +1700,11 @@ filled with agitation; and an aggressive mood seems to take hold of the people w
 	&lt;&lt;include &quot;Tumult Overdone&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
-</tw-passagedata><tw-passagedata pid="121" name="Tumult 100" tags="" position="3990.0000000000005,3400" size="100,100">Are you smelling a fire? Yeah. Definitely a fire.
+</tw-passagedata><tw-passagedata pid="121" name="Tumult 100" tags="" position="3990,3400" size="100,100">Are you smelling a fire? Yeah. Definitely a fire.
 And the droning noise of discussions everywhere, yes, you can feel it. This is absolute chaos!
-</tw-passagedata><tw-passagedata pid="122" name="Tumult Overdone" tags="" position="3990.0000000000005,3520.0000000000005" size="100,100">You start trembling when looking at 
+</tw-passagedata><tw-passagedata pid="122" name="Tumult Overdone" tags="" position="3990,3520" size="100,100">You start trembling when looking at 
 the street. Violent mayhem. You feel your face paling; and start heavily worrying.
-</tw-passagedata><tw-passagedata pid="123" name="Tumult 0" tags="" position="4111.666666666667,2733.3333333333335" size="100,100">Most literally, nothing is happening. Like, absolute lull.</tw-passagedata><tw-passagedata pid="124" name="Big Rug" tags="" position="2946,2340.666666666667" size="100,100">Any kind of blue, any kind of patterns! Best quality, best price! Let me show you!
+</tw-passagedata><tw-passagedata pid="123" name="Tumult 0" tags="" position="4111,2733" size="100,100">Most literally, nothing is happening. Like, absolute lull.</tw-passagedata><tw-passagedata pid="124" name="Big Rug" tags="" position="2946,2340" size="100,100">Any kind of blue, any kind of patterns! Best quality, best price! Let me show you!
 
 He tugs at your sleeve and cuts his way through the crowd to a huge stack of blue rugs. Talking to himself he starts rummage the stack and finally pulls out a couple of big rugs.
 
@@ -1708,12 +1713,12 @@ Is this what you are looking for, Sir?
 [[Yes! That one! That’s it! How much?-&gt;Buy Rug]]
 &lt;&lt;if $rugdealer_intel is true&gt;&gt;
 [[hmmm.. it’s pretty but i need a bigger one. You know.. a heavy one. Really heavy, if you know what i mean..-&gt;Drugs]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="125" name="Buy Rug" tags="" position="2689.3333333333335,2459.0000000000005" size="100,100">Just 16£ today! Delivery is included, of course!
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="125" name="Buy Rug" tags="" position="2689,2459" size="100,100">Just 16£ today! Delivery is included, of course!
 &lt;&lt;if $money gte 16&gt;&gt;
 [[ Alright. Could you deliver on Monday 11 o&#39;clock at 54 Berners Street? -&gt;DealRugdealer]]
 &lt;&lt;/if&gt;&gt;
 [[What? Were these rugs woven with caviar extract by nude virgins in Walhalla?-&gt;Cheaper Rug]]
-</tw-passagedata><tw-passagedata pid="126" name="Drugs" tags="" position="2944.3333333333335,2499" size="100,100">Eehm.. I think this must be one of the biggest in my selection. Anyway, why should it be heavy?. This makes no sense to me..
+</tw-passagedata><tw-passagedata pid="126" name="Drugs" tags="" position="2944,2499" size="100,100">Eehm.. I think this must be one of the biggest in my selection. Anyway, why should it be heavy?. This makes no sense to me..
 
 Maybe the carpet is not that important but the weight.
 
@@ -1732,7 +1737,7 @@ I know exactly what you mean, i have tons of new stuff from Casablanca. Superior
 [[Saturday,11 o’clock, Berners Street 54. Bring a really heavy one!-&gt;DealRugdealer]]
 
 
-</tw-passagedata><tw-passagedata pid="127" name="Cheaper Rug" tags="" position="2354.3333333333335,2320.666666666667" size="100,100">You Sir have no idea of the origin of these high quality rugs! Don’t be ridiculous!
+</tw-passagedata><tw-passagedata pid="127" name="Cheaper Rug" tags="" position="2354,2320" size="100,100">You Sir have no idea of the origin of these high quality rugs! Don’t be ridiculous!
 
 &lt;&lt;linkappend &quot;I’m sorry, what was the price again?&quot;&gt;&gt;
 12 £, no alternative, no dealing!
