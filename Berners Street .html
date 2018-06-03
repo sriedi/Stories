@@ -184,11 +184,13 @@ margin-bottom:2vh;
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">Dialog.addClickHandler("#some-element", null, function () {
     Dialog.setup("My Dialog Title", "my-dialog-class");
     Dialog.wiki(Story.get("MyDialogContents").processText());
 });
 Config.history.controls = false;
+
 
 
 
@@ -253,7 +255,7 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 [[Enter Directly]]
 
 
-</tw-passagedata><tw-passagedata pid="3" name="Map" tags="" position="3504,1351.6666666666665" size="200,200">&lt;div id=&quot;redmap&quot;&gt;
+</tw-passagedata><tw-passagedata pid="3" name="Map" tags="" position="3504,1351" size="200,200">&lt;div id=&quot;redmap&quot;&gt;
 	&lt;div id=&quot;bloxford&quot;&gt;&lt;&lt;link &quot;&quot;&gt;&gt;&lt;&lt;goto &quot;Bloxsford Street&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;
 	&lt;div id=&quot;faker&quot;&gt;&lt;&lt;link &quot;&quot;&gt;&gt;&lt;&lt;goto &quot;Faker Street&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;
 	&lt;div id=&quot;reek&quot;&gt;&lt;&lt;link &quot;&quot;&gt;&gt;&lt;&lt;goto &quot;Reek Street&quot;&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;
@@ -304,10 +306,10 @@ You find yourself on the Reek Street.
 &lt;&lt;if $prostitute isnot true&gt;&gt;
 [[Shady Tavern]]&lt;br/&gt;
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;if $$pharmacist isnot true&gt;&gt;
+&lt;&lt;if $pharmacist isnot true&gt;&gt;
 [[Pharmacy]]&lt;br/&gt;
 &lt;&lt;/if&gt;&gt;
-&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Interlude" tags="" position="3582,1748.3333333333333" size="100,100">The sun slowly sinks towards the horizon, taking its golden light away with it step by step.
+&lt;&lt;/nobr&gt;&gt;</tw-passagedata><tw-passagedata pid="7" name="Interlude" tags="" position="3582,1748" size="100,100">The sun slowly sinks towards the horizon, taking its golden light away with it step by step.
 People start rushing onto the streets to engage in their offtime activities, or to merely join the nightlife; and so you think about ending your current odyssey through the city streets.
 
 You decide that you&#39;ve organized enough people to arrive on monday morning. Also, the amount of money that Hook gave you is slowly thinning out; and maybe you want to take a few bucks home for yourself.
@@ -342,7 +344,7 @@ The time to watch the great Berners Street Hoax pan out.
 	&lt;&lt;/linkappend&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
                        
-</tw-passagedata><tw-passagedata pid="9" name="9.00" tags="" position="3506,2286" size="100,100">&lt;&lt;linkappend &quot;Wait for a while&quot;&gt;&gt;
+       </tw-passagedata><tw-passagedata pid="9" name="9.00" tags="" position="3506,2286" size="100,100">&lt;&lt;linkappend &quot;Wait for a while&quot;&gt;&gt;
 	&lt;&lt;if $inventor is true&gt;&gt;
 		&lt;&lt;include &quot;Happening Inventor&quot;&gt;&gt;
 		&lt;&lt;set $inventor_present to true&gt;&gt;
@@ -359,7 +361,7 @@ The time to watch the great Berners Street Hoax pan out.
 	&lt;&lt;/linkappend&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
                        
-</tw-passagedata><tw-passagedata pid="10" name="Church" tags="" position="5163,1071.3333333333333" size="100,100">As you go through the old wooden door of the Fakerstreet Church, the dark wood being held together by black steel bars, you enter a very long hallway, lined with supporting pillars to the left and right. The walls consisted of huge sandstone blocks; decorated with ornaments painted with a yellow tint. Your eyes can barely make out the wooden altar at the end of the hallway, as they are blinded by the white light casted from the majestic church window at the very end of the church ship. As you Walk through the Church, a figure dressed in black with a unnaturally stiff posture approaches you quickly, his feet moving in such a controlled, mechanical way make it seem as if his body is floating over the ground.  
+</tw-passagedata><tw-passagedata pid="10" name="Church" tags="" position="5163,1071" size="100,100">As you go through the old wooden door of the Fakerstreet Church, the dark wood being held together by black steel bars, you enter a very long hallway, lined with supporting pillars to the left and right. The walls consisted of huge sandstone blocks; decorated with ornaments painted with a yellow tint. Your eyes can barely make out the wooden altar at the end of the hallway, as they are blinded by the white light casted from the majestic church window at the very end of the church ship. As you Walk through the Church, a figure dressed in black with a unnaturally stiff posture approaches you quickly, his feet moving in such a controlled, mechanical way make it seem as if his body is floating over the ground.  
 
 &lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/priest.png&quot;/&gt;//“Come closer my child. Welcome to the Fakerstreet church.”// The priest makes the sign of the cross as he looks down upon you before he rests his hands touching each other in front of his stomach //“I see you have a conflicted soul, how can I help you?”//
 
@@ -487,7 +489,7 @@ And so, you write history in a different way than expected. Instead of writing i
 
 
 
-[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="20" name="Shadey Alley" tags="" position="4487.666666666667,2207" size="100,100">You enter a dark alley and instantly try not to vomit from the disgusting smell of garbage and filth that accumulated over many years here. You accidently step into something soft and take a look at your shoes when out of nowhere a shadow appears in front of you. A rather short man stands in front of you, with icy eyes staring directly into yours. He wears remarkably flawless black clothes for someone that just appeared in a dark alley in the most notorious street of london. He smiles and says:
+[[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="20" name="Shadey Alley" tags="" position="4487,2207" size="100,100">You enter a dark alley and instantly try not to vomit from the disgusting smell of garbage and filth that accumulated over many years here. You accidently step into something soft and take a look at your shoes when out of nowhere a shadow appears in front of you. A rather short man stands in front of you, with icy eyes staring directly into yours. He wears remarkably flawless black clothes for someone that just appeared in a dark alley in the most notorious street of london. He smiles and says:
 
 &lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/criminal.png&quot;/&gt;//&quot;Hey! Psssssshhht, listen! Today is yer special day. Hehehehe!&quot;//
 
@@ -523,7 +525,7 @@ The old man looks surprised at first, but then replies with a remarkably deep vo
 [[What do you mean with entertaining?]]
 [[I would like to have medicine for my Masters bronchite-&gt;Just Medicine]]
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Photography Shop" tags="" position="3015,620.3333333333334" size="100,100">
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Photography Shop" tags="" position="3015,620" size="100,100">
 &lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/photographer.png&quot;/&gt;You push the giant, shiny, hand made, wooden framed glass door of the brand new building and step in. The store is one big room. Two well-dressed gentlemen sit together on a small table having a cup of tea and a chat, while another man in the back of the room is handling something with a big camera. In the other corner, a young lady in a brand new white dress practises some poses in front of a big picture of an empty London street in deep winter. There are also a lot of frames and shelves filled up with cameras, lenses and other stuff.
 
 The whole room is very clean and tidy. Everything shines and sparkles.
@@ -556,7 +558,7 @@ You take a step to the counter in the back section of the room when a fat cat su
 
 [[Hello?! Anybody home?]]
 [[Freaking Cat! God damn you dirty beast!]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Oriental Rugshop" tags="" position="3159,1895.3333333333333" size="100,100">
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Oriental Rugshop" tags="" position="3159,1895" size="100,100">
 
 You stand in front of a small store wedged in between the giant Larks &amp; Lancer Clothing Company store and a very old theater. You can’t see inside because the showcase is covered with carpets from the inside. A young man opens the door and steps outside followed by two other young men carrying a wrapped carpet. Finally, an elder woman steps outside, talking to a well-dressed gentlemen and says goodbye to him in an extremely polite way. The Gentleman then sees you and immediately welcomes you.
 
@@ -663,7 +665,7 @@ The photographer takes a look around, comes closer to the servant and speaks qui
 He turns around and walks away angry, shouting to the coachman:
 //&quot;Load! Immediately! We&#39;re off. God darn it!”//
 
-&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Happening Chalcographer" tags="" position="3365.3333333333335,2128.3333333333335" size="100,100">&lt;&lt;if $photographer_present is true&gt;&gt;
+&lt;&lt;set $tumult += 8&gt;&gt;</tw-passagedata><tw-passagedata pid="29" name="Happening Chalcographer" tags="" position="3365,2128" size="100,100">&lt;&lt;if $photographer_present is true&gt;&gt;
 &lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/chalcographer.png&quot;/&gt;A small, skinny man in old brown clothes comes around the corner, looks at the facades of the houses, trying to catch the numbers. As soon as he spotted the photographer, he walks straight to him:
 
 Engraver: //“Oh no, it’s you.. that cocky photographer. Still trying to make art with your funny flashlightbox?”//
@@ -887,7 +889,7 @@ You immediately turn around. Something’s not right. Not at all.
 &lt;/div&gt;\
 &lt;img class=&quot;background&quot; src=&quot;http://bsh.zeitsturm.ch/img/berners_street.png&quot;/&gt;
 &lt;&lt;else&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="You stand still and listen to the gentlemen" tags="" position="2511.6666666666665,602" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/photographer.png&quot;/&gt;You give a nod, turn around a little bit and take a step beside. There are some magazines laying on another table. You take one of them, scroll through the pages a little bit and try to understand what the gentlemen are talking about.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="You stand still and listen to the gentlemen" tags="" position="2511,602" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/photographer.png&quot;/&gt;You give a nod, turn around a little bit and take a step beside. There are some magazines laying on another table. You take one of them, scroll through the pages a little bit and try to understand what the gentlemen are talking about.
 
 &lt;&lt;set $photographer_info to true&gt;&gt;
 //&quot;… you have never seen anything like this, i’m telling you, Lance! You will be the first in the city to own it, i promise you!&quot;//
@@ -925,7 +927,7 @@ He stands up, pushes back the chair adjusts his collar and comes straight toward
 
 [[I need a photographer]]
 [[I’m late, i’ll come back soon-&gt;Bloxsford Street]]
-</tw-passagedata><tw-passagedata pid="39" name="You decide to take a walk through the store and check it out a little bit." tags="" position="2713,407.6666666666667" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/photographer.png&quot;/&gt; You step towards a cabinet displaying old cameras. Some of them have a few traces of usage, but everything is very clean and seems to be lovingly cared for.
+</tw-passagedata><tw-passagedata pid="39" name="You decide to take a walk through the store and check it out a little bit." tags="" position="2713,407" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/photographer.png&quot;/&gt; You step towards a cabinet displaying old cameras. Some of them have a few traces of usage, but everything is very clean and seems to be lovingly cared for.
 You take a closer look at a sporadic prototype of a camera that basically looks like a wooden box with a hole in it. On top there is something poking out of it, like a little drawer. You wonder what it is and you put it out just a tiny bit. The big man with the moustache and the top hat interrupts his talking and turns his head towards you:
 
 //&quot;Sir! Please don’t touch! This thing is very fragile and worth a lot!&quot;//
@@ -954,7 +956,7 @@ After a while, a small skinny man in ragged brown clothing enters the room from 
 [[You call yourself an artist?-&gt;Artist?]]
 
 
-</tw-passagedata><tw-passagedata pid="43" name="Freaking Cat! God damn you dirty beast!" tags="" position="1767,1863.6666666666667" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/chalcographer.png&quot;/&gt;A small skinny man in old brown clothes rushes into the room from a back room behind the counter. He looks up to you, eyes you up and down, opens the microscope-kinda-lid of his horn glasses and raises a warning finger.
+</tw-passagedata><tw-passagedata pid="43" name="Freaking Cat! God damn you dirty beast!" tags="" position="1767,1863" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/chalcographer.png&quot;/&gt;A small skinny man in old brown clothes rushes into the room from a back room behind the counter. He looks up to you, eyes you up and down, opens the microscope-kinda-lid of his horn glasses and raises a warning finger.
 
 //&quot;I heard that, boy! Don’t you ever call my cat a dirty beast again, huh?!&quot;//
 
@@ -980,9 +982,10 @@ He shows you a pretty standard barrel gun. You don&#39;t know enough about weapo
 [[I can&#39;t afford that.-&gt;Faker Street]]
 &lt;&lt;else&gt;&gt;
 [[Accep Offer-&gt;Deal Inventor]]
+[[No thank you.-&gt;Faker Street]]
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
-&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="Why did you come to London?" tags="" position="5283.666666666667,580" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/inventor.png&quot;/&gt; The man blushes upon hearing this question, but starts explaining anyway.
+&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="Why did you come to London?" tags="" position="5283,580" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/inventor.png&quot;/&gt; The man blushes upon hearing this question, but starts explaining anyway.
 //&quot;I was exiled from Berlin for my… controverschial experimenz. They claimed I cauzd something like a, you know, a sity fire.&quot;//
 He points at a newspaper article that says (Geisteskranker Tüftler in Berlin verursacht Stadtbrand), and then adds: //&quot;Of course… this is not true…&quot;//
 
@@ -990,7 +993,7 @@ He points at a newspaper article that says (Geisteskranker Tüftler in Berlin ve
 &quot;Thank you. Until then&quot;, you answer, and leave the shop.
 &lt;&lt;set $money -= 15&gt;&gt;
 &lt;&lt;set $inventor to true&gt;&gt;
-[[Faker Street]] </tw-passagedata><tw-passagedata pid="48" name="Speak to her" tags="" position="5059.666666666667,2541" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/prostitute.png&quot;/&gt;//&quot;Well, hello there, handsome - what gives us the pleasure to have such a fine gentleman in our house?&quot;//
+[[Faker Street]] </tw-passagedata><tw-passagedata pid="48" name="Speak to her" tags="" position="5059,2541" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/prostitute.png&quot;/&gt;//&quot;Well, hello there, handsome - what gives us the pleasure to have such a fine gentleman in our house?&quot;//
 
 She lights up a slim cigarette and examines you from top to bottom with an insinuating look.
 
@@ -1172,9 +1175,7 @@ It says:
 Who on earth would allow this man to sell these kind of mixtures?
 
 [[Alright, I will try this. And those other bottles too. Could you send them to 54 Berners Street on Monday?-&gt;Deal Pharmacist]]
-
 [[ I think i will just stay with the normal medicine. Can you bring them on Monday to 54 Berners Street? -&gt;Deal Pharmacist]]
-
 [[ I don’t have much time - I’ll visit your store later this day.-&gt;Goodbye]]
 </tw-passagedata><tw-passagedata pid="60" name="Deal Pharmacist" tags="" position="5047,1931" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/pharmacist.png&quot;/&gt;//&quot;Excuse me, what?&quot;//
 &quot;I asked, if you could send those bottles to 54 Bernerstreet on Monday morning.&quot;
@@ -1340,7 +1341,7 @@ Herlock groans in pain and holds his chest, which is covered in blood while Sham
 
 &lt;&lt;set $tumult += 26&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="Detective" tags="" position="4363,1532" size="100,100">As you pass by the many ran down buildings in Reek street, you suddenly feel something on your shoulder. You turn around and look into the face of a man in his thirties, with a dark beard and horn-rimmed spectacles. He looks at you with a worn out look.
 
-[[Approach Him]]</tw-passagedata><tw-passagedata pid="76" name="Normal Reek Street Text" tags="" position="4327,1773" size="100,100">The people are as shady as this street is.</tw-passagedata><tw-passagedata pid="77" name="Approach Him" tags="" position="4119.666666666667,1337.3333333333333" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/detective.png&quot;/&gt;//&quot;Excuse me sir, I never saw you here in this area - and as I can see you are a servant to someone. Your clothes are too expensive for a day laborer and too cheap for a  businessman. Your shoe soles have been replaced already 2 times, you must walk around a lot, yet your posture tells me that you trained yourself to keep your back up straight. You see this?&quot;//
+[[Approach Him]]</tw-passagedata><tw-passagedata pid="76" name="Normal Reek Street Text" tags="" position="4327,1773" size="100,100">The people are as shady as this street is.</tw-passagedata><tw-passagedata pid="77" name="Approach Him" tags="" position="4119,1337" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/detective.png&quot;/&gt;//&quot;Excuse me sir, I never saw you here in this area - and as I can see you are a servant to someone. Your clothes are too expensive for a day laborer and too cheap for a  businessman. Your shoe soles have been replaced already 2 times, you must walk around a lot, yet your posture tells me that you trained yourself to keep your back up straight. You see this?&quot;//
 He points at your left forearm.
 //&quot;See those white particles on your jacket? Those are cotton fibers. You MUST be a servant, only servants use white cloth on their left forearm to serve meals and beverages.&quot;//
 He stares at you intensely and you start to feel a little bit uneasy. But you&#39;re definitely impressed by his deductive skills.
@@ -1356,11 +1357,11 @@ He stares at you intensely and you start to feel a little bit uneasy. But you&#3
 [[ I never heard of him and most definitely never met him…-&gt;Dissmiss]]</tw-passagedata><tw-passagedata pid="79" name="Dissmiss" tags="" position="4250,1265" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/detective.png&quot;/&gt;//&quot;What a shame! Well I won’t waste your time anymore, I guess.&quot;// He throws you a critical look, taxing you from top to bottom. //&quot;Keep your eyes open - these streets are dangerous….&quot;//
 He walks away and disappears in the next alley.
 
-[[Return to the Street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="80" name="Doge Question" tags="" position="4063,978.3333333333334" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/detective.png&quot;/&gt;//&quot;WHAT DID YOU SAY?  How can you be so certain? He is an unpredictable being! Nobody can find a pattern in his behaviour except that he commits crimes everyday… People don’t call him Shamous the Shameless O’Flannigan without reason.&quot;//
+[[Return to the Street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="80" name="Doge Question" tags="" position="4063,978" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/detective.png&quot;/&gt;//&quot;WHAT DID YOU SAY?  How can you be so certain? He is an unpredictable being! Nobody can find a pattern in his behaviour except that he commits crimes everyday… People don’t call him Shamous the Shameless O’Flannigan without reason.&quot;//
 
 [[ Oh you meant //the// SHAMOUS O’Flannigan? I thought you searched for someone else. I’m sorry to boost your hopes for such a short time! I’m sure someone as brilliant as you can find him in no time!!-&gt;Dissmiss]]
 
-[[I’m not gonna tell you more than this: Go to 54 Bernerstreet next monday. He will be there. He always carries a gun and a knife. Be prepared! I have to go now -  my master is awaiting my presence...-&gt;DealDetective]]</tw-passagedata><tw-passagedata pid="81" name="DealDetective" tags="" position="4388,1134.3333333333333" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/detective.png&quot;/&gt;//&quot;Hmmmm… I don’t know if I can trust you in this matter. I will think about this thoroughly. If i don’t have any clue until then, I will maybe show up at 54 Berners street.//&quot; And after giving you another stern look, he adds://&quot;Maybe.&quot;//
+[[I’m not gonna tell you more than this: Go to 54 Bernerstreet next monday. He will be there. He always carries a gun and a knife. Be prepared! I have to go now -  my master is awaiting my presence...-&gt;DealDetective]]</tw-passagedata><tw-passagedata pid="81" name="DealDetective" tags="" position="4388,1134" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/detective.png&quot;/&gt;//&quot;Hmmmm… I don’t know if I can trust you in this matter. I will think about this thoroughly. If i don’t have any clue until then, I will maybe show up at 54 Berners street.//&quot; And after giving you another stern look, he adds://&quot;Maybe.&quot;//
 &lt;&lt;set $detective to true&gt;&gt;
 [[Return to the Street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="82" name="With pleasure." tags="" position="2918,1990" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/rugdealer.png&quot;/&gt; //&quot;Well, as you can see, there is a wide selection. Do you have any favourites? Colors? Patterns? Size?&quot;//
 
@@ -1377,9 +1378,7 @@ He walks away and disappears in the next alley.
 &lt;&lt;else&gt;&gt;
 [[Great, Monday, 11 o&#39;clock, 54 Berners Street. Alright?-&gt;DealRugdealer]]
 [[Hmmm, that seems a little too much for something we do not buy yet. The Lady wouldn’t accept that. You have to reduce the price a little bit.-&gt;Cheaper Price]]
-
 [[Way too much; I can&#39;t give you this much in advance. I’m sorry!-&gt;Even Cheaper]]
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="84" name="DealRugdealer" tags="" position="2257,1895" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/rugdealer.png&quot;/&gt;//&quot;Good! See you there, Sir!&quot;//
 &lt;&lt;if $rugdealer_pricecheap is 1&gt;&gt;
   &lt;&lt;set $money -=12&gt;&gt;
@@ -1398,7 +1397,7 @@ He walks away and disappears in the next alley.
   &lt;&lt;set $rugdealer_pricecheap to 1&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 
-[[Still too much. I’m sorry! Have a nice day, Sir!-&gt;Bloxsford Street]]</tw-passagedata><tw-passagedata pid="86" name="Even Cheaper" tags="" position="2498.6666666666665,2228" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/rugdealer.png&quot;/&gt;//&quot;Wait, Sir, we can talk about that! You have to understand that visiting your employers house is much work these days. I can’t afford work for free, neither do you, right? I need a down payment of at least 10£. That’s my last offer!&quot;//
+[[Still too much. I’m sorry! Have a nice day, Sir!-&gt;Bloxsford Street]]</tw-passagedata><tw-passagedata pid="86" name="Even Cheaper" tags="" position="2498,2228" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/rugdealer.png&quot;/&gt;//&quot;Wait, Sir, we can talk about that! You have to understand that visiting your employers house is much work these days. I can’t afford work for free, neither do you, right? I need a down payment of at least 10£. That’s my last offer!&quot;//
 
 &lt;&lt;link &quot;Great, Monday, 11 o&#39;clock, 54 Berners Street. Alright?&quot;&gt;&gt;
   &lt;&lt;goto &quot;DealRugdealer&quot;&gt;&gt;
@@ -1542,7 +1541,7 @@ A gasp goes through the flock of black clothed hens, like being shook up by a fo
 [[Are you sure that there is no way? The Lady would pay very well!-&gt;Pay Well]]
 
 [[ Too bad, see you!-&gt;Bloxsford Street]]
-</tw-passagedata><tw-passagedata pid="99" name="Barter Phographer" tags="" position="1444.3333333333333,777" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/photographer.png&quot;/&gt;//&quot;Who is the Lady again?&quot;//
+</tw-passagedata><tw-passagedata pid="99" name="Barter Phographer" tags="" position="1444,777" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/photographer.png&quot;/&gt;//&quot;Who is the Lady again?&quot;//
 
 &lt;&lt;linkappend &quot;Her late husband was an important key figure in the travelling business of london decades ago. She is still kindly regarded by a lot of travel agencies and publishers.&quot;&gt;&gt;
 
