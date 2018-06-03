@@ -218,7 +218,8 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 &lt;/div&gt;
 
 [[Go Home-&gt;Interlude]]
-</tw-passagedata><tw-passagedata pid="4" name="Blocksford Street" tags="" position="2915,1521.3333333333335" size="100,100">You are on the Blocksford Street
+</tw-passagedata><tw-passagedata pid="4" name="Blocksford Street" tags="" position="2915,1521.3333333333335" size="100,100">You find yourself on the Blocksford Street.
+
 [[Map]]
 &lt;&lt;if $photographer isnot true&gt;&gt;
 [[Photography Shop]]
@@ -228,7 +229,7 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $rugdealer isnot true&gt;&gt;
 [[Oriental Rugshop]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Faker Street" tags="" position="4688,1031" size="100,100">You are on the Faker Street
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Faker Street" tags="" position="4688,1031" size="100,100">You find yourself on the Faker Street.
 
 [[Map]] 
 &lt;&lt;if $priest isnot true&gt;&gt;
@@ -239,7 +240,7 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $weaponsdealer isnot true&gt;&gt;
 [[Weapons Shop]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Reek Street" tags="" position="4512,1773" size="100,100">You are on Reek Street
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="6" name="Reek Street" tags="" position="4512,1773" size="100,100">You find yourself on the Reek Street.
 
 &lt;&lt;if $visitedDetective isnot true&gt;&gt;
 &lt;&lt;set _randompassage to either(
@@ -443,19 +444,18 @@ A gentleman sits on one of the many couches and two rather lightly dressed women
 [[Speak to her]]
 &lt;&lt;/if&gt;&gt;
 </tw-passagedata><tw-passagedata pid="22" name="Pharmacy" tags="" position="4822,1629" size="100,100">&lt;&lt;if $visitedPharmacist is true&gt;&gt;
-Oh you agian. What do you take? The Medicine or the Alternative
+//&quot;Oh, you again. Have you made a choice yet? The standard medicine or the experimental alternative?&quot;//
 
 [[Just Medicine]] 
 [[Alternative Medicine]] 
 
 &lt;&lt;else&gt;&gt;
-You enter a small room and you wait a moment until your eyes adapt to the darkness in this store. Only a little ray of sunlight passes behind the curtains, which are hanged in front of the windows. There is a counter and behind it several  shelves filled with glasses of all kinds of shapes, size and color. A short old man past his sixties with thick eyeglasses sits behind the counter reading a book. His face expression is just like one of a sloth. Calm, sad and probably extremely high on morphium. As you clear your throat he looks up directly into your eyes. A moment passes. He still doesn’t say anything. 
+You enter a small room and you wait a moment until your eyes adapt to the darkness in this store. Only a little ray of sunlight passes through a small opening between the curtains, with which someone seemingly tried to cover up all the windows inside the room. There is a counter and behind it several shelves filled with glasses of all kinds and shapes, sizes and colors. A short, old man past his sixties with thick eyeglasses sits behind the counter reading a book. His face expression is reminiscent of a motionless, dumbfounded mask. Calm, sad and probably extremely high on morphium. As you clear your throat, he looks up directly into your eyes. A moment passes. He still doesn’t say anything. 
 
-//Good day Sir, I want to order some medicine!//
+&quot;Good day Sir, I want to order some medicine!&quot;
 
-The old man looks surprised and says with a remarkably deep voice. 
-
-//Ahh a customer well clothed! I don’t get much customers these days since the rumours spread that there is a rugdealer at Bloxfordstreet who sells special drugs. Back in the day the people really appreciated our family recipes! Anyway what kind of medicine do you need? Something entertaining or something for serious use?//
+The old man looks surprised at first, but then replies with a remarkably deep voice:
+//&quot;Ahh a customer well clothed! I don’t get much customers these days, you know? Since the rumours spread, that there is a rugdealer at Bloxford street who sells special drugs. Back in the day the people really appreciated our family recipes! But nowadays they rather go for that low quality street rubbish. Anyway, what kind of medicine do you need? Something entertaining or something for serious use?&quot;//
 
 [[I have to go-&gt;Reek Street]] 
 [[What do you mean with entertaining?]]
@@ -1161,9 +1161,8 @@ Lady: AND NOW BEGONE SLAGS!!
 
 While the naked nun tries to leave the street as fast as possible the people living on the street are observing the situation from their windows. The two remaining nuns look at each other  confused. 
 &lt;&lt;set $tumult += 10&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="What do you mean with entertaining?" tags="" position="5063,1572" size="100,100">//Ahhhh you’re new to this neighborhood am I right?
-I meant if you would need something that helps your body to recover AND has a feature of entertainment. Like every drugstore we only sell the best medicine and of course our special mixtures which recipes are passed down generation after generation for the last 120 years!
-And as I allow myself to say we’ve been passed out generation after generation because of them too. So do you want the special mixtures or the traditional medicine?//
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="57" name="What do you mean with entertaining?" tags="" position="5063,1572" size="100,100">//&quot;Ahhhh you’re new to this neighborhood am I right?
+I was asking you, if you would need something that helps your body to recover AND has a feature of entertainment. Like every drug store with a bit of ambition, we only sell the best medicine. And of course our special mixtures which&#39;s recipes have been passed down generation after generation for the last 120 years! And, if I may allow myself to say such an arrogance, we’ve been passed out generation after generation for 120 years because of them, too.&quot;// He chuckles. //&quot;So, do you want the special mixtures or the traditional medicine?&quot;//
 
 [[Of course I will try the special mixtures. What kind of special mixtures do you have?-&gt;Alternative Medicine]]
 [[Actually I’m just looking for a simple medicine for my masters bronchite. Do you have anything like that?-&gt;Just Medicine]]</tw-passagedata><tw-passagedata pid="58" name="Just Medicine" tags="" position="4977,1770" size="100,100">//Hmmm yes we have all different kinds of medicine for bronchite! For example those two. Only 14£.//
@@ -1177,11 +1176,11 @@ You remember that your task is to order the services to Bernerstreet 54.
 &lt;&lt;/if&gt;&gt;
 [[You know what? I’d like to order those two and in addition some of your special mixture.What kind of mixtures do you have?-&gt;Alternative Medicine]]
 
-[[I will come back to your store later this day. I have some urgent business to do. My apologies.-&gt;Goodbye]]</tw-passagedata><tw-passagedata pid="59" name="Alternative Medicine" tags="" position="5151,1725" size="100,100">//Ahhh you chose wisely! I have this special mixture that works well with bronchite! It’s called the Chinese Dragonleaf water. We imported the best oriental herbs for this product. For 7£.//
+[[I will come back to your store later this day. I have some urgent business to do. My apologies.-&gt;Goodbye]]</tw-passagedata><tw-passagedata pid="59" name="Alternative Medicine" tags="" position="5151,1725" size="100,100">//&quot;Ahhh, you chose wisely! I have this special mixture that works well with...uhh, with bronchite! I guess, at least. It’s called the Chinese Dragonleaf water. We imported the best oriental herbs for this product. For 7£ only.&quot;//
 
 He hands you a small jar with a dark greenish liquid inside. You look at the label. 
 It says:
-//Chinese Dragonleaf Water. 85% Alcohol, Morphia, Cannabis , Chloroform, Chinese traditional Herbs.//
+//Chinese Dragonleaf Water. 85% Alcohol, Morphia, Cannabis, Chloroform, Chinese traditional Herbs.//
 
 Who on earth would allow this man to sell these kind of mixtures?
 
@@ -1385,30 +1384,29 @@ Herlock reaches his hand behind his back and takes out handcuffs. O&#39;Flanniga
 // CALL A DOCTOR!! // 
 Herlock groans in pain and holds his chest, which is covered in blood while Shamous still lies motionless on the ground.
 
-&lt;&lt;set $tumult += 26&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="Detective" tags="" position="4363,1532" size="100,100">As you pass by the many rundown buildings in Reekstreet, you suddenly feel something on your shoulder. You turn around and look into the face of a man in his thirties, with a dark beard and horn-rimmed spectacles. He looks at you with a worn out look.
+&lt;&lt;set $tumult += 26&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="Detective" tags="" position="4363,1532" size="100,100">As you pass by the many ran down buildings in Reek street, you suddenly feel something on your shoulder. You turn around and look into the face of a man in his thirties, with a dark beard and horn-rimmed spectacles. He looks at you with a worn out look.
 
-[[Approch Him]]</tw-passagedata><tw-passagedata pid="76" name="Normal Reek Street Text" tags="" position="4327,1773" size="100,100">The People are as shady as this Street is.</tw-passagedata><tw-passagedata pid="77" name="Approch Him" tags="" position="4118,1339" size="100,100">//Excuse me sir, I never saw you here in this area - and as I can see you are a servant to someone. Your clothes are too expensive for a day laborer and too cheap for a  businessman. Your shoe soles have been replaced already 2 times, you must walk around a lot, yet your posture tells me that you trained yourself to keep your back up straight. You see this?//
+[[Approach Him]]</tw-passagedata><tw-passagedata pid="76" name="Normal Reek Street Text" tags="" position="4327,1773" size="100,100">The People are as shady as this Street is.</tw-passagedata><tw-passagedata pid="77" name="Approach Him" tags="" position="4118,1339" size="100,100">//&quot;Excuse me sir, I never saw you here in this area - and as I can see you are a servant to someone. Your clothes are too expensive for a day laborer and too cheap for a  businessman. Your shoe soles have been replaced already 2 times, you must walk around a lot, yet your posture tells me that you trained yourself to keep your back up straight. You see this?&quot;//
 He points at your left forearm.
-//See those white particles on your jacket? Those are cotton fibers. You MUST be a servant, only servants use white cloth on their left forearm to serve meals and beverages. 
-He stares at you intensely and you start to feel a little bit uneasy.//
-
-//Excuse me! I didn’t introduce myself: I am Herlock Sholmes an aspiring private detective. Currently I am searching for the most notorious criminal in this area -  but this madman’s mind is too arbitrarily for me to fully understand. You might’ve heard of him already.  Do you have a brief moment of time to answer some questions?//
+//&quot;See those white particles on your jacket? Those are cotton fibers. You MUST be a servant, only servants use white cloth on their left forearm to serve meals and beverages.&quot;//
+He stares at you intensely and you start to feel a little bit uneasy. But you&#39;re definitely impressed by his deductive skills.
+//&quot;Excuse me! I didn’t introduce myself: I am Herlock Sholmes, an aspiring private detective. Currently I am searching for the most notorious criminal in this area -  but this madman’s mind is too far gone, too churned and twisted for me to fully understand. You might’ve heard of him already.  Do you have a brief moment of time to answer some questions?//
 &lt;&lt;set $visitedDetective to true&gt;&gt;
 
 [[Of course! How can I help you?-&gt;Help]]
-[[Mind your own business! I’m sure someone as brilliant as you can track down some criminal by yourself.-&gt;Dissmiss]]</tw-passagedata><tw-passagedata pid="78" name="Help" tags="" position="3981,1277" size="100,100">//Excellent! Now for the first question: Did you happen to encounter O’Flannigan somewhere here? If you did, you would know who he is. He never hides, yet nobody was able to track him down until now. //
+[[Mind your own business! I’m sure someone as brilliant as you can track down some random criminal by yourself.-&gt;Dissmiss]]</tw-passagedata><tw-passagedata pid="78" name="Help" tags="" position="3981,1277" size="100,100">//&quot;Excellent! Now for the first question: Did you happen to encounter a subject named &quot;O’Flannigan&quot; somewhere here? If you did, you would know who he is. He never hides, yet nobody was able to track him down; even until this very day.&quot;//
 
 &lt;&lt;if $criminal is true&gt;&gt;
 [[I don’t really want to get involved in this case but I know for sure when and where to find him..-&gt;Doge Question]]
 &lt;&lt;/if&gt;&gt;
-[[ I never heard of him and most definitely never met him…-&gt;Dissmiss]]</tw-passagedata><tw-passagedata pid="79" name="Dissmiss" tags="" position="4250,1265" size="100,100">//What a shame! Well I won’t waste your time anymore.. Keep your eyes open - these streets are dangerous….//
+[[ I never heard of him and most definitely never met him…-&gt;Dissmiss]]</tw-passagedata><tw-passagedata pid="79" name="Dissmiss" tags="" position="4250,1265" size="100,100">//&quot;What a shame! Well I won’t waste your time anymore, I guess.&quot;// He throws you a critical look, taxing you from top to bottom. //&quot;Keep your eyes open - these streets are dangerous….&quot;//
 He walks away and disappears in the next alley.
 
-[[Return to the Street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="80" name="Doge Question" tags="" position="4063,980" size="100,100">//WHAT DID YOU SAY?  How can you be so certain? He is an unpredictable being! Nobody can find a pattern in his behaviour except that he commits crimes everyday… People don’t call him Shamous the Shameless O’Flannigan without reason.//
+[[Return to the Street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="80" name="Doge Question" tags="" position="4063,980" size="100,100">//&quot;WHAT DID YOU SAY?  How can you be so certain? He is an unpredictable being! Nobody can find a pattern in his behaviour except that he commits crimes everyday… People don’t call him Shamous the Shameless O’Flannigan without reason.&quot;//
 
-[[ Oh you meant the SHAMOUS O’Flannigan? I thought you searched for someone else. I’m sorry to boost your hopes for such a short time! I’m sure someone as brilliant as you can find him in no time!!-&gt;Dissmiss]]
+[[ Oh you meant //the// SHAMOUS O’Flannigan? I thought you searched for someone else. I’m sorry to boost your hopes for such a short time! I’m sure someone as brilliant as you can find him in no time!!-&gt;Dissmiss]]
 
-[[I’m not gonna tell you more than this: Go to 54 Bernerstreet on [enter Date and time]. He will be there. He always carries a gun and a knife. Be prepared! I have to go now -  my master is waiting...-&gt;DealDetective]]</tw-passagedata><tw-passagedata pid="81" name="DealDetective" tags="" position="4388,1136" size="100,100">//Hmmmm… I don’t know if I can trust you in this matter. I will think about this throughly. If i don’t have any clue until [enter date] , I will maybe show up at 54 Berners street.//
+[[I’m not gonna tell you more than this: Go to 54 Bernerstreet next monday. He will be there. He always carries a gun and a knife. Be prepared! I have to go now -  my master is awaiting my presence...-&gt;DealDetective]]</tw-passagedata><tw-passagedata pid="81" name="DealDetective" tags="" position="4388,1136" size="100,100">//&quot;Hmmmm… I don’t know if I can trust you in this matter. I will think about this thoroughly. If i don’t have any clue until then, I will maybe show up at 54 Berners street.//&quot; And after giving you another stern look, he adds://&quot;Maybe.&quot;//
 &lt;&lt;set $detective to true&gt;&gt;
 [[Return to the Street-&gt;Reek Street]] </tw-passagedata><tw-passagedata pid="82" name="With pleasure." tags="" position="2918.6666666666665,1990" size="100,100">&#39;&#39;Victor S. Weapunder&#39;&#39; //&quot;Well, as you can see, there is a wide selection. Do you have any favourites? Colors? Patterns? Size?&quot;//
 
