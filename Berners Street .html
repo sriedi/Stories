@@ -142,11 +142,13 @@ width: 200px;
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">Dialog.addClickHandler("#some-element", null, function () {
     Dialog.setup("My Dialog Title", "my-dialog-class");
     Dialog.wiki(Story.get("MyDialogContents").processText());
 });
 Config.history.controls = false;
+
 
 
 
@@ -454,7 +456,7 @@ The old man looks surprised and says with a remarkably deep voice.
 [[What do you mean with entertaining?]]
 [[I would like to have medicine for my Masters bronchite-&gt;Just Medicine]]
 
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Photography Shop" tags="" position="3015.6666666666665,622.3333333333334" size="100,100">
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="23" name="Photography Shop" tags="" position="3015,622" size="100,100">
 You push the giant shiny hand made glass door of the brand new building and step in. The store is one big room. Two well-dressed gentlemen sit together on a small table having a cup of tea and a chat, while another man in the back of the room is handling something with a big camera. In the other corner, a young lady in a brand new white dress practises some poses in front of a big picture of an empty London street in deep winter. There are also a lot of frames and shelves filled up with cameras, lenses and other stuff.
 
 The whole room is very clean and tidy. Everything shines and sparkles.
@@ -469,17 +471,14 @@ He lights his pipe and continues the talk with the other gentleman, also a very 
 
 [[Return to the Street-&gt;Blocksford Street]] 
 [[You stand still and listen to the gentlemen]]
-[[You decide to take a walk through the store and check it out a little bit.]]</tw-passagedata><tw-passagedata pid="24" name="Caclographer Workshop" tags="" position="2056,1689" size="100,100">
-
-&lt;&lt;if $visitedChalcographer is true&gt;&gt;
-	Hello again dear Sir. My Offer still stands. 20 Pounds just name the 		details and the place.
-		[[Accept-&gt;Deal Chaclographer]]
+[[You decide to take a walk through the store and check it out a little bit.]]</tw-passagedata><tw-passagedata pid="24" name="Caclographer Workshop" tags="" position="2056.0000000000005,1699" size="100,100">&lt;&lt;if $visitedChalcographer is true&gt;&gt;
+	Hello again dear Sir. My Offer still stands. 20 Pounds just name the 		details and the place.&lt;br/&gt;
+		[[Accept-&gt;Deal Chaclographer]]&lt;br/&gt;
 		[[Return to the Street -&gt;Blocksford Street]] 
 &lt;&lt;elseif $angered_calcographer is true&gt;&gt;
-	Alright boy, get out of my house!
+	Alright boy, get out of my house!&lt;br/&gt;
 	[[Leave the Shop-&gt;Blocksford Street]] 
 &lt;&lt;else&gt;&gt;
-
 Strolling down the Bloxfordstreet looking for number 211, you suddenly stand in front of a tiny entrance between a multilevel family house with a small tea store in its first floor on the left side and a former pet shop on the right, which seems to be abandoned since ages. 
 Above the small door an old copper sign slightly covered in patina says:
 “COOPER NEEDLESTICH - ENGRAVER since 1858”
@@ -488,7 +487,7 @@ You push the old yawing door carefully and enter the building.
 The room is such a mess, you haven’t seen anything like that before in your life. There is metal stuff everywhere; tons of copper plates are piled on top of each other, nearly reaching the ceiling. Hundreds of hammers, burins and other strange tools are lying around the room. There is a discreet smell of metal filling the air.
 You take a step to the counter in the back section of the room when a fat cat suddenly jumps from a stack of metal plates, touches your pants while rushing to the door. She obviously sniffed the rare chance to leave the building since you opened the door.
 
-[[Hello?! Anybody home?]]] 
+[[Hello?! Anybody home?]]
 [[Freaking Cat! God damn you dirty beast!]]
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="25" name="Oriental Rugshop" tags="" position="3144,1987" size="100,100">
 
@@ -859,7 +858,7 @@ You immediately turn around. Something’s not right. Not at all.
 	&lt;br style=&quot;clear:left&quot;/&gt;\
 &lt;/div&gt;\
 &lt;&lt;else&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="You stand still and listen to the gentlemen" tags="" position="2510.3333333333335,602.6666666666666" size="100,100">You give a nod, turn around a little bit and take a step beside. There are some magazines laying on another table. You take one of them, scroll through the pages a little bit and try to understand what the gentlemen are talking about.
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="38" name="You stand still and listen to the gentlemen" tags="" position="2510,602" size="100,100">You give a nod, turn around a little bit and take a step beside. There are some magazines laying on another table. You take one of them, scroll through the pages a little bit and try to understand what the gentlemen are talking about.
 
 &lt;&lt;set $photographer_info to true&gt;&gt;
 &#39;&#39;Other Gentleman&#39;&#39; //&quot;… you have never seen anything like this, i’m telling you, Lance! You will be the first in the city to own it, i promise you!&quot;//
@@ -897,27 +896,25 @@ He stands up, pushes back the chair adjusts his collar and comes straight toward
 
 [[I need a photographer]]
 [[I’m late, i’ll come back soon-&gt;Blocksford Street]]
-</tw-passagedata><tw-passagedata pid="39" name="You decide to take a walk through the store and check it out a little bit." tags="" position="2758.6666666666665,401.3333333333333" size="100,100">You step towards a frame with old cameras. Some of them have a few traces of usage, but everything is very clean and seems to be lovingly cared.
+</tw-passagedata><tw-passagedata pid="39" name="You decide to take a walk through the store and check it out a little bit." tags="" position="2758,401" size="100,100">You step towards a frame with old cameras. Some of them have a few traces of usage, but everything is very clean and seems to be lovingly cared.
 You take a closer look to a very old camera that looks like a wooden box with a hole in it. On top there is something standing out of it, like a little drawer. You wonder what it is and you put it out a little tiny bit. The big man with the mustache and the top hat interrupts his talking and turns his head to you:
 
-Sir! Please don’t touch! This thing is very fragile and worth a lot!
+&#39;&#39;Lance McFlare&#39;&#39; //&quot;Sir! Please don’t touch! This thing is very fragile and worth a lot!&quot;//
 
 [[Sure, excuse me, it’s fascinating!-&gt;Nosy]]
 [[What’s the use of this?-&gt;What&#39;s This?]]
-[[Oh, i just wanted to look around a little bit. Anyway, i got to go. See you!-&gt;Blocksford Streed]]</tw-passagedata><tw-passagedata pid="40" name="I need a photographer" tags="" position="2043,441" size="100,100">
-//Aye, right place, right time! Although my timetable is quite full, i do have some time left for new commissions! What exactly are we talking about?//
-
+[[Oh, i just wanted to look around a little bit. Anyway, i got to go. See you!-&gt;Blocksford Street]]</tw-passagedata><tw-passagedata pid="40" name="I need a photographer" tags="" position="2043,441" size="100,100">&#39;&#39;Lance McFlare&#39;&#39; //&quot;Aye, right place, right time! Although my timetable is quite full, i do have some time left for new commissions! What exactly are we talking about?&quot;//
 
 [[My employer Mrs. Tottenham wants a professional family portrait for the album.-&gt;Album]]
 
 [[My employer Mrs. Tottenham wants a portrait of her dog. The old Labrador is slowly dying and needs to be caught in a wonderful picture for the next generations.-&gt;Dog]]</tw-passagedata><tw-passagedata pid="41" name="Deal Photographer" tags="" position="2484,855" size="100,100">&lt;&lt;if $photographer_pricecheap is true&gt;&gt;
 &lt;&lt;set $money -= 10&gt;&gt;
-Good! I’ll be there on time! Good day, Sir!
+&#39;&#39;Lance McFlare&#39;&#39; //&quot;Good! I’ll be there on time! Good day, Sir!&quot;//
 &lt;&lt;else&gt;&gt;
 &lt;&lt;set $money -= 15&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;set $photographer to true&gt;&gt;
-[[Blocksford Street]] </tw-passagedata><tw-passagedata pid="42" name="Hello?! Anybody home?" tags="" position="1761,1304" size="100,100">
+[[Blocksford Street]] </tw-passagedata><tw-passagedata pid="42" name="Hello?! Anybody home?" tags="" position="1759.3333333333333,1265.6666666666667" size="100,100">
 After a while, a small skinny man in old brown clothes enters the room from a back room behind the counter. He looks up to you, eyes you up and down, opens the microscope-kinda-lid of his horn glasses and clears his throat.
 
 I heard you, Sir, but i had to finish my work. You know, as an artist i need the flow. It’s hard to restart after getting disturbed.An artist like me needs to focus constantly to get the right result.
@@ -926,14 +923,14 @@ I heard you, Sir, but i had to finish my work. You know, as an artist i need the
 
 [[You call yourself an artist?-&gt;Artist?]]
 
-&lt;&lt;set $visitedChalcographer to true&gt;&gt;
-</tw-passagedata><tw-passagedata pid="43" name="Freaking Cat! God damn you dirty beast!" tags="" position="1759,1874" size="100,100">A small skinny man in old brown clothes rushes into the room from a back room behind the counter. He looks up to you, eyes you up and down, opens the microscope-kinda-lid of his horn glasses and raises a warning finger.
 
-I heard that, boy! Don’t you ever call my cat a dirty beast again, huh?!
+</tw-passagedata><tw-passagedata pid="43" name="Freaking Cat! God damn you dirty beast!" tags="" position="1767.3333333333335,1862.3333333333333" size="100,100">A small skinny man in old brown clothes rushes into the room from a back room behind the counter. He looks up to you, eyes you up and down, opens the microscope-kinda-lid of his horn glasses and raises a warning finger.
+
+&#39;&#39;Needlestich&#39;&#39; //&quot;I heard that, boy! Don’t you ever call my cat a dirty beast again, huh?!&quot;//
 
 [[I am very sorry, Sir. I didn’t want to be rude. That cat just frightened me, you have to understand. I love pets!-&gt;pets]]
 
-</tw-passagedata><tw-passagedata pid="44" name="Deal Chaclographer" tags="" position="1740,1439" size="100,100">Sounds good! Saturday 10:00 o’clock? The address is 54 Berners Street.
+</tw-passagedata><tw-passagedata pid="44" name="Deal Chaclographer" tags="" position="1718.3333333333333,1450.6666666666667" size="100,100">&#39;&#39;Needlestich&#39;&#39; //&quot;Sounds good! Saturday 10:00 o’clock? The address is 54 Berners Street.&quot;//
 
 &lt;&lt;set $money -= 10&gt;&gt;
 &lt;&lt;set $chalcographer to true&gt;&gt;
@@ -1435,24 +1432,23 @@ He walks away and disappears in the next alley.
   &lt;&lt;set $rugdealer_pricecheap to 2&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 
-[[Still too much. I’m sorry! Have a nice day, Sir!-&gt;Blocksford Street]]</tw-passagedata><tw-passagedata pid="87" name="Excuse" tags="" position="1189,1439" size="100,100">Don’t you worry, Sir. As long as you respect my Artwork, i am always open for a talk, especially if you want me to do my artwork for you. Is that the reason of your visit? By the way, my name is Cooper Needlestich, i am the owner.
+[[Still too much. I’m sorry! Have a nice day, Sir!-&gt;Blocksford Street]]</tw-passagedata><tw-passagedata pid="87" name="Excuse" tags="" position="1172.3333333333333,1417.3333333333333" size="100,100">&#39;&#39;Needlestich&#39;&#39; //&quot;Don’t you worry, Sir. As long as you respect my Artwork, i am always open for a talk, especially if you want me to do my artwork for you. Is that the reason of your visit? By the way, my name is Cooper Needlestich, i am the owner.&quot;//
 
 [[ Sure.I was assigned by my employer Mrs. Tottenham to hire somebody to make a portrait of her dog, an old and prideful labrador. She fears that he will leave us soon and she wants to have a memory of him lying on her late husband&#39;s former armchair.-&gt;Dog Portrait]]
 
 [[Well, i just wanted to ask the way to the photographers store. It’s the same Street, isn’t it?-&gt;AngeredChalcographer]]
-</tw-passagedata><tw-passagedata pid="88" name="pets" tags="" position="1520,1764" size="100,100">hmmmpf… so do you?
+</tw-passagedata><tw-passagedata pid="88" name="pets" tags="" position="1491.6666666666667,1754" size="100,100">&#39;&#39;Needlestich&#39;&#39; //&quot;hmmmpf… so do you?&quot;//
 
 [[Well.. you know. they are alright..!-&gt;Excuse]]
-
 &lt;&lt;linkappend &quot;Just kidding, hate those ugly skunks!&quot;&gt;&gt;
 	&lt;&lt;set $angered_calcographer to true&gt;&gt;
 	Alright boy, get out of my house!
 	[[Leave the Shop-&gt;Blocksford Street]] 
-&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="89" name="Dog Portrait" tags="" position="1087,1777" size="100,100">Oh, dogs are my speciality. What size are we talking about?
+&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="89" name="Dog Portrait" tags="" position="1087,1777" size="100,100">&#39;&#39;Needlestich&#39;&#39; //&quot;Oh, dogs are my speciality. What size are we talking about?&quot;//
 
-Well, it should be a big portrait. I mean a giant one. I mean, it’s a memorial!
+//Well, it should be a big portrait. I mean a giant one. I mean, it’s a memorial!//
 
-Well, sounds like a lot of work. I normally do blanket prices for this kind of work. Let’s say 20£.
+&#39;&#39;Needlestich&#39;&#39; //&quot;Well, sounds like a lot of work. I normally do blanket prices for this kind of work. Let’s say &#39;&#39;20£&#39;&#39;.&quot;//
 
 &lt;&lt;if $money gte 20&gt;&gt;
 [[Sounds good! Monday 8 o’clock? The address is 54 Berners Street.-&gt;Deal Chaclographer]]
@@ -1461,7 +1457,7 @@ Well, sounds like a lot of work. I normally do blanket prices for this kind of w
 &lt;&lt;/if&gt;&gt;
 
 [[The Lady can’t afford that, i guess. Maybe i have to go to the Photographer.-&gt;Barter Chalcographer]]
-
+&lt;&lt;set $visitedChalcographer to true&gt;&gt;
 </tw-passagedata><tw-passagedata pid="90" name="Gift" tags="" position="4601,434" size="100,100">“very good, very good, lets see… “ The Merchant looks through his workshop and grabs an old looking dusty box ”this my friend, yes this is a set of dueling pistols they are almost one hundred years old, yes yes, almost as old as I am ha!. They are in mint condition of course and would make a great wedding gift?”
 
 I have this selection set of revolvers for only 25£.
@@ -1541,11 +1537,11 @@ In the big stir you created you leap out of eyes reach of the flock and move you
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="97" name="Album" tags="" position="1706,580" size="100,100">Braw! I have a lot of experience in family portrait. How big is the family?
+</tw-passagedata><tw-passagedata pid="97" name="Album" tags="" position="1651,555" size="100,100">&#39;&#39;Lance McFlare&#39;&#39; //&quot;Braw! I have a lot of experience in family portrait. How big is the family?&quot;//
 
-Around 30 people. We also need a portrait of every single one.
+//Around 30 people. We also need a portrait of every single one.//
 
-Ouch! That’s a lot of work! But i love long portrait sessions like this! Well, listen: I offer you 16£ for the family portrait. Pay upfront. What do you say?
+&#39;&#39;Lance McFlare&#39;&#39; //&quot;Ouch! That’s a lot of work! But i love long portrait sessions like this! Well, listen: I offer you &#39;&#39;16£&#39;&#39; for the family portrait. Pay upfront. What do you say?&quot;//
 
 &lt;&lt;if $money gt 15&gt;&gt;
 [[Alright-&gt;Deal Photographer]]
@@ -1553,20 +1549,20 @@ Ouch! That’s a lot of work! But i love long portrait sessions like this! Well,
 [[The Lady can’t afford that, i am sorry!-&gt;No Deal Photographer]]
 &lt;&lt;if $photographer_intel is true&gt;&gt;
 [[Listen, the Lady Tottenham is very well-known in the Borough, has a lot of connections to people you might be interested in. If you would do her this favour, she might do a bit of advertising for your work-&gt;Barter Phographer]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="98" name="Dog" tags="" position="2181,585" size="100,100">Well, i have to say that i have an allergic reaction to any pets. I’m sorry, i can’t do this!
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="98" name="Dog" tags="" position="2182.6666666666665,585" size="100,100">&#39;&#39;Lance McFlare&#39;&#39; //&quot;Well, i have to say that i have an allergic reaction to any pets. I’m sorry, i can’t do this!&quot;//
 
 [[Are you sure that there is no way? The Lady would pay very well!-&gt;Pay Well]]
 
 [[ Too bad, see you!-&gt;Blocksford Street]]
-</tw-passagedata><tw-passagedata pid="99" name="Barter Phographer" tags="" position="1446,777" size="100,100">Who is the Lady again?
+</tw-passagedata><tw-passagedata pid="99" name="Barter Phographer" tags="" position="1446,777" size="100,100">&#39;&#39;Lance McFlare&#39;&#39; //&quot;Who is the Lady again?&quot;//
 
 &lt;&lt;linkappend &quot;Her late husband was a key man in the travelling business of london decades ago. She is still kindly regarded by a lot of travel agencies and publishers.&quot;&gt;&gt;
 
-//What kind of publishers?//
+&#39;&#39;Lance McFlare&#39;&#39; //&quot;What kind of publishers?&quot;//
 
 &lt;&lt;linkappend &quot;Look, i’m not very well informed in this field. She always writes Letters to the editors of something called “vist” magazine…&quot;&gt;&gt;
 
-“The visitors of London”?! Good god! It would be amazing to meet somebody with contacts to the editors of that magazine! Is it possible to visit the Lady? I will bring my stuff! Maybe she will have a lil’ extra time to talk! Alright, I&#39;ll do it for 10£ upfront.
+&#39;&#39;Lance McFlare&#39;&#39; //&quot;The Visitors of London?! Good god! It would be amazing to meet somebody with contacts to the editors of that magazine! Is it possible to visit the Lady? I will bring my stuff! Maybe she will have a lil’ extra time to talk! Alright, I&#39;ll do it for 10£ upfront.&quot;//
 &lt;&lt;set $photographer_pricecheap to true&gt;&gt;
 &lt;&lt;if $money gt 10&gt;&gt;
 [[Alright. This Monday at 8 o&#39;clock ? The address is 54 Berners Street.-&gt;Deal Photographer]]
@@ -1574,67 +1570,65 @@ Ouch! That’s a lot of work! But i love long portrait sessions like this! Well,
 [[Oh sorry I can&#39;t afford that goodbye-&gt;Blocksford Street]] 
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/linkappend&gt;&gt;
-&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="100" name="No Deal Photographer" tags="" position="2364,930" size="100,100">I am very sorry Sir, but i can’t do this. There is a lot of work these days.
+&lt;&lt;/linkappend&gt;&gt;</tw-passagedata><tw-passagedata pid="100" name="No Deal Photographer" tags="" position="2365.6666666666665,930" size="100,100">&#39;&#39;Lance McFlare&#39;&#39; //&quot;I am very sorry Sir, but i can’t do this. There is a lot of work these days.&quot;//
 
-[[Blocksford Street]] </tw-passagedata><tw-passagedata pid="101" name="Pay Well" tags="" position="1930,735" size="100,100">What do you define as “well paid”, Sir?
+[[Blocksford Street]] </tw-passagedata><tw-passagedata pid="101" name="Pay Well" tags="" position="1930,721.6666666666666" size="100,100">&#39;&#39;Lance McFlare&#39;&#39; //&quot;What do you define as &#39;well paid&#39;, Sir?&quot;//
 
-I think 11£ should be possible.
+//I think 11£ should be possible.//
 
-Well, maybe my allergic reaction to dogs isn’t that bad. Yes, i remember that in general it only happened with cats. Maybe you could pay a little extra of 5£ as a kind of insurance? Just in case that i need to visit the doctor after this commission. And that dog will definitely not walk into my studio! I will bring my stuff to the Lady’s place!
+&#39;&#39;Lance McFlare&#39;&#39; //&quot;Well, maybe my allergic reaction to dogs isn’t that bad. Yes, i remember that in general it only happened with cats. Maybe you could pay a little extra of 5£ as a kind of insurance? Just in case that i need to visit the doctor after this commission. And that dog will definitely not walk into my studio! I will bring my stuff to the Lady’s place!&quot;//
 
 [[Alright. This Monday at 8 o&#39;clcok ? The address is 54 Berners Street.-&gt;Deal Photographer]]
-</tw-passagedata><tw-passagedata pid="102" name="Nosy" tags="" position="2265,191" size="100,100">Of course it is! Are ye familiar with cameras?
+</tw-passagedata><tw-passagedata pid="102" name="Nosy" tags="" position="2281.6666666666665,239.33333333333334" size="100,100">&#39;&#39;Lance McFlare&#39;&#39; //&quot;Of course it is! Are ye familiar with cameras?&quot;//
 
-Not really. How does this work?
+//&quot;Not really. How does this work?&quot;//
 
-It doesn’t work at all without a good photographer. You are lucky to talk with the best photographer in London right now.
-
-He stands up, whispers something to the other man and walks towards you.
-
-How can i help you, Sir?
-
-[[My employer Mrs. Tottenham wants a professional family portrait for the album.-&gt;Album]]
-
-[[My employer Mrs. Tottenham wants a portrait of her dog. The old Labrador is slowly dying and needs to be caught in a wonderful picture for the next generations.-&gt;Dog]]</tw-passagedata><tw-passagedata pid="103" name="What&#39;s This?" tags="" position="2250,34" size="100,100">Oh, the camera is a very complicated and complex manufacturing. I don’t want to be rude, but most people wouldn’t understand it anyway.
+&#39;&#39;Lance&#39;&#39; //&quot;It doesn’t work at all without a good photographer. You are lucky to talk with the best photographer in London right now.&quot;//
 
 He stands up, whispers something to the other man and walks towards you.
 
-How can i help you, Sir?
+&#39;&#39;Lance&#39;&#39; //&quot;How can i help you, Sir?&quot;//
 
 [[My employer Mrs. Tottenham wants a professional family portrait for the album.-&gt;Album]]
+[[My employer Mrs. Tottenham wants a portrait of her dog. The old Labrador is slowly dying and needs to be caught in a wonderful picture for the next generations.-&gt;Dog]]</tw-passagedata><tw-passagedata pid="103" name="What&#39;s This?" tags="" position="2250,34" size="100,100">&#39;&#39;Lance McFlare&#39;&#39; //&quot;Oh, the camera is a very complicated and complex manufacturing. I don’t want to be rude, but most people wouldn’t understand it anyway.&quot;//
 
-[[My employer Mrs. Tottenham wants a portrait of her dog. The old Labrador is slowly dying and needs to be caught in a wonderful picture for the next generations.-&gt;Dog]]</tw-passagedata><tw-passagedata pid="104" name="Blocksford Streed" tags="" position="2487,409.66666666666663" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="105" name="Barter Chalcographer" tags="" position="1350,1914" size="100,100">Don’t you even think about photography, Sir! That new rubbish of making pictures will never reach the high quality of an well done artistic engraving!
-Listen, i’ll do it for 17£!
+He stands up, whispers something to the other man and walks towards you.
+
+&#39;&#39;Lance McFlare&#39;&#39; //&quot;How can i help you, Sir?&quot;//
+
+[[My employer Mrs. Tottenham wants a professional family portrait for the album.-&gt;Album]]
+[[My employer Mrs. Tottenham wants a portrait of her dog. The old Labrador is slowly dying and needs to be caught in a wonderful picture for the next generations.-&gt;Dog]]</tw-passagedata><tw-passagedata pid="104" name="Barter Chalcographer" tags="" position="1346.6666666666667,1914" size="100,100">&#39;&#39;Needlestich&#39;&#39; //&quot;Don’t you even think about photography, Sir! That new rubbish of making pictures will never reach the high quality of an well done artistic engraving!
+Listen, i’ll do it for 17£!&quot;//
 
 &lt;&lt;if $money gte 17&gt;&gt;
 [[[Sounds good! Monday 8 o’clock? The address is 54 Berners Street.-&gt;Deal Chaclographer]]
 &lt;&lt;/if&gt;&gt;
 
-[[Still too much-&gt;Fail Barter Chalcographer]]</tw-passagedata><tw-passagedata pid="106" name="AngeredChalcographer" tags="" position="1270,1099" size="100,100">&lt;&lt;set $angered_calcographer to true&gt;&gt;
-You can’t be serious about that, Sir! Oh no.. a gentleman enters my shop, interrupts my artistic workflow and asks for the crappy photographer.. Oh god, how did i deserve this? Please get out, i have to hang myself.
+[[Still too much-&gt;Fail Barter Chalcographer]]</tw-passagedata><tw-passagedata pid="105" name="AngeredChalcographer" tags="" position="1270,1100.6666666666667" size="100,100">&lt;&lt;set $angered_calcographer to true&gt;&gt;
+&#39;&#39;Needlestich&#39;&#39; //&quot;You can’t be serious about that, Sir! Oh no.. a gentleman enters my shop, interrupts my artistic workflow and asks for the crappy photographer.. Oh god, how did i deserve this? Please get out, I have to hang myself.&quot;//
 
-[[Leave the Shop-&gt;Blocksford Street]] </tw-passagedata><tw-passagedata pid="107" name="Fail Barter Chalcographer" tags="" position="1764,2047" size="100,100">&lt;&lt;set $angered_calcographer to true&gt;&gt;
-You really think this is a discount, huh? I am an Artist! Well, go visit a crappy photographer!
+[[Leave the Shop-&gt;Blocksford Street]] </tw-passagedata><tw-passagedata pid="106" name="Fail Barter Chalcographer" tags="" position="1764,2047" size="100,100">&lt;&lt;set $angered_calcographer to true&gt;&gt;
+ &#39;&#39;Needlestich&#39;&#39; //&quot;You really think this is a discount, huh? I am an Artist! Well, go visit a crappy photographer!&quot;//
 
-[[Leave the Shop-&gt;Blocksford Street]] </tw-passagedata><tw-passagedata pid="108" name="Artist?" tags="" position="1522,1489" size="100,100">This is outrageous! Do i look like a plumber?
+[[Leave the Shop-&gt;Blocksford Street]] </tw-passagedata><tw-passagedata pid="107" name="Artist?" tags="" position="1510.3333333333333,1409" size="100,100">This is outrageous! Do i look like a plumber?
 
 [[Excuse me, Sir, i don’t mean to be rude. This place just doesn’t look like an artists atelier. And.. you just don’t really look like an artist at all..-&gt;Artist Excuse]]
 
-[[To be honest; What about a really dirty old plumber?-&gt;Anger Artist]]</tw-passagedata><tw-passagedata pid="109" name="Artist Excuse" tags="" position="1608,1250" size="100,100">Just because i do not paint, neigher look like a fancy painter, it doesn’t mean i do not make art. I still do pictures and - if i may be so bold - in a more artistic way than a painter. And please do not come with that new rubbish they call photography.. Now they try to do pictures with the help of some kinds of light machines.. What a waste of time! Anyway, how can i help you, Sir?
+[[To be honest; What about a really dirty old plumber?-&gt;Anger Artist]]</tw-passagedata><tw-passagedata pid="108" name="Artist Excuse" tags="" position="1553.0000000000002,1205" size="100,100">&#39;&#39;Needlestich&#39;&#39; //&quot;Just because i do not paint, neigher look like a fancy painter, it doesn’t mean i do not make art. I still do pictures and - if i may be so bold - in a more artistic way than a painter. And please do not come with that new rubbish they call photography.. Now they try to do pictures with the help of some kinds of light machines.. What a waste of time! Anyway, how can i help you, Sir?&quot;//
 
 [[ Sure.I was assigned by my employer Mrs. Tottenham to hire somebody to make a portrait of her dog, an old and prideful labrador. She fears that he will leave us soon and she wants to have a memory of him lying on her late husband&#39;s former armchair.-&gt;Dog Portrait]]
 
-[[Well, i just wanted to ask the way to the photographers store. It’s the same Street, isn’t it?-&gt;AngeredChalcographer]]</tw-passagedata><tw-passagedata pid="110" name="Anger Artist" tags="" position="1730,1693" size="100,100">&lt;&lt;set $angered_calcographer to true&gt;&gt;
-What about; get out of my shop?!
+[[Well, i just wanted to ask the way to the photographers store. It’s the same Street, isn’t it?-&gt;AngeredChalcographer]]</tw-passagedata><tw-passagedata pid="109" name="Anger Artist" tags="" position="1778.3333333333335,1711.3333333333333" size="100,100">&lt;&lt;set $angered_calcographer to true&gt;&gt;
+&#39;&#39;Needlestich&#39;&#39; //&quot;What about; get out of my shop?!&quot;//
 
-[[Leave the Shop-&gt;Blocksford Street]] </tw-passagedata><tw-passagedata pid="111" name="Keyword" tags="" position="3049,2197" size="100,100">As you wish, Sir! You’ll find me over here!
+[[Leave the Shop-&gt;Blocksford Street]] </tw-passagedata><tw-passagedata pid="110" name="Keyword" tags="" position="3049,2197" size="100,100">As you wish, Sir! You’ll find me over here!
 
 You take a look around the crowded shop. There are at least thousands of rugs in this tiny shop. You wonder how this gentleman could transport them all over the sea.
 Just as you touch a beautiful small patterned red rug, somebody suddenly tapps on your shoulder. You turn around quickly. There is a small man looking up to you.
 
 Hey, what’s the keyword?
 
-[[Excuse me?-&gt;What Keyword?]]</tw-passagedata><tw-passagedata pid="112" name="What Keyword?" tags="" position="2731,2248" size="100,100">The keyword for.. you know.. C’mon, i bet you’re not here for carpets!
+[[Excuse me?-&gt;What Keyword?]]</tw-passagedata><tw-passagedata pid="111" name="What Keyword?" tags="" position="2731,2248" size="100,100">The keyword for.. you know.. C’mon, i bet you’re not here for carpets!
 
 The keyword for what?
 
@@ -1655,7 +1649,7 @@ Can i help you now, Sir?
 [[With pleasure.]]
 
 [[Oh I have to leave.-&gt;Blocksford Street]]
-</tw-passagedata><tw-passagedata pid="113" name="Carl Uber" tags="" position="3748,2617" size="100,100">A grey painted cab with a sketchy drawn initial U on it’s doors pulls a hard break in front of you. The man on the couch wears a grey top hat also with this ominous initial. “Greetings Lad…” he breaks his voice as behind him another tow cabs rally down the streets and only on the last blimp avoid the collision with the cabbie in the middle of the street. “Some one called for Carl Ubers Cabs?” shouts a cubby Irishman from one of the other cabs. “Brian I told you that’s a drive for the Boss!” The Tophated snarks in his direction. “I pay you not by the hour just to do the orders I can do.”  He looks to the other cabbie, a donter with dirty clothes and a face like he seems to have nearly dosed of. “And what a you doing here Harold?...HAROLD?” The old man seems to have awoken from his daytime senility and spouts indistinct silabas. “What? No I said I’m going to Berners Street you were supposed to pick up the cabs from Mayfair. It says it clearly on your chalkboard.”
+</tw-passagedata><tw-passagedata pid="112" name="Carl Uber" tags="" position="3748,2617" size="100,100">A grey painted cab with a sketchy drawn initial U on it’s doors pulls a hard break in front of you. The man on the couch wears a grey top hat also with this ominous initial. “Greetings Lad…” he breaks his voice as behind him another tow cabs rally down the streets and only on the last blimp avoid the collision with the cabbie in the middle of the street. “Some one called for Carl Ubers Cabs?” shouts a cubby Irishman from one of the other cabs. “Brian I told you that’s a drive for the Boss!” The Tophated snarks in his direction. “I pay you not by the hour just to do the orders I can do.”  He looks to the other cabbie, a donter with dirty clothes and a face like he seems to have nearly dosed of. “And what a you doing here Harold?...HAROLD?” The old man seems to have awoken from his daytime senility and spouts indistinct silabas. “What? No I said I’m going to Berners Street you were supposed to pick up the cabs from Mayfair. It says it clearly on your chalkboard.”
 He looks down to you. “Did you order the Services of Carl Ubers Cabbie Service?”
 
 &lt;span id=&quot;output&quot;&gt;
@@ -1686,17 +1680,17 @@ The Irish Guy jumps down his cab and jumps onto Carl Uber. His horses shoo and r
 &lt;/span&gt;
 
 
-</tw-passagedata><tw-passagedata pid="114" name="Tumult 10" tags="" position="3979,2732" size="100,100">There is a bit of activity going on...oh, wait. No, it’s just a
+</tw-passagedata><tw-passagedata pid="113" name="Tumult 10" tags="" position="3979,2732" size="100,100">There is a bit of activity going on...oh, wait. No, it’s just a
 swarm of crows flying off.
-</tw-passagedata><tw-passagedata pid="115" name="Tumult 30" tags="" position="3981,2880" size="100,100">Berners Street seems more lively than usual. 
+</tw-passagedata><tw-passagedata pid="114" name="Tumult 30" tags="" position="3981,2880" size="100,100">Berners Street seems more lively than usual. 
 Which...means not much, sadly.
-</tw-passagedata><tw-passagedata pid="116" name="Tumult 40" tags="" position="3979,3013" size="100,100">The general mood seems to be bad. Although the people 
+</tw-passagedata><tw-passagedata pid="115" name="Tumult 40" tags="" position="3979,3013" size="100,100">The general mood seems to be bad. Although the people 
 making up this “general mood” aren’t many yet.
-</tw-passagedata><tw-passagedata pid="117" name="Tumult 60" tags="" position="3987,3138" size="100,100">There’s actually a bigger group of people gathered 
+</tw-passagedata><tw-passagedata pid="116" name="Tumult 60" tags="" position="3987,3138" size="100,100">There’s actually a bigger group of people gathered 
 around the house now. You seem some people from the sidewalks joining in.
-</tw-passagedata><tw-passagedata pid="118" name="Tumult 90" tags="" position="3984,3260" size="100,100">Now there is actual chaos spreading slowly. The air is 
+</tw-passagedata><tw-passagedata pid="117" name="Tumult 90" tags="" position="3984,3260" size="100,100">Now there is actual chaos spreading slowly. The air is 
 filled with agitation; and an aggressive mood seems to take hold of the people walking into the bunch.
-</tw-passagedata><tw-passagedata pid="119" name="Tumult Handler" tags="" position="3977,2596" size="100,100">&lt;&lt;nobr&gt;&gt;
+</tw-passagedata><tw-passagedata pid="118" name="Tumult Handler" tags="" position="3977,2596" size="100,100">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $tumult lte 10&gt;&gt;
 	&lt;&lt;include &quot;Tumult 0&quot;&gt;&gt;
 &lt;&lt;elseif $tumult lt 30&gt;&gt;
@@ -1713,11 +1707,11 @@ filled with agitation; and an aggressive mood seems to take hold of the people w
 	&lt;&lt;include &quot;Tumult Overdone&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
-</tw-passagedata><tw-passagedata pid="120" name="Tumult 100" tags="" position="3990,3400" size="100,100">Are you smelling a fire? Yeah. Definitely a fire.
+</tw-passagedata><tw-passagedata pid="119" name="Tumult 100" tags="" position="3990,3400" size="100,100">Are you smelling a fire? Yeah. Definitely a fire.
 And the droning noise of discussions everywhere, yes, you can feel it. This is absolute chaos!
-</tw-passagedata><tw-passagedata pid="121" name="Tumult Overdone" tags="" position="3990,3520" size="100,100">You start trembling when looking at 
+</tw-passagedata><tw-passagedata pid="120" name="Tumult Overdone" tags="" position="3990,3520" size="100,100">You start trembling when looking at 
 the street. Violent mayhem. You feel your face paling; and start heavily worrying.
-</tw-passagedata><tw-passagedata pid="122" name="Tumult 0" tags="" position="4111,2733" size="100,100">Most literally, nothing is happening. Like, absolute lull.</tw-passagedata><tw-passagedata pid="123" name="Big Rug" tags="" position="2946,2340" size="100,100">Any kind of blue, any kind of patterns! Best quality, best price! Let me show you!
+</tw-passagedata><tw-passagedata pid="121" name="Tumult 0" tags="" position="4111,2733" size="100,100">Most literally, nothing is happening. Like, absolute lull.</tw-passagedata><tw-passagedata pid="122" name="Big Rug" tags="" position="2946,2340" size="100,100">Any kind of blue, any kind of patterns! Best quality, best price! Let me show you!
 
 He tugs at your sleeve and cuts his way through the crowd to a huge stack of blue rugs. Talking to himself he starts rummage the stack and finally pulls out a couple of big rugs.
 
@@ -1726,12 +1720,12 @@ Is this what you are looking for, Sir?
 [[Yes! That one! That’s it! How much?-&gt;Buy Rug]]
 &lt;&lt;if $rugdealer_intel is true&gt;&gt;
 [[hmmm.. it’s pretty but i need a bigger one. You know.. a heavy one. Really heavy, if you know what i mean..-&gt;Drugs]]
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="124" name="Buy Rug" tags="" position="2689,2459" size="100,100">Just 16£ today! Delivery is included, of course!
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="123" name="Buy Rug" tags="" position="2689,2459" size="100,100">Just 16£ today! Delivery is included, of course!
 &lt;&lt;if $money gte 16&gt;&gt;
 [[ Alright. Could you deliver on Monday 11 o&#39;clock at 54 Berners Street? -&gt;DealRugdealer]]
 &lt;&lt;/if&gt;&gt;
 [[What? Were these rugs woven with caviar extract by nude virgins in Walhalla?-&gt;Cheaper Rug]]
-</tw-passagedata><tw-passagedata pid="125" name="Drugs" tags="" position="2944,2499" size="100,100">Eehm.. I think this must be one of the biggest in my selection. Anyway, why should it be heavy?. This makes no sense to me..
+</tw-passagedata><tw-passagedata pid="124" name="Drugs" tags="" position="2944,2499" size="100,100">Eehm.. I think this must be one of the biggest in my selection. Anyway, why should it be heavy?. This makes no sense to me..
 
 Maybe the carpet is not that important but the weight.
 
@@ -1750,7 +1744,7 @@ I know exactly what you mean, i have tons of new stuff from Casablanca. Superior
 [[Saturday,11 o’clock, Berners Street 54. Bring a really heavy one!-&gt;DealRugdealer]]
 
 
-</tw-passagedata><tw-passagedata pid="126" name="Cheaper Rug" tags="" position="2354,2320" size="100,100">You Sir have no idea of the origin of these high quality rugs! Don’t be ridiculous!
+</tw-passagedata><tw-passagedata pid="125" name="Cheaper Rug" tags="" position="2354,2320" size="100,100">You Sir have no idea of the origin of these high quality rugs! Don’t be ridiculous!
 
 &lt;&lt;linkappend &quot;I’m sorry, what was the price again?&quot;&gt;&gt;
 12 £, no alternative, no dealing!
