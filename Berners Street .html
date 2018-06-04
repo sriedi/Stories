@@ -188,11 +188,13 @@ margin-bottom:2vh;
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">Dialog.addClickHandler("#some-element", null, function () {
     Dialog.setup("My Dialog Title", "my-dialog-class");
     Dialog.wiki(Story.get("MyDialogContents").processText());
 });
 Config.history.controls = false;
+
 
 
 
@@ -309,7 +311,7 @@ You find yourself on the Reek Street.
 [[Shadey Alley]]&lt;br/&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $prostitute isnot true&gt;&gt;
-[[Shady Tavern]]&lt;br/&gt;
+[[Shadey Tavern]]&lt;br/&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;if $pharmacist isnot true&gt;&gt;
 [[Pharmacy]]&lt;br/&gt;
@@ -503,9 +505,9 @@ And so, you write history in a different way than expected. Instead of writing i
 [[Turn around and walk away-&gt;Reek Street]]
 [[What do you mean by Special Day? Are you some kind of dealer?-&gt;Dealer?]]
 [[First you appear out of nowhere and then you speak to me without introducing yourself? Begone you filthy streetrat!-&gt;Agressive]]
-</tw-passagedata><tw-passagedata pid="21" name="Shady Tavern" tags="" position="4857,2465" size="100,100">&lt;&lt;if $anger_prositute is true&gt;&gt;
+</tw-passagedata><tw-passagedata pid="21" name="Shadey Tavern" tags="" position="4857,2465" size="100,100">&lt;&lt;if $anger_prositute is true&gt;&gt;
 You are blocked from entering the tavern by a big man with a dark hrumpf. Probably you should&#39;n have angered Miss Mary.
-
+[[Back to the Street-&gt;Reek Street]] 
 &lt;&lt;else&gt;&gt;
 
 You enter a dark, smokey lounge and you instantly start to feel uneasy because of the mixed stench of cheap cigars, sweat and perfume. As you try to peek through the wavery clouds of smoke you see that everything in the room is covered in red fabric. Even the curtains, which seem to be hanging there since the the house was built, are colored in a dark red. Although it might’ve been the many years the fabric was exposed to the smoke that colored it so dark.
@@ -1042,7 +1044,7 @@ She bursts out in loud laughter and you smell her bad breath mixed with the smel
 [[ Alright, I will accept the offer. Make sure to send them to 54 Bernerstreet on Monday-&gt;Deal Prositute]]
 &lt;&lt;/if&gt;&gt;
 
-[[That’s still too much. Let’s make a reasonable compromise: [insert price] and I promise to come and use your services again.-&gt;Fail Barter]]</tw-passagedata><tw-passagedata pid="53" name="Fail Barter" tags="" position="5430,2611" size="100,100">She looks at you in anger and raises her voice.
+[[That’s still too much. Let’s make a reasonable compromise:10£ and I promise to come and use your services again.-&gt;Fail Barter]]</tw-passagedata><tw-passagedata pid="53" name="Fail Barter" tags="" position="5430,2611" size="100,100">She looks at you in anger and raises her voice.
 
 &lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/prostitute.png&quot;/&gt;//&quot;Who do you think I am? I am Mary O’Ral, the proud owner of this establishment and I welcome all my guest with the best offer there is in the whole city. If you’re not satisfied with our pricing, you are welcome to leave this place and search the city for cheaper services. &#39;&#39; NOW GET OUT!&#39;&#39;&quot;//
 
@@ -1448,6 +1450,7 @@ He makes inviting gestures around the box with his hand, hovering it left and ri
 [[I can&#39;t afford that-&gt;Faker Street]] 
 &lt;&lt;else&gt;&gt;
 [[Thats great I take it, can you deliver the set to 54 Bernerstreet by Monday 9.00pm?-&gt;Deal Weaponsdealer]]
+[[No thanks-&gt;Faker Street]] 
 &lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="91" name="Self Defence" tags="" position="4818,533" size="100,100">&lt;img class=&quot;character&quot; src=&quot;http://bsh.zeitsturm.ch/img/weaponsdealer.png&quot;/&gt;//“Very well sir, I have just the Iron you need, heeheehee.”// 
 He grabs a box from below the counter and puts it in front of you before opening it. You&#39;re no weapons expert, but you recognize some kind of colt being contained in the box.
 //”This, my young friend, is an import from the USA, the united states of the americas, as you may know, and its a colt &quot;Dragoon&quot; revolver, sir.&quot;// 
