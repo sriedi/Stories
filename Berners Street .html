@@ -191,11 +191,15 @@ margin-bottom:2vh;
 
 
 
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">Dialog.addClickHandler("#some-element", null, function () {
     Dialog.setup("My Dialog Title", "my-dialog-class");
     Dialog.wiki(Story.get("MyDialogContents").processText());
 });
 Config.history.controls = false;
+
+
 
 
 
@@ -254,7 +258,8 @@ Config.history.controls = false;
 
 
 &lt;&lt;set $phase_collection to false &gt;&gt;
-&lt;&lt;set $phase_tumult to false &gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Intro" tags="" position="3465,0" size="100,100">T’was a mediocrely foggy day; one of many typical London fall mornings. You take the corner towards Hook’s bureau; evade a few people rushing; and look down the street. 
+&lt;&lt;set $phase_tumult to false &gt;&gt;</tw-passagedata><tw-passagedata pid="2" name="Intro" tags="" position="3465,0" size="100,100">&lt;img class=&quot;background&quot; src=&quot;http://bsh.zeitsturm.ch/img/london_title.png&quot;/&gt;
+T’was a mediocrely foggy day; one of many typical London fall mornings. You take the corner towards Hook’s bureau; evade a few people rushing; and look down the street. 
 The city’s awakening; the ubiquitous noise of people slowly increases together with the sun climbing the sky westwards. A few carriages were rolling on the manky streets already; a couple of maids were transporting bins of laundry, chit-chatting with each other in shrill soprane tones of voice. 
 
 The effect of the coffee you drank half an hour ago is slowly unfolding; and you’re feeling rather well, ready to serve another day as a loyal helping hand for Hook.
@@ -273,7 +278,7 @@ As you climb up the two rows of stairs up to the office, you notice agitated tal
 &lt;/div&gt;
 
 [[Go Home-&gt;Interlude]]
-</tw-passagedata><tw-passagedata pid="4" name="Bloxford Street" tags="" position="2915,1521" size="100,100">&lt;img class=&quot;background&quot; src=&quot;http://bsh.zeitsturm.ch/img/bloxford_street.png&quot;/&gt;
+</tw-passagedata><tw-passagedata pid="4" name="Bloxford Street" tags="" position="2913.3333333333335,1521" size="100,100">&lt;img class=&quot;background&quot; src=&quot;http://bsh.zeitsturm.ch/img/bloxford_street.png&quot;/&gt;
 You find yourself on the Bloxford Street.
 &lt;&lt;nobr&gt;&gt;
 [[Map]]&lt;br/&gt;
@@ -472,6 +477,9 @@ It is done. Berners Street had become absolute Mayhem, a small, seemingly unimpo
 “Boy! Boy!” Hook runs towards you, half smiling, half in shock.
 “Mister! I did it, now haven’t I?”
 “Oh, boy-o.” He pauses to catch some breath. “You absolutely, abso-hecking-lutely have outdone yourself, boy. Let me give you this well deserved hug! And a raise! A raise for sure!”
+
+&lt;img class=&quot;background&quot; src=&quot;http://bsh.zeitsturm.ch/img/succsess.png&quot;/&gt;
+
 And so, without a chance for defense, you get overpowered by Hook’s hug, and endure the most literally “breathtaking” experience with the thought of your raise; while Berners Street descends into madness right by your side.
 
 [[Return to Start-&gt;Start]] </tw-passagedata><tw-passagedata pid="18" name="Overdone Ending" tags="" position="3481,3200" size="100,100">
@@ -1099,7 +1107,7 @@ The nuns disappeared in all this rumble in a sidealley.
 Benjamin Waters, the Priest arrives at the street. As he moves to his destination he gets greeted by the people with respect passing by. However, before arriving at the House a gang of young kids, mostly boys gather around him and start teasing him. They try to steal his suitcase and pull on his black clothing. At first the priest acted as if nothing happened, while the pedestrians on the street watch the situation from afar. Suddenly, the holy man loses his temper and and curses the lord in a shouting manner. the people, especially the women are shocked at his outrage. they will not forget that.
 
 &lt;&lt;set $tumutl +=6&gt;&gt;
-&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="Happening Prostitue" tags="" position="3361,2463.6666666666665" size="100,100">&lt;&lt;if $priest_present is true&gt;&gt;
+&lt;&lt;/if&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="Happening Prostitue" tags="" position="3361,2463" size="100,100">&lt;&lt;if $priest_present is true&gt;&gt;
 A priest appears behind the corner and walks up to the House. He sees three nuns; but doesn&#39;t realize they&#39;re the prostitutes you ordered. Upon recognizing the nuns he approaches them saying: 
 //&quot; Hello sisters! What brings you here on such a sad day?&quot;//
 The three black dressed ladies look down on the priest.
